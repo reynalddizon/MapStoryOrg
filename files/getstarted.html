@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>MapStory Beta</title>
+		<meta name="description" content="MapStory Beta">
+		<meta name="author" content="reynalddizon">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<link href="font-icons/custom-icons/css/flags.css"" media="screen" rel="stylesheet" type="text/css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header" style="height:50px">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="home.html"><img src="images/mslogo02.png" class="img-responsive" style="padding:5px"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<!--<form role="search">
+     								 <div class="form-group">
+        								<input type="text" class="form-control" placeholder="Search">
+     								 </div>
+     								<button type="submit" class="btn btn-sm"><i class="icon-search"></i></button>
+    								</form>
+    								-->
+								<ul class="nav navbar-nav pull-right">
+     							  	<li class="btn-toolbar">
+     							  	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="eureka.html" style="text-decoration:none;font-size:1.3em;color:black">
+												Explore
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												Create
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="../../MapStoryStyles/html/storylayers.html">Composer</a></li>
+         								 <li><a href="#">Tools ></a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												How To
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="getstarted.html">Get Started</a></li>
+         								 <li><a href="getinvolved.html">Get Involved</a></li>
+          								 <li><a href="getskills.html">Get Skills</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="getstarted.html#welcome" style="text-decoration:none;font-size:1.3em;color:black">
+												About
+											</a>
+										</button></div>
+     							    	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="userdiary.html" style="text-decoration:none;font-size:1.3em;color:black">
+												Diary
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-doc"></i>
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="profile_visit.html">Profile</a></li>
+         								 <li><a href="profile_log.html">Profile (logged)</a></li>
+          								 <li><a href="profile_edit.html">Profile (edit)</a></li>
+          								 <li class="divider"></li>
+          								 <li><a href="organization_visit.html">Organization</a></li>
+         								 <li><a href="organization_log.html">Org (logged)</a></li>
+         								  <li class="divider"></li>
+         								 <li><a href="storylayer.html">StoryLayer</a></li>
+         								 <li><a href="mapstory.html">MapStory</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a data-toggle="modal" data-target="#loginModal" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-user"></i>
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a data-toggle="modal" data-target="#helpModal" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-info"></i>
+											</a>
+										</button></div>
+     							    </li>
+     							  </ul>
+							</div>
+						</nav>
+				</div>
+			</header>
+			
+			<div class="modal fade" id="loginModal">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<!--<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">Welcome to MapStory</h2>
+      						</div>-->
+      						<div class="modal-body">
+      							<div class="row" style="margin:10px">
+						<div class="col-sm-6" style="border-right:1px solid darkgray">
+							<h1 style="font-size:1.4em"><strong>Log in</strong></h1>
+							<hr class="col-sm-10" style="margin:10px">
+							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden"><div class="form-group">
+                        <label class="col-md-3 control-label" for="inputText1">Username</label>
+                        <div class="col-md-8">
+                          <input class="form-control" id="inputText1" placeholder="Username" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-3 control-label" for="inputPassword4">Password</label>
+                        <div class="col-md-8">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-3">
+                            <label>
+                              <a href="#" style="color:black">Forgot password?</a>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                          <div class="col-sm-offset-2 col-sm-8">
+                          	<button class="btn btn-sm btn-block"><a href="profile.html">Sign in</a></button>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="col-sm-11" style="margin:10px">
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                        	<div class="col-sm-11">
+                        	<h1 style="font-size:1.2em;">Connect your account</h1>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:dodgerblue;color:white"><i class="icon-facebook-1"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:deepskyblue;color:white"><i class="icon-twitter-bird"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:red;color:white"><i class="icon-gplus-1"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:blueviolet;color:white"><i class="icon-yahoo"></i></button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+						</div>
+						<div class="col-sm-6" >
+							<h1 class="col-sm-offset-1" style="font-size:1.4em">
+								<strong>Sign up to MapStory</strong>
+								<button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</h1>
+							<hr class="col-sm-offset-1 col-sm-10" style="margin:10px">
+							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden">
+							<div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Name</label>
+                        <div class="col-md-4">
+                          <input class="form-control" id="inputText1" placeholder="First" type="text">
+                        </div>
+                        <div class="col-md-5">
+                          <input class="form-control" id="inputText1" placeholder="Last" type="text">
+                        </div>
+                      </div>
+                      		<div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Email</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputText1" placeholder="@email.com" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputPassword4">Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputPassword4">Confirm Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <a href="#" style="color:black">Signing up as an organization?</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              I agree with the <a href="#" style="color:black">Terms and Conditions</a>.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                          <div class="col-sm-offset-2 col-sm-9">
+                          	<button class="btn btn-sm btn-block">Join MapStory</button>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+						</div>
+					</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+				
+			<div class="modal fade" id="helpModal" ole="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">MapStory Help Center</h2>
+      						</div>
+      						<div class="modal-body">
+        						<ul class="nav nav-tabs">
+  									<li class="active"><a href="#post" data-toggle="tab">Post a Question</a></li>
+  									<li><a href="#faqs" data-toggle="tab">FAQs</a></li>
+  									<li><a href="#links" data-toggle="tab">Links</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="post">
+										<form role="form">
+  											<div class="form-group">
+   												<label for="exampleInputEmail1">Question Title</label>
+    											<input type="text" class="form-control" id="questiontitle" placeholder="Search or ask your question">
+  											</div>
+  											<div class="form-group">
+    											<label for="exampleInputPassword1">Description</label>
+    											<input type="text" class="form-control" id="questiondetail" placeholder="Details">
+  											</div>
+ 											<div class="form-group">
+    											<label for="exampleInputFile">Attach a screenshot</label>
+    											<input type="file" id="exampleInputFile">
+  											</div>
+  											<div class="checkbox">
+   												 <label>
+      												<input type="checkbox"> Ask anonymously
+    											</label>
+ 											 </div>
+  											<button type="submit" class="btn btn-default btn-sm">Ask question</button>
+										</form>
+									</div>
+									<div class="tab-pane" id="faqs">
+										<h2>Frequently Asked Questions</h2>
+										<h3>Question 1</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 2</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 3</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+									</div>
+									<div class="tab-pane" id="links">
+										<h2>List of Resources</h2>
+
+										<h3>MapStory Wiki</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to Videos</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>Data Repositories</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to video blogs</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+									</div>
+								</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+			<!-- header -->
+				<!-- content -->
+				
+				<!--<section id="home" data-stellar-background-ratio="0.5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-sm-6">
+								<div class="flexslider" id="flexHome">
+									<ul class="slides">
+										<li>
+											<h1>Welcome to MapStory</h1>
+											<h2>Lorem ipsum dolor sit amet</h2>
+										</li>
+										<li>
+											<h1>Share your stories</h1>
+											<h2>Lorem ipsum dolor sit amet</h2>
+										</li>
+										<li>
+											<h1>Get involved</h1>
+											<h2>Lorem ipsum dolor sit amet</h2>
+										</li>
+									</ul>
+								</div> 
+							</div>
+							<div class="col-lg-5 col-sm-6 hidden-xs">
+								<img src="images/theme-pics/MSlogo-lg.png" alt="Ashley, Bootstrap website template" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				-->
+				
+				<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
+							<div class="paralaxText container">
+								<blockquote class="bigTitle" style="vertical-align:bottom">Get Started<br/><small>lorem ipsum dolor sit amet</small></blockquote>
+							</div>
+						</div>
+					</div>
+				
+				<section class="slice" id="welcome">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Welcome to MapStory<br/></blockquote>
+								<div style="max-height:275px; overflow-y:scroll; overflow-x:hidden">
+									<h2 style="font-size:14px;text-align:left;">
+										MapStory powers a global community of students, scholars and citizens to share data and tell stories about how our world changes over time and space. You can use MapStory to upload (link) spatio-temporal datasets, which we call StoryLayers, contribute edits to existing StoryLayers like you might edit a Wikipedia article, or use StoryLayers and other material on the internet to create (link) MapStories. MapStory is open data, so users license their StoryLayers and MapStories with Creative Commons licenses. To learn more about how to use MapStory and how to license and cite MapStory content, go to Get Skills (link). MapStory is sustained by the nonprofit MapStory Foundation (link) and a growing network of sponsors (link). To learn more about the community, go to Get Involved (link). We’re glad you’re here!
+									</h2>
+								</div>
+							</div>
+						</div>
+						<!--<div class="row">
+									<section>
+				<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+    	    <div> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                  <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/redlgpng.png" /></a></div>
+                	  <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/pinklgpng.png" /></a></div>
+                	  <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/greenlgpng.png" /></a></div>
+                	<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/yellowlgpng.png" /></a></div>
+                		<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/bluelgpng.png" /></a></div>
+                		<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/olivelgpng.png" /></a></div>
+                	</div>
+                </div>
+                <div class="item">
+                	<div class="row">
+                		<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/blacklgpng.png" /></a></div>
+                		<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/purplelgpng.png" /></a></div>
+                	  <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/pinklgpng.png" /></a></div>
+                	  <div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/greenlgpng.png" /></a></div>
+                	<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/yellowlgpng.png" /></a></div>
+                		<div class="col-sm-2"><a href="#x" class="thumbnail"><img src="images/portfolio/bluelgpng.png" /></a></div>
+                	</div>
+                </div>
+                 
+                </div>
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+                 
+            </div>  
+		</div>
+	</div>
+</div>
+				</section>
+								</div>-->
+						<br/>
+					</div>
+				</section>
+				<hr>
+				<section class="slice" id="students">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Students<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+										One of our goals with MapStory, is to enable you (students) to better understand a complex, changing world that is normally described to you solely through (really boring) text – as if a long parade of place names from long ago has any real meaning to you. The past happened somewhere, and it is high time that someone show you where and when it happened, particularly as it relates to the world you live in today. MapStory is here to empower you to achieve a superior understanding of our world, and to help you throughout your life to be a more effective and successful person. Success, after all, is based on what you know. But, we promise you this. Knowing when and where it all went down is key. Work with us, and we will help you become badass. The future of the world is yours. But, not without an understanding of our rich past, and our complex present.
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<br/>
+					</div>
+				</section>
+				<hr>
+				<section class="slice" id="educators">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Educators<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+										We at MapStory share your pain. Too little emphasis is placed on history and geography anymore. Our society’s historical memory and knowledge of the world is anemic, at best. And, we wonder why we are in trouble! If we are here to do anything, we are here to empower you – the teachers. It is time for a new generation of kids to grow up with an understanding of the world around them that is not just based on some turgid text that does little to light up their imaginations. We want kids (of all ages) to not only have access to a rich body of spatial and temporal knowledge that can tell them about the world around them, but access to many disparate narratives (yes, MapStories) that can communicate why various dimensions of our past and present are important. Moreover, we want you and your students to be empowered to create your own MapStories and publish them to the world. Think of it as a new way to do a book report?! They may be about world history, important recent events, or they may be about the past century in your own hometown. Your local MapStory is often just as important as world historic events from some distant land. And, it is guaranteed to make history and geography (and a dozen other academic disciplines) more meaningful to your students and their parents. MapStory wants to empower you to succeed in inspiring the next generations of our global society. Work with us! Let us know what MapStory can do for you.
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<hr>
+				
+				<section class="slice" id="policymakers">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Policy Makers<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+									We know that often, modern politics holds you at siege, forcing you to fight fires and address the crisis de jour - making it difficult for you to act strategically. But, many of your agencies not only make policy – they also systematically collect data related to your policy domain. MapStory seeks to let you publish this data in a way that makes it actually meaningful to the citizens and politicians that are your ultimate task masters. Regular people want to understand how policies relate to them, where they and their families live, and how things have changed for them over their lifetimes. Place and time are key organizing dimensions of the human condition. And, it is about time that public agencies and policymakers communicate their data this way to the public, and the politicians they elect. Some public policy thought leaders call this “Place Based Policy”. And, we at MapStory are happy to help.
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+				<hr>
+				
+				<section class="slice" id="business">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Business<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+									Ever since the East India Company was founded, businesses have shaped and reshaped our world in countless ways. As the famous economist Joseph Schumpeter articulated so well, businesses engage in “creative destruction” as they innovate, fundamentally changing the markets in which they compete, and the societies from which they emerge. Businesses often have the best data about where they were founded, the geographies they expanded across over time, their history of mergers and acquisitions, their evolving supply chains and markets, you name it. Think of MapStory as a platform by which you can gift your corporate past to today’s global society, as a cultural resource. How did WalMart spread across America and the globe, while instigating an enormous manufacturing district in China? What railroads were built and merged over the past two centuries to create CSX, BNSF, and Union Pacific Railroads? How is it that it has come to pass that you can get a Mercedes taxi to drive you across the deserts of North Africa? How did the companies that built Silicon Valley (and so many other regional technology clusters) form, expand, compete, ally, merge, and sometimes dissolve? There are so many questions that are key to understanding our world today, and businesses often have treasure troves of such data. MapStory is platform to which you can contribute to our understanding of our world.
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<hr>
+				
+				<section class="slice" id="ngos">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">NGOs<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+										Countless NGOs exist to address a wide variety of challenges across the globe. Some NGOs are dedicated to relieving humanitarian crises. Some seek the betterment of humanity, with regard to education, free enterprise, or some other domain of activity. Others are focused on mitigating human impacts on the natural world. Some are active in conflict zones, seeking to rebuild or simply to build common ground. NGOs require a better understanding of the “facts on the ground”, as to how things got the way they are. And often, NGOs have some of the best data, collected where know one else is willing to go. NGOs sometimes have a narrative they are seeking to project, related to a particular geography at a particular historical moment. And, sometimes, they have no narrative, only data. MapStory hopes to empower these NGOs to breed a better understanding of the complex places in which they are engaged, and the challenges they (and more likely, we!) face.
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<hr>
+				
+				<section class="slice" id="journalists">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Journalists<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+									As a journalist, you work hard and oftentimes under great personal risk, to follow Pulitzer's dictum to "illuminate dark places and interpret these troubled times." In this digital era, our dark places often lie in the data, and it is up to you to clarify themes and visualize data-based phenomena for the general public. At MapStory, we hope to make your job easier by providing a place where you can draw upon the spatial-temporal data of others for your work, and to produce your own StoryLayers and MapStories that can in-turn be embedded in your own publications. We believe in your work and are here to help!
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<hr>
+				
+				<section class="slice" id="natsecurity">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-sm-5">
+								<video width="380" height="320" controls>
+ 									 <source src="images/theme-pics/lake.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="col-sm-7">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">National Security<br/></blockquote>
+								<div>
+									<h2 style="font-size:14px;text-align:left;">
+									If you are a national security professional, and geospatial situational awareness of complex socio-cultural phenomena is not central to what you do…what is it, again, that do you do? Whether you are supporting major combat operations, counter-insurgencies, counter-terrorism, foreign internal defense, stability operations (stabilization, security, transition and reconstruction operations –SSTRO), irregular warfare, freedom of the seas, strategic triad operations, defense liaison, diplomatic negotiations, international development, humanitarian assistance/disaster response, you name it – we at MapStory think that it would be good if you had a better understanding of the complexities of the societies that you are engaging. We know that some of you disagree. We also know that an overwhelming majority of you - agree. Human security has always been and always will be a real challenge, all across the globe. Security professionals, and the parties to various conflicts and disagreements, struggle with these challenges in remote, dangerous places. And, sometimes at the negotiating table. As a global community, we owe it to ourselves to band together and provide ourselves better geospatial situational awareness about the security challenges that we face. MapStory is here to help.
+									</h2>
+									<hr style="margin-top:15px;margin-bottom:5px">
+									<h3 class="pull-right">
+										<a>Examples</a> |
+										<a>More Resources</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<hr>
+				
+				
+				<footer class="color4">
+					<section id="mainFooter">
+						<div class="container" id="footer">
+							<div class="row">
+								<div class="col-sm-9">
+									<div class="footerWidget">
+										<strong> MapStory</strong> is the atlas of change that everyone can edit. We are a community, not a company, that envisions a world where everyone's wisdom can be tapped, peer reviewed, organized and shared so that we all can dramatically improve our understanding of the rich past, complex present and uncertain future we share as living beings on planet Earth.
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div>
+										<button class="btn btn-sm btn-block btn-default">
+											<a href="donate.html">Help MapStory grow.<br/> Make a donation.</a>
+										</button>
+									</div>
+								</div>
+								</div>
+						</div>
+					</section>
+					<br>
+					<section>
+						<div class="container">
+									<div class="row">
+									<div class="col-sm-1">
+										<h3><strong>Lorem</strong></h3>
+										<h6 style="color:white">Ipsum</h6>
+										<h6 style="color:white">Ipsum</h6>
+										<h6 style="color:white">Ipsum</h6>
+									</div>
+									<div class="col-sm-1">
+										<h3><strong>Lorem</strong></h3>
+										<h6 style="color:white">Ipsum</h6>
+										<h6 style="color:white">Ipsum</h6>
+										<h6 style="color:white">Ipsum</h6>
+									</div>
+									<div class="col-sm-1">
+										<h3><strong>Lorem</strong></h3>
+										<h6 style="color:white">Ipsum</h6>
+										<h6 style="color:white">Ipsum</h6>
+										<h6 style="color:white">Ipsum</h6>
+									</div>
+									</div>
+									<br/>
+									<div class="row">
+									<div class="col-sm-12">
+											<p><small>By using this site, you agree to the License, Terms of Use and Privacy Policy. MapStory® is a registered trademark of the MapStory Foundation, Inc., a non-profit organization.</small></p>
+											<p><small>About the MapStory Foundation | Blog | Contact | Developers | Mobile View | Press | Disclaimers | Values | wiki.MapStory.org</small></p>
+										<ul class="socialNetwork pull-right">
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1"></i></a></li>
+											<li><a href="https://twitter.com/LIttleNeko1" class="tips" title="" data-original-title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Dribble"><i class="icon-dribbble"></i></a></li>
+										</ul>     
+									</div>
+								</div>
+							</div>
+				</section>
+				</footer>
+						
+				
+		
+		<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>

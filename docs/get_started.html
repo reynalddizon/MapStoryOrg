@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Documentation - Flatty v2.2</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <link href="assets/stylesheets/docs.css" media="all" rel="stylesheet" type="text/css" />
+  </head>
+  <body data-spy='scroll' style='padding-top:60px;padding-bottom:60px' target='.flatty-sidebar'>
+    <div class='navbar navbar-inverse navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <button class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse' type='button'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='brand' href='./index.html'>Flatty v2.2</a>
+          <div class='nav-collapse collapse'>
+            <ul class='nav'>
+              <li class=''>
+                <a href='index.html'>Home</a>
+              </li>
+              <li class='active'>
+                <a href='get_started.html'>Get started</a>
+              </li>
+              <li class=''>
+                <a href='documentation.html'>Documentation</a>
+              </li>
+              <li class=''>
+                <a href='contact.html'>Contact & support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='span3'>
+          <ul class='nav nav-list nav-stacked flatty-sidebar' data-offset-top='0' data-spy='affix'>
+            <li>
+              <a href='#files'>
+                Files
+              </a>
+            </li>
+            <li>
+              <a href='#sass_and_compass'>
+                Compass & SASS
+              </a>
+            </li>
+            <li>
+              <a href='#sass'>
+                SASS
+              </a>
+            </li>
+            <li>
+              <a href='#ror'>
+                Ruby on Rails
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='span9'>
+          <div class='page-header'>
+            <h1 class='text-center'>Get started</h1>
+          </div>
+          <section id='files'>
+            <div class='page-header'>
+              <h2>Files</h2>
+            </div>
+            <div class='lead'>Once downloaded, unzip the compressed folder to see the structure of Flatty template.</div>
+          </section>
+          <br>
+          <div class='page-header'>
+            <h3>What files are required for minimal setup?</h3>
+          </div>
+          <strong>Stylesheets:</strong>
+          <br>
+          <code>bootstrap/bootstrap.css</code>
+          ,
+          <code>light-theme.css or dark-theme.css or dark-blue-theme.css</code>
+          ,
+          <code>theme-colors.css (optional)</code>
+          .
+          <br>
+          <br>
+          <strong>Javascripts:</strong>
+          <br>
+          <code>jquery/jquery.min.js</code>
+          ,
+          <code>jquery/jquery-migrate.min.js</code>
+          ,
+          <code>bootstrap/bootstrap.min.js</code>
+          ,
+          <code>theme.js</code>
+          .
+          <br>
+          <br>
+          <div class='alert alert-info'>
+            Loading other, than required files (plugins, jQuery UI, etc) is based on you needs.
+          </div>
+          <br>
+          <div class='page-header'>
+            <h3>How to get plugin ABC get working?</h3>
+          </div>
+          <p>
+            If you want plugin
+            <code>ABC</code>
+            to get working, you must include all dependent files - check all folders
+            <code>stylesheets/plugins/ABC/</code>
+            ,
+            <code>javascripts/plugins/ABC/</code>
+            ,
+            <code>images/plugins/ABC/</code>
+            .
+          </p>
+          <br>
+          <br>
+          <section id='sass_and_compass'>
+            <div class='page-header'>
+              <h2>Compass & SASS</h2>
+            </div>
+            <div class='lead'>
+              If you are not familiar with Compass or SASS, check these sites:
+              <br>
+              <br>
+              <div class='row-fluid'>
+                <div class='span6'>
+                            <a href="http://compass-style.org/"><div class='well well-small text-center'>
+                    compass-style.org
+                  </div>
+                  </a>
+        
+                </div>
+                <div class='span6'>
+                            <a href="http://sass-lang.com/"><div class='well well-small text-center'>
+                    sass-lang.com
+                  </div>
+                  </a>
+        
+                </div>
+              </div>
+            </div>
+            <div class='page-header'>
+              <h3>How can I benefit from Compass & SASS?</h3>
+            </div>
+            Flatty was built using SASS, which is an CSS3 extension with variables, mixins, selector inheritance, etc.
+            Most of custom work in template can be overriden by usage of variables. All assets in stylesheets are linked with
+            usage of url/path helpers from Compass.
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>How to install Compass?</h3>
+            </div>
+            <strong>Open your terminal and type:</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              gem install compass
+            </script>
+            <div class='alert alert-info'>
+              Compass depends on RubyGems, so you'll need to have Ruby on your machine. If you're on Windows, you can run the
+              <a href="http://rubyinstaller.org/">Ruby Installer</a>.
+              On Linux,
+              <a href="https://github.com/joshfng/railsready">Rails Ready</a>,
+              on OS X you can use
+              <a href="https://rvm.io/">RVM</a>.
+            </div>
+            <br>
+            <div class='page-header'>
+              <h3>How to create my custom build?</h3>
+            </div>
+            Create file, for example
+            <code>my_build_name.scss</code>
+            in
+            <code>flatty/compass/sass</code>
+            folder.
+            <br>
+            <br>
+            You'll have to decide what parts of Flatty template are you going to use, for example:
+            <br>
+            <br>
+            <strong>
+              Flatty + Bootstrap
+            </strong>
+            (required files only)
+            <script class='brush: js' type='syntaxhighlighter'>
+              @import "theme-colors";
+              @import "bootstrap/bootstrap";
+              @import "light-theme";
+            </script>
+            <strong>Flatty + Bootstrap + some plugins + jQuery UI</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              @import "theme-colors";
+              @import "bootstrap/bootstrap";
+              @import "plugins/bootstrap_colorpicker/bootstrap-colorpicker";
+              @import "plugins/select2/select2";
+              @import "jquery/jquery_ui";
+              @import "light-theme";
+            </script>
+            <strong>All Flatty stylesheets with custom contrast color</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              $contrast: violet;
+              @import "theme-colors";
+              @import "bootstrap/bootstrap";
+              @import "plugins/plugins";
+              @import "jquery/jquery_ui";
+              @import "light-theme";
+            </script>
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>How to compile my custom build?</h3>
+            </div>
+            It's pretty simple - just open your terminal and go to
+            <code>flatty/compass</code>
+            folder and then type this command:
+            <script class='brush: js' type='syntaxhighlighter'>
+              compass compile sass/my_build_name.scss
+            </script>
+            <br>
+            Compass will compile
+            <code>my_build_name.scss</code>
+            into CSS file - you can find this file in
+            <code>flatty/compass/stylesheets/my_build_name.css</code>
+            .
+            <br>
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>How to change assets paths?</h3>
+            </div>
+            There is a configuration file
+            <code>flatty/compass/config.rb</code>
+            which contains basic settings. Complete list of Compass settings can be found
+            <a href="http://compass-style.org/help/tutorials/configuration-reference/">here</a>.
+            <br>
+            <br>
+            This
+            <code>config.rb</code>
+            will compile paths to this:
+            <code>url(../assets/images/bootstrap/glyphicons-halflings.png)</code>
+            <script class='brush: js' type='syntaxhighlighter'>
+              images_dir = 'assets/images'
+              fonts_dir = 'assets/fonts'
+              relative_assets = true
+            </script>
+            <br>
+            This
+            <code>config.rb</code>
+            will compile paths to this:
+            <code>url(/assets/images/bootstrap/glyphicons-halflings.png);</code>
+            <script class='brush: js' type='syntaxhighlighter'>
+              images_dir = 'assets/images'
+              fonts_dir = 'assets/fonts'
+              relative_assets = false
+            </script>
+            <br>
+            This
+            <code>config.rb</code>
+            will compile paths to this:
+            <code>url(../awesome_compass_setting/assets/images/bootstrap/glyphicons-halflings.png);</code>
+            <script class='brush: js' type='syntaxhighlighter'>
+              images_dir = 'awesome_compass_setting/assets/images'
+              fonts_dir = 'awesome_compass_setting/assets/fonts'
+              relative_assets = true
+            </script>
+          </section>
+          <br>
+          <br>
+          <section id='sass'>
+            <div class='page-header'>
+              <h2>SASS</h2>
+            </div>
+            <div class='page-header'>
+              <h3>How to change Bootstrap variables?</h3>
+            </div>
+            You have possibility to compile/override your own version of Bootstrap. But it's not necessary - future updates will be easier with standard Bootstrap (Flatty is using standard Bootstrap and
+            <strong>NOT</strong>
+            custom Bootstrap).
+            <br>
+            <br>
+            For example if you want to change base font size of Bootstrap from 14px to 13px.
+            Open file
+            <code>compass/sass/bootstrap/bootstrap.scss</code>
+            and override Bootstrap variable by adding variable with same name to this file:
+            <code>$baseFontSize: 13px;</code>
+            .
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>How to change Flatty variables?</h3>
+            </div>
+            Variables in Flatty are dependent on theme. Let's suppose that you choosed
+            <code>light-theme.scss</code>
+            as your theme. Then open that file. For example, you want to change body background color.
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  // change this
+                  // $contentBackground: #fbfbfb;
+                  // to this
+                  $contentBackground: red;
+              ]]>
+            </script>
+            And background color is now red :-)
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>I don't want to include all theme colors, but just one. How can I do that?</h3>
+            </div>
+            If you don't want ability to change themes by using
+            <code>contrast-red, contrast-blue, ...</code>
+            classes on
+            <code>body</code>
+            tag then it's not necessary to load
+            <code>theme-colors.scss</code>
+            file.
+            <br>
+            <br>
+            Changing contrast color is as simple as going to your theme file
+            (
+            <code>light-theme.scss</code>
+            for example)
+            and overriding
+            <code>$contrast</code>
+            variable.
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $contrast: navy;
+              ]]>
+            </script>
+            And theme color is navy blue, now.
+            <br>
+            <br>
+            If you are not loading
+            <code>theme-colors.scss</code>
+            be sure that you are importing
+            <code>@import "theme/variables";</code>
+            on the first line of your custom build.
+          </section>
+          <br>
+          <br>
+          <section id='ror'>
+            <div class='page-header'>
+              <h2>Ruby on Rails</h2>
+            </div>
+            <div class='lead'>Flatty is Ruby on Rails ready! So implementation couldn't be easier :-)</div>
+            <br>
+            <div class='page-header'>
+              <h3>How to install Flatty?</h3>
+            </div>
+            <ol>
+              <li>
+                Just go to
+                <code>flatty/ruby_on_rails</code>
+                folder and copy
+                <code>assets</code>
+                folder to
+                <code>your_rails_app/app</code>
+              </li>
+              <li>
+                Copy
+                <code>application.js</code>
+                from
+                <code>flatty/ruby_on_rails/pipeline</code>
+                to
+                <code>your_rails_app/app/assets/javascripts</code>
+              </li>
+              <li>
+                Copy
+                <code>application.scss</code>
+                from
+                <code>flatty/ruby_on_rails/pipeline</code>
+                to
+                <code>your_rails_app/app/assets/stylesheets</code>
+              </li>
+              <li>
+                Add
+                <code>compass-rails</code>
+                gem to your Gemfile.
+                <code>gem "compass-rails", "~> 2.0.alpha.0"</code>
+              </li>
+              <li>You're done!</li>
+            </ol>
+            <br>
+            <div class='page-header'>
+              <h3>Custom application.js & application.scss</h3>
+            </div>
+            Flatty is sent with
+            <code>application.js</code>
+            &
+            <code>application.scss</code>
+            files. These files are loading all Flatty files (these asset pipeline files are just examples). So you can create your own build as described above in
+            <a href="#sass_and_compass">Compass & SASS section</a>.
+            <br>
+            <br>
+            But you probably know that stuff :-)
+          </section>
+          <br>
+          <br>
+          <br>
+          <a class='btn btn-primary btn-large btn-block' href='./documentation.html'>
+            Go to Documentation
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/javascripts/docs.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MapStory 7</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta content='Flat administration template for Twitter Bootstrap. Twitter Bootstrap 3 template with Ruby on Rails support.' name='description'>
+    <link href='assets/images/meta_icons/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='assets/images/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+    <link href='assets/images/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='assets/images/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+ 
+    <!-- / START - page related stylesheets [optional] -->
+	
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+    <link href="assets/stylesheets/plugins/select2/select2.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/bootstrap_switch/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/common/bootstrap-wysihtml5.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/bootstrap/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/light-theme.css" media="all" id="color-settings-body-color" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/theme-colors.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/demo.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/stylesheets/thirdparty/bootstrap-colorpicker.css" type='text/css' />
+	<link href="assets/stylesheets/plugins/tabdrop/tabdrop.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/plugins/jgrowl/jquery.jgrowl.min.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/jquery/jquery_ui.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/plugins/datatables/bootstrap-datatable.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="assets/stylesheets/plugins/fuelux/wizard.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/stylesheets/hopscotch-0.1.2.css"></link>
+	
+	<!--Plugins-->
+	
+  </head>
+  <body class='contrast-orange without-footer' id="composer">
+  
+	<!--plugin scripts-->
+    <!--<header>
+      <nav class='navbar navbar-default' style="margin-bottom:0">
+        <a class='navbar-brand' href='index.html'>
+          <img width="120" height="21" class="logo" alt="Flatty" src="assets/images/MSBanner.png" />
+          <img width="30" height="21" class="logo-xs" alt="Flatty" src="assets/images/logo_xs.svg" />
+        </a>
+        <ul class='nav'>
+          <li class='dropdown only-icon widget'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-rss'></i>
+              <div class='label'>5</div>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Jon Marino signed up
+                      <small class='text-muted'>just now</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-inbox text-error'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      New MapStory Request
+                      <small class='text-muted'>3 minutes ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-comment text-primary'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Betsy Emmons commented on your MapStory.
+                      <small class='text-muted'>1 hour ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Daniel Dufour signed up
+                      <small class='text-muted'>last week</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Sean Emerson signed up
+                      <small class='text-muted'>last week</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='widget-footer'>
+                <a href='#'>All notifications</a>
+              </li>
+            </ul>
+          </li>
+          <li class='dropdown light user-menu'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <img width="23" height="23" alt="Mila Kunis" src="assets/images/avatar.jpg" />
+              <span class='user-name'>@mapstoryteller</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-cog'></i>
+                  Settings
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='sign_in.html'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search MapStory" autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form>
+      </nav>
+    </header>-->
+	
+	<div class="tabbable">
+        <ul class="nav nav-tabs nav-tabs-simple" style="margin-bottom:2px">
+			<li>
+                <a class="orange-border" href="../../MapStoryBeta/files/home.html">
+					<img src="assets/images/logo.png" height="14" />
+                </a>
+            </li>
+            <li>
+				<a class="green-border" href="storylayers.html">
+					<span id="SLTab">StoryLayers</span>
+                </a>
+            </li>
+            <li >
+                <a class="red-border" href="storyboard.html">
+					<span id="SBTab">StoryBoard</span>
+                </a>
+            </li>
+			<li  class="active">
+                <a class="blue-border" data-toggle="tab" href="#StoryPinsTab">
+					<span id="SPTab">StoryPins</span>
+                </a>
+            </li>
+			<li>
+                <a class="orange-border" href="storypreview.html">
+					<span id="SPVTab">StoryPreview</span>
+                </a>
+            </li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="StoryPinsTab">
+			<iframe style="position:absolute; z-index:0" width="100%" height="700px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+			
+            
+			<div class="panel-group col-sm-3 sortable ui-sortable" style="position:absolute; z-index:1; opacity:0.95;" id="PinsAccordion">
+				<!--Add Pin Header-->
+				<div class="panel panel-default" style="color: #000000">
+					<div class="panel-heading" style="background-color:#ffffff;">
+						<div class="panel-title text-primary" style="background-color:#ffffff" >
+							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#PinsAccordion" href="#NewPin">
+								Add a StoryPin </span>
+						</div>
+					</div>
+				<!-- Pin form-->
+					<div id="NewPin" class="panel-collapse collapse">
+						<div class="panel-body" style="max-height:450px; overflow-y:scroll; overflow-x:hidden; background-color:#ffffff">
+							<div class="col-sm-12">	
+								<form>
+													<!--StoryPin title-->
+													<label for="inputLayerTitle">StoryPin Title</label> <input class="form-control" type="text" id="inputLayerTitle" placeholder="Title">
+													<br> <label for="inputAbstract">Abstract</label>
+													<textarea id="inputAbstract" class="form-control" rows="2" placeholder="Summary"></textarea>
+													<br>
+													<!--Media Buttons Buttons-->
+													<label>Add media</label> <br>
+													<button data-toggle="tooltip" title="Add a new feature" class="btn">
+														<i class="glyphicon glyphicon-hand-up"></i>
+													</button>
+													<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn">
+														<i class="glyphicon glyphicon-camera"></i>
+													</button>
+													<button data-toggle="tooltip" title="Delete a feature" class="btn">
+														<i class="glyphicon glyphicon-film"></i>
+													</button>
+													<button data-toggle="tooltip" title="Get feature information" class="btn">
+														<i class="glyphicon glyphicon-headphones"></i>
+													</button>
+													<br> <hr>
+													<table class="table table-bordered table-condensed table-hover" style="background-color: white">
+														<caption style="text-align: left">
+															StoryPin Location
+															<button data-toggle="tooltip" title="Adjust geographic coordinates" class="btn btn-default btn-sm pull-right">
+																<i class="glyphicon glyphicon-screenshot"></i>
+															</button>
+															<br> <br>
+														</caption>
+														<tbody>
+															<tr>
+																<td>Latitude</td>
+																<td><input class="form-control" type="text" placeholder="DD.MMSSSS"></td>
+															</tr>
+															<tr>
+																<td>Longitude</td>
+																<td><input class="form-control" type="text" placeholder="DD.MMSSSS"></td>
+															</tr>
+															<tr>
+																<td>Start Time</td>
+																<td><input class="form-control" type="text" placeholder="YYYY-MM-DD:HH:mm:ss"></td>
+															</tr>
+															<tr>
+																<td>End Time</td>
+																<td><input class="form-control" type="text" placeholder="YYYY-MM-DD:HH:mm:ss"></td>
+															</tr>
+														</tbody>
+													</table>
+													<!--checkboxes-->
+													<label>Options</label> <label class="checkbox"> <input type="checkbox" value=""> Show in Timeline
+													</label> <label class="checkbox"> <input type="checkbox" value=""> Enable clustering
+													</label>
+													<a class="btn btn-block">
+														Add Pin
+													</a>
+												</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--Add Pin Header-->
+				<div class="panel panel-default" style="color: #000000">
+					<div class="panel-heading" style="background-color:#ffffff;">
+						<div class="panel-title text-primary" style="background-color:#ffffff" >
+							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#PinsAccordion" href="#NewNote">
+								Add a StoryNote </span>
+						</div>
+					</div>
+				<!-- Pin form-->
+					<div id="NewNote" class="panel-collapse collapse">
+						<div class="panel-body" style="max-height:450px; overflow-y:scroll; overflow-x:hidden; background-color:#ffffff">
+							<div class="col-sm-12">	
+								<form>
+													<!--StoryPin title-->
+													<label for="inputLayerTitle">StoryNote Title</label> <input class="form-control" type="text" id="inputLayerTitle" placeholder="Title">
+													<br> <label for="inputAbstract">Abstract</label>
+													<textarea id="inputAbstract" class="form-control" rows="2" placeholder="Summary"></textarea>
+													<br>
+													<!--Media Buttons Buttons-->
+													<label>Add media</label> <br>
+													<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success">
+														<i class="glyphicon glyphicon-hand-up"></i>
+													</button>
+													<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info">
+														<i class="glyphicon glyphicon-camera"></i>
+													</button>
+													<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger">
+														<i class="glyphicon glyphicon-film"></i>
+													</button>
+													<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning">
+														<i class="glyphicon glyphicon-headphones"></i>
+													</button>
+													<br> <hr>
+													<table class="table table-bordered table-condensed table-hover" style="background-color: white">
+														<caption style="text-align: left">
+															StoryPin Location
+															<button data-toggle="tooltip" title="Adjust geographic coordinates" class="btn btn-default btn-sm pull-right">
+																<i class="glyphicon glyphicon-screenshot"></i>
+															</button>
+															<br> <br>
+														</caption>
+														<tbody>
+															<tr>
+																<td>Latitude</td>
+																<td><input class="form-control" type="text" placeholder="DD.MMSSSS"></td>
+															</tr>
+															<tr>
+																<td>Longitude</td>
+																<td><input class="form-control" type="text" placeholder="DD.MMSSSS"></td>
+															</tr>
+															<tr>
+																<td>Start Time</td>
+																<td><input class="form-control" type="text" placeholder="YYYY-MM-DD:HH:mm:ss"></td>
+															</tr>
+															<tr>
+																<td>End Time</td>
+																<td><input class="form-control" type="text" placeholder="YYYY-MM-DD:HH:mm:ss"></td>
+															</tr>
+														</tbody>
+													</table>
+													<!--checkboxes-->
+													<label>Options</label> <label class="checkbox"> <input type="checkbox" value=""> Show in Timeline
+													</label> <label class="checkbox"> <input type="checkbox" value=""> Enable clustering
+													</label>
+													<button class="btn btn-danger btn-block">
+														<i class="glyphicon glyphicon-edit glyphicon-white"></i> Add StoryPin
+													</button>
+												</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--Batch Upload Header-->
+				<a data-toggle="modal" href="#BatchUploadModal">
+				<div class="panel panel-default" style="color: #000000">
+					<div class="panel-heading" style="background-color:#ffffff;">
+						<div class="panel-title text-primary" style="background-color:#ffffff" >
+							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#PinsAccordion" href="#BatchUpload">
+								Batch Upload </span>
+						</div>
+					</div>
+				</div>
+				</a>
+				
+			</div>
+			
+		</div>
+			
+	</div>
+	</div>
+	
+	<div id="BatchUploadModal" class="modal fade">
+		<div class="modal-dialog" width="70%">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						x
+					</button>
+					<h4 class="modal-title">StoryPins Batch Upload</h4>
+				</div>
+				<div class="modal-body">
+				<div class="box">
+                    <div class="box-content box-padding">
+                      <div class="fuelux">
+                        <div class="wizard">
+                          <ul class="steps">
+                            <li class="active" data-target="#bu1">
+                              <span class="step">File</span>
+                            </li>
+                            <li data-target="#bu2">
+                              <span class="step">Columns</span>
+                            </li>
+                            <li data-target="#bu3">
+                              <span class="step">Preview</span>
+                            </li>
+                          </ul>
+                          <div class="actions">
+                            <button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev
+                            </button>
+                            <button class="btn btn-xs btn-success btn-next" data-last="Finish">
+                              Next
+                              <i class="icon-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="step-content">
+                          <hr class="hr-normal">
+						<div class="step-pane active" id="bu1">
+                            <div class="alert alert-warning">
+                          <h4>
+                            Select file
+                          </h4>
+                          Drag and drop SHP, SHX, SBN, DBF and PRJ files here.
+                          <br><br>
+                          <a><input title="Search file..." type="file"></a>
+                          <a class="btn pull-right"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                          <a class="btn pull-right"><i class="glyphicon glyphicon-upload"></i></a>
+                          <br><br>
+                          <div class="progress">
+                        	 <span class="progress-bar progress-bar-warning" style="width:90%;">90%</span>
+                        	</div>
+                        </div>
+                          </div>
+                          <div class="step-pane" id="bu2">
+                           <div class="alert alert-warning">
+                                   <h4>
+                           		 	<i class="icon-info-sign"></i>
+                           		 	File information
+                          			</h4>
+                          			Columns:
+                          			Latitude
+                          			Longitude
+                          			Name
+                          			Start_time
+                          			End_time
+                          			<p>
+                          			Projection: Web Mercator
+                          			<hr>
+                          			<div class="row" style="padding:10px">
+                          				<div class="col-sm-6">
+                          			Latitude:
+                          			
+                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
+																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+																	Latitude
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Latitude</a></li>
+																	<li><a href="#">Longitude</a></li>
+																	<li><a href="#">Name</a></li>
+																</ul>
+															</div>
+                          				</div>
+                          				<div class="col-sm-6">
+                          			Longitude:
+                          			
+                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
+																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+																	Longitude
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Latitude</a></li>
+																	<li><a href="#">Longitude</a></li>
+																	<li><a href="#">Name</a></li>
+																</ul>
+															</div>
+										</div>
+									</div>
+                          		</div>
+                            	
+                          </div>
+                          <div class="step-pane" id="bu3">
+                            <div class="alert alert-warning">
+                                   <h4>
+                           		 	<i class="icon-info-sign"></i>
+                           		 	Time information
+                          			</h4>
+                          			<div class="btn-group" data-toggle="buttons">
+																<button class="btn">
+																	<input type="radio" name="options" id="Bold"> 
+																	Yes
+																</button>
+																<button class="btn">
+																	<input type="radio" name="options" id="Italic"> 
+																	No
+																</button>
+															</div>
+                          			
+                          			<hr>
+                          			<div class="row" style="padding:10px">
+                          				<div class="col-sm-6">
+                          			Includes start time:
+                          			<div class="btn-group" data-toggle="buttons">
+																<button class="btn">
+																	<input type="radio" name="options" id="Bold"> 
+																	Yes
+																</button>
+																<button class="btn">
+																	<input type="radio" name="options" id="Italic"> 
+																	No
+																</button>
+															</div>
+                          			<p>Source:
+                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
+																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+																	Start_Time
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Start_Time</a></li>
+																	<li><a href="#">End_Time</a></li>
+																	<li><a href="#">Name</a></li>
+																</ul>
+															</div>
+                          			<p>Time format:
+                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
+																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+																	Best Guess
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Best Guess</a></li>
+																	<li><a href="#">Custom</a></li>
+																</ul>
+															</div>
+									<p>Custom format:
+									<input class="form-control" id="timeformat" placeholder="mm/dd/yyyy" type="text">
+                          			
+                          			</div>
+                          				
+                          			
+                          				<div class="col-sm-6">
+                          			Includes end time:
+                          			<div class="btn-group" data-toggle="buttons">
+																<button class="btn">
+																	<input type="radio" name="options" id="Bold"> 
+																	Yes
+																</button>
+																<button class="btn">
+																	<input type="radio" name="options" id="Italic"> 
+																	No
+																</button>
+															</div>
+                          			<p>Source:
+                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
+																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+																	End_Time
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Start_Time</a></li>
+																	<li><a href="#">End_Time</a></li>
+																	<li><a href="#">Name</a></li>
+																</ul>
+															</div>
+                          			<p>Time format:
+                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
+																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+																	Best Guess
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Best Guess</a></li>
+																	<li><a href="#">Custom</a></li>
+																</ul>
+															</div>
+									<p>Custom format:
+									<input class="form-control" id="timeformat" placeholder="mm/dd/yyyy" type="text">
+                          			
+                          			</div>
+									</div>
+                          		</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+					
+																		</div>
+																		<div class="modal-footer">
+																			<button type="button" class="btn btn-default" data-dismiss="modal">Abort</button>
+																		</div>
+																	</div>
+																</div>
+															</div>	
+
+	<!-- / jquery [required] -->
+    <script src="assets/javascripts/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- / jquery mobile (for touch events) -->
+    <script src="assets/javascripts/jquery/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <!-- / jquery migrate (for compatibility with new jquery) [required] -->
+    <script src="assets/javascripts/jquery/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- / jquery ui -->
+    <script src="assets/javascripts/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- / jQuery UI Touch Punch -->
+    <script src="assets/javascripts/plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <!-- / bootstrap [required] -->
+    <script src="assets/javascripts/bootstrap/bootstrap.js" type="text/javascript"></script>
+    <!-- / modernizr -->
+    <script src="assets/javascripts/plugins/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <!-- / retina -->
+    <script src="assets/javascripts/plugins/retina/retina.js" type="text/javascript"></script>
+    <!-- / theme file [required] -->
+    <script src="assets/javascripts/theme.js" type="text/javascript"></script>
+    <!-- / demo file [not required!] -->
+    <script src="assets/javascripts/demo.js" type="text/javascript"></script>
+    <!-- / START - page related files and scripts [optional] -->
+    <script src="assets/javascripts/plugins/fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/select2/select2.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/moment.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/input_mask/bootstrap-inputmask.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/charCount/charCount.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/autosize/jquery.autosize-min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/naked_password/naked_password-0.2.4.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/mention/mention.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/typeahead/typeahead.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/wysihtml5.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/bootstrap-wysihtml5.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/pwstrength/pwstrength.js" type="text/javascript"></script>
+	<script src="assets/javascripts/thirdparty/bootstrap-colorpicker.js"></script>
+	<script src="assets/javascripts/plugins/tabdrop/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/jgrowl/jquery.jgrowl.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/typeahead/typeahead.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/timeago/jquery.timeago.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/nestable/jquery.nestable.js" type="text/javascript"></script>
+	<!--Timeslider script-->
+	<script>
+      
+      $("#slider-example4").slider({
+        value: 1948,
+        min: 1900,
+        max: 2013,
+        step: 1,
+        slide: function(event, ui) {
+          return $("#slider-example4-amount").text("Year: " + ui.value);
+        }
+      });
+      
+      $("#slider-example4-amount").text("Year: " +$("#slider-example4").slider("value"));
+      
+    </script>
+	<script src="assets/javascripts/plugins/datatables/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/datatables/dataTables.overrides.js" type="text/javascript"></script>
+	<script src="assets/javascripts/plugins/fuelux/wizard.js" type="text/javascript"></script>
+	<script src="assets/javascripts/plugins/fileupload/tmpl.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/load-image.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/canvas-to-blob.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.iframe-transport.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload-init.js" type="text/javascript"></script>
+	<script src="assets/javascripts/hopscotch-0.1.2.js"></script>
+    <script src="assets/javascripts/my_first_tours.js"></script> <!-- define and start your tour in this file -->
+	
+  </body>
+</html>

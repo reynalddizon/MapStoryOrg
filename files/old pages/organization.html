@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>MSB Org</title>
+		<meta name="description" content="MapStory Beta">
+		<meta name="author" content="reynalddizon">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/dynatree/ui.dynatree.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<link href="font-icons/custom-icons/css/flags.css"" media="screen" rel="stylesheet" type="text/css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header" style="height:50px">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="home.html"><img src="images/mslogo02.png" class="img-responsive" style="padding:5px"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<!--<form role="search">
+     								 <div class="form-group">
+        								<input type="text" class="form-control" placeholder="Search">
+     								 </div>
+     								<button type="submit" class="btn btn-sm"><i class="icon-search"></i></button>
+    								</form>
+    								-->
+								<ul class="nav navbar-nav pull-right">
+     							  	<li class="btn-toolbar">
+     							  	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:1px solid transparent;padding:0px 100px 20px 0px">
+     							    		<a style="text-decoration:none;font-size:1.7em;color:#46443b" href="explore.html">Explore</a> 
+     							    	</button></div>
+     							    	
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="color:darkgray;background-color:white;border:1px solid transparent;padding:0px 100px 20px 0px">
+       										 <a style="text-decoration:none;font-size:1.7em;color:#46443b" href="#">Create</a>
+       									</button>
+        								<ul class="dropdown-menu">
+         								 <li><a href="../../MapStoryStyles/html/storylayers.html">StoryLayers</a></li>
+         								 <li><a href="../../MapStoryStyles/html/storyboard.html">StoryBoard</a></li>
+         								 <li><a href="../../MapStoryStyles/html/storypins.html">StoryPins</a></li>
+         								 <li><a href="../../MapStoryStyles/html/storypreview.html">StoryPreview</a></li>
+         								 <li><a href="#">Warper</a></li>
+          								 <li><a href="#">Uploader</a></li>
+          								</ul></div>
+     							   
+     							   		<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="color:darkgray;background-color:white;border:1px solid transparent;padding:0px 100px 20px 0px">
+       								 		<a style="text-decoration:none;font-size:1.7em;color:#46443b" href="#">Learn</a>
+       								 	</button>
+        								<ul class="dropdown-menu">
+         								 <li><a href="getstarted.html">Get Started</a></li>
+         								 <li><a href="getinvolved.html">Get Involved</a></li>
+          								 <li><a href="getskills.html">Get Skills</a></li>
+          								</ul></div>
+          								
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:1px solid orange">
+											<a href="userdiary.html" style="font-size:1.1em;color:orange">
+												Diary
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:1px solid orange">
+											<a href="#" style="font-size:1.1em;color:orange">
+												Users
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="profile.html">Profile</a></li>
+         								 <li><a href="organization.html">Organization</a></li>
+          								 <li><a href="project.html">Project</a></li>
+          								 <li class="divider"></li>
+         								 <li><a href="storylayer.html">StoryLayer</a></li>
+         								 <li><a href="mapstory.html">MapStory</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:1px solid orange">
+											<a data-toggle="modal" data-target="#helpModal" style="font-size:1.1em;color:orange">
+												Help
+											</a>
+										</button></div>
+     							    </li>
+     							  </ul>
+     							    
+							</div>
+						</nav>
+				</div>
+			</header>
+			<!-- header -->
+			
+			<div class="modal fade" id="helpModal" ole="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">MapStory Help Center</h2>
+      						</div>
+      						<div class="modal-body">
+        						<ul class="nav nav-tabs">
+  									<li class="active"><a href="#post" data-toggle="tab">Post a Question</a></li>
+  									<li><a href="#faqs" data-toggle="tab">FAQs</a></li>
+  									<li><a href="#links" data-toggle="tab">Links</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="post">
+										<form role="form">
+  											<div class="form-group">
+   												<label for="exampleInputEmail1">Question Title</label>
+    											<input type="text" class="form-control" id="questiontitle" placeholder="Search or ask your question">
+  											</div>
+  											<div class="form-group">
+    											<label for="exampleInputPassword1">Description</label>
+    											<input type="text" class="form-control" id="questiondetail" placeholder="Details">
+  											</div>
+ 											<div class="form-group">
+    											<label for="exampleInputFile">Attach a screenshot</label>
+    											<input type="file" id="exampleInputFile">
+  											</div>
+  											<div class="checkbox">
+   												 <label>
+      												<input type="checkbox"> Ask anonymously
+    											</label>
+ 											 </div>
+  											<button type="submit" class="btn btn-default btn-sm">Ask question</button>
+										</form>
+									</div>
+									<div class="tab-pane" id="faqs">
+										<h2>Frequently Asked Questions</h2>
+										<h3>Question 1</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 2</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 3</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+									</div>
+									<div class="tab-pane" id="links">
+										<h2>List of Resources</h2>
+
+										<h3>MapStory Wiki</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to Videos</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>Data Repositories</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to video blogs</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+									</div>
+								</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+				
+				<!-- content -->
+				
+				<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
+							<div class="paralaxText container" style="text-align:left">
+								<img class="img-circle" src="images/orglogo2.png" width="100" height="100" style="margin-top:30px;margin-bottom:0px"/>
+								<blockquote class="bigTitle" style="vertical-align:bottom; padding:0">
+									<div class="row">
+										<div class="col-sm-7">
+											Organization Name<br/><small>Organization Motto
+											<div class="btn-toolbar" role="toolbar" style="padding-top:10px">
+ 										 <div class="btn-group">
+ 										 	<a class="btn btn-xs btn-block btn-default" title="" href="#storylayersSlice" target="blank">
+											<span style="font-size:1.2em"><i class="icon-user-add"></i> follow</span>
+											</a>
+ 										 </div>
+ 										  <div class="btn-group">
+  										 	<a class="btn btn-xs btn-block btn-default" title="" href="#storylayersSlice" target="blank">
+											<span style="font-size:1.2em"><i class="icon-comment"></i></span>
+											</a>
+  										 </div>
+  										 <div class="btn-group">
+  										 	<a class="btn btn-xs btn-block btn-default" title="" href="#storylayersSlice" target="blank">
+											<span style="font-size:1.2em"><i class="icon-twitter-bird"></i></span>
+											</a>
+  										 </div>
+  										 
+  										 <div class="btn-group">
+  										 	<a class="btn btn-xs btn-block btn-default" title="" href="#mapstoriesSlice" target="blank">
+											<span style="font-size:1.2em"><i class="icon-facebook-1"></i></span>
+											</a>
+  										 </div>
+  										 <div class="btn-group">
+  										 	<a class="btn btn-xs btn-block btn-default" title="" href="#mapstoriesSlice" target="blank">
+											<span style="font-size:1.2em"><i class="icon-at"></i></span>
+											</a>
+  										 </div>
+									</div>
+										</div>
+										
+										<div class="col-sm-5">
+											<div class="row">
+									<section>
+				<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+    	    <div> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                  <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/redlgpng.png" /></a></div>
+                	  <div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/pinklgpng.png" /></a></div>
+                	  <div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/greenlgpng.png" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/yellowlgpng.png" /></a></div>
+                		<div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/bluelgpng.png" /></a></div>
+                		<div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/olivelgpng.png" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/blacklgpng.png" /></a></div>
+                		<div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/purplelgpng.png" /></a></div>
+                		<div class="col-sm-4"><a href="#x" class="thumbnail"><img src="images/portfolio/redlgpng.png" /></a></div>
+                	</div>
+                </div>
+                 
+                </div>
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+                 
+            </div>  
+		</div>
+	</div>
+</div>
+				</section>
+								</div>
+								
+										</div>
+									</div>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				<!-- dashboard -->
+				<section class="slice" id="dashboard">
+					<div class="container">
+						<div class="row" >
+							<div class="col-lg-9">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#mapstories" data-toggle="tab">MapStories</a></li>
+  									<li><a href="#storylayers" data-toggle="tab">StoryLayers</a></li>
+  									<li><a href="#storytellers" data-toggle="tab">Storytellers</a></li>
+  									<li><a href="#activities" data-toggle="tab">Activities</a></li>
+  									<li><a href="#media" data-toggle="tab">Media</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="mapstories">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-12">
+            <div class="btn-toolbar" role="toolbar">
+            	
+            	<div class="btn-group">
+  					<div class="btn-group">
+  					<button type="button" class="btn btn-sm btn-warning dropdown-toggle" data-toggle="dropdown">
+     					<a href="#" class="tips" title="" data-original-title="Content Filter: Categories">
+     					 <i class="icon-th-list"></i>
+     					</a>
+     					 <span class="caret"></span>
+    				</button>
+    				<ul class="dropdown-menu">
+   					   <li><a href="#">Category 1</a></li>
+    				  <li><a href="#">Category 2</a></li>
+   					 </ul>
+   					</div>
+   					<div class="btn-group">
+   					 <button type="button" class="btn btn-sm btn-warning dropdown-toggle" data-toggle="dropdown">
+     					 <a href="#" class="tips" title="" data-original-title="Content Filter: Region">
+     					 	<i class="icon-globe"></i>
+     					 </a>
+     					 <span class="caret"></span>
+    				</button>
+   					 <ul class="dropdown-menu">
+   					   <li><a href="#">Region 1</a></li>
+    				  <li><a href="#">Region 2</a></li>
+   					 </ul>
+   					 </div>
+   					 <div class="btn-group">
+   					 <button type="button" class="btn btn-sm btn-warning dropdown-toggle" data-toggle="dropdown">
+     					 <a href="#" class="tips" title="" data-original-title="Content Filter: Timeframe">
+     						<i class="icon-stopwatch"></i>
+     					 </a>
+     					 <span class="caret"></span>
+    				</button>
+   					 <ul class="dropdown-menu">
+   					   <li><a href="#">Time 1</a></li>
+    				  <li><a href="#">Time 2</a></li>
+   					 </ul>
+   					 </div>
+  				</div>
+  				
+ 				 <div class="btn-group">
+  					<button class="btn btn-sm btn-warning">
+  						<a href="#" class="tips" title="" data-original-title="Sort: Alphabetical Asc">
+  							<i class="icon-up-small"></i><i class="icon-sort-alphabet"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Sort: Alphabetical Des">
+  							<i class="icon-down-small"></i><i class="icon-sort-alphabet"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Sort: Numeric">
+  							<i class="icon-up-small"></i><i class="icon-sort-numeric-outline"></i>
+  						</a>
+  					</button>
+  				</div>
+  				
+  				<div class="btn-group">
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Type Filter: All">
+  							<i class="icon-th-large"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Type Filter: StoryLayers">
+  							<i class="icon-comment"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Type Filter: MapStories">
+  							<i class="icon-chat"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Type Filter: StoryTellers">
+  							<i class="icon-user"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Type Filter: Organizations">
+  							<i class="icon-users"></i>
+  						</a>
+  					</button>
+  					<button class="btn btn-warning btn-sm">
+  						<a href="#" class="tips" title="" data-original-title="Type Filter: Projects">
+  							<i class="icon-flow-merge"></i>
+  						</a>
+  					</button>
+  				</div>
+  				
+ 				 <div class="btn-group">
+ 				 	<button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-cog"></i>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Return first 10</a></li>
+      <li><a href="#">Return first 20</a></li>
+    </ul>
+ 				 </div>
+			</div>
+             
+        </div>
+											</div>
+											<br>
+											<div class="row">
+											<table class="table table-hover table-condensed">
+  												<tr>
+  													<td width="20%">
+  														<img src="images/portfolio/blue.png" class="img-rounded" width="150" height="150">
+  														</td>
+  													<td>
+  														<big>MapStory X</big>
+  														<span class="label label-success">nature</span>
+  														<span class="label label-success">environment</span>
+  														<br>
+  														<small>
+  															Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. 
+  														</small>
+  														<small>
+  															<br><i>1,234 features</i>
+  															<br>uploaded <strong>31 Dec 2013</strong>
+  															<br>last modified <strong>01 Jan 2014</strong>
+  															<br>by <i>@mapstoryuser</i>
+  														</small>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td width="15%">
+  														<img src="images/portfolio/green.png" class="img-rounded" width="150" height="150">
+  													</td>
+  													<td>
+  														<big>MapStory Y</big>
+  														<span class="label label-success">nature</span>
+  														<span class="label label-success">environment</span>
+  														<br>
+  														<small>
+  															Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. 
+  														</small>
+  														<small>
+  															<br><i>1,234 features</i>
+  															<br>uploaded <strong>31 Dec 2013</strong>
+  															<br>last modified <strong>01 Jan 2014</strong>
+  															<br>by <i>@mapstoryuser</i>
+  														</small>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td width="15%">
+  														<img src="images/portfolio/red.png" class="img-rounded" width="150" height="150">
+  													</td>
+  													<td>
+  														<big>MapStory Z</big>
+  														<span class="label label-success">nature</span>
+  														<span class="label label-success">environment</span>
+  														<br>
+  														<small>
+  															Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. 
+  														</small>
+  														<small>
+  															<br><i>1,234 features</i>
+  															<br>uploaded <strong>31 Dec 2013</strong>
+  															<br>last modified <strong>01 Jan 2014</strong>
+  															<br>by <i>@mapstoryuser</i>
+  														</small>
+  													</td>
+  												</tr>
+											</table>
+										</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="storylayers">
+										<!--<div class="row">
+							<nav id="filter" class="col-md-12 text-center">
+								<ul>
+									<li><a href="" class="current btn btn-sm" data-filter="*"><i class="icon-star"></i> Featured</a></li>
+									<li><a href="" class="btn btn-sm" data-filter=".politics" ><i class="icon-certificate-outline"> Recent</i></a></li>
+									<li><a href="" class="btn btn-sm" data-filter=".nature"><i class="icon-users-outline"></i> Popular</a></li>
+									<li><a href="" class="btn btn-sm" data-filter=".technology"><i class="icon-chart-outline"></i> Trending</a></li>
+									<li><a href="" class="btn btn-sm" data-filter="*"><i class="icon-flow-merge"></i> Categories</a></li>
+								</ul>
+							</nav>
+
+							<div class="portfolio-items  isotopeWrapper clearfix imgHover" id="6" >
+								<article class="col-sm-2 isotopeItem">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/blacklgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:black; opacity:0.60">
+											<h5 style="color:white">Black MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Black MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem nature">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/bluelgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:blue; opacity:0.60">
+											<h5 style="color:white">Blue MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Blue MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem nature">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/greenlgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:green; opacity:0.60">
+											<h5 style="color:white">Green MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Green MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem technology">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/mintlgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:aqua; opacity:0.60">
+											<h5 style="color:white">Aqua MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Aqua MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem technology">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/orangelgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:orange; opacity:0.60">
+											<h5 style="color:white">Orange MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Orange MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem politics">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/olivelgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:olive; opacity:0.60">
+											<h5 style="color:white">Olive MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Olive MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem technology">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/pinklgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:pink; opacity:0.60">
+											<h5 style="color:white">Pink MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Pink MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem politics">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/purplelgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:purple; opacity:0.60">
+											<h5 style="color:white">Purple MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Purple MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem politics">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/redlgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:red; opacity:0.60">
+											<h5 style="color:white">Red MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Red MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem nature">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/skybluelgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:skyblue; opacity:0.60">
+											<h5 style="color:white">Sky Blue MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Sky Blue MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+
+								<article class="col-sm-2 isotopeItem nature">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/yellowlgpng.png" class="img-responsive">
+									</section>
+									<div class="mediaHover">
+										<div class="mask" style="background-color:yellow; opacity:0.60">
+											<h5 style="color:white">Yellow MapStory<br/>@mapstoryteller</h5>
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Yellow MapStory</h3>
+										<p>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+								
+								<article class="col-sm-2 isotopeItem nature politics technology">
+									<a class="btn btn-sm btn-block" title="" href="../../MapStoryStyles/html/storylayers.html" target="blank">
+										<i class="icon-arrows-cw"></i> Load more...
+									</a>
+									<a class="btn btn-sm btn-block" title="" href="../../MapStoryStyles/html/storylayers.html" target="blank">
+										<i class="icon-search"></i> Search...
+									</a>
+								</article>
+								</div>
+							</div>-->
+									</div>
+									<div class="tab-pane" id="storytellers">
+									</div>
+									<div class="tab-pane" id="activities">
+										<div class='row timeline' style="max-height:500px; overflow-y:scroll; overflow-x:hidden">
+                <div class='col-sm-12'>
+                  <ol class='list-unstyled'>
+                    <li> <!--News sample-->
+                      <div class='icon red-background'>
+                        <i class='icon-chat'></i>
+                      </div>
+                      <div class='title'>
+                        <a class="text-muted" href="#">Org Name</a>
+                        posted a new article.
+                        <small class='text-muted'>10 minutes ago</small>
+                      </div>
+                      <div class='content'>
+                        Occaecati adipisci eum debitis necessitatibus odio commodi voluptatem iure architecto velit eveniet quos quia dolore quia voluptates voluptatum nam facilis omnis tempora eos magnam qui ad qui id molestiae officia praesentium autem quae eaque sequi dignissimos facere ea consectetur aperiam
+                      </div>
+                    </li>
+                    <li> <!--Photo sample-->
+                      <div class='icon green-background'>
+                        <i class='icon-picture'></i>
+                      </div>
+                      <div class='title'>
+                        <a class="text-muted" href="#">Doris Solomon</a>
+                        uploaded new photos
+                        <small class='text-muted'>10 minutes ago</small>
+                      </div>
+                      <div class='content'>
+                        <img src="images/sampleimg.png" class="img-responsive" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class='icon orange-background'>
+                        <i class='icon-folder-add'></i>
+                      </div>
+                      <div class='title'>
+                        <a class="text-muted" href="#">Noelle Goldstein</a>
+                        uploaded a new dataset
+                        <small class='text-muted'>1 hour ago</small>
+                      </div>
+                      <div class='content'>
+                        <h3>Country Borders c 1980</h3>
+                        Lorem ipsum dolor sit amet.
+                      </div>
+                    </li>
+                    <li>
+                      <div class='icon blue-background'>
+                        <i class='icon-video'></i>
+                      </div>
+                      <div class='title'>
+                        <a class="text-muted" href="#">Don Eason</a>
+                        shared a video clip
+                        <small class='text-muted'>2 weeks ago</small>
+                      </div>
+                      <div class='content'>
+                        <iframe src='http://www.youtube.com/embed/VyG1rk1XgT4' style='frameborder:0;'></iframe>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+									</div>
+									<div class="tab-pane" id="media">
+										<h2><i class="icon-camera-outline"></i> media gallery</h2>
+										<div class="row">
+											<div class="col-sm-4">
+												<img class="img-responsive img-thumbnail" src="images/filler.jpg" style="margin:5px" /> 
+											</div>
+											<div class="col-sm-4">
+												<img class="img-responsive img-thumbnail" src="images/filler.jpg" style="margin:5px" /> 
+											</div>
+											<div class="col-sm-4">
+												<img class="img-responsive img-thumbnail" src="images/filler.jpg" style="margin:5px" /> 
+											</div>
+											<div class="col-sm-4">
+												<img class="img-responsive img-thumbnail" src="images/filler.jpg" style="margin:5px" /> 
+											</div>
+											<div class="col-sm-4">
+												<img class="img-responsive img-thumbnail" src="images/filler.jpg" style="margin:5px" /> 
+											</div>
+											<div class="col-sm-4">
+												<img class="img-responsive img-thumbnail" src="images/filler.jpg" style="margin:5px" /> 
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="misc">
+									
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<!--<div class="alert alert-warning">
+                             		
+								</div>
+								
+									<h2><i class="icon-users-outline"></i> subscribers </h2>
+									
+								-->
+								<div class="col-sm-12">
+							<div class="input-group custom-search-form">
+              					<input type="text" class="form-control" placeholder="search in the org">
+             						 <span class="input-group-btn">
+              					<button class="btn btn-sm btn-default" type="button">
+              						<span class="glyphicon glyphicon-search"></span>
+             					</button>
+             					</span>
+             				</div>
+						</div>
+								<br>
+								<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#orgprofile">
+          Organization Profile
+        </a>
+      </h4>
+    </div>
+    <div id="orgprofile" class="panel-collapse collapse in">
+      <div class="panel-body">
+										<div style="max-height:200px; overflow-y:scroll; overflow-x:hidden;font-size:0.9em"><i>
+											Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. Ipsum ignota scripserit sed ne, ne appareat intellegat liberavisse nec. Ea per impetus insolens mediocrem, nam et augue placerat, duis congue corpora te eos. Mel ei commodo alterum singulis, eu est quod interpretaris. Ad case propriae elaboraret sea. Ex sit accusam forensibus cotidieque, wisi feugiat omittantur vel ex. Id legere aliquid reprehendunt his. Sea etiam movet putent ad, ad ludus doming eam. At mei etiam option efficiendi, ubique feugait suavitate te eos, mollis tractatos pertinacia ei sea. An convenire patrioque signiferumque ius. Omnium impedit te pro. Mea ei minimum salutandi disputationi, animal praesent suscipiantur est id. Graeco aperiri et mei. Saepe nusquam scripserit pro an. Maiestatis deseruisse pri ei, dicam veniam eos te. Ei per iriure efficiendi eloquentiam, nec ne veri doming corrumpit, quem diceret accusamus et mel. Oratio propriae pertinacia per an, no graeco dolorem persecuti mel. Modus corpora eos ei, simul nobis discere ut has. Feugait petentium ex mea, vim quod recteque ex. Nec an mazim deseruisse, ex petentium accusamus abhorreant est, sint decore disputando id sit. Eum id fastidii lobortis, ne semper habemus suavitate sit. Et cum melius sapientem assueverit.
+										</i></div>
+									</h2>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#followers">
+          Followers <span class="pull-right text-orange">1,234</span>
+        </a>
+      </h4>
+    </div>
+    <div id="followers" class="panel-collapse collapse">
+      <div class="panel-body">
+      	<div style="max-height:250px; overflow-y:scroll; overflow-x:hidden">
+										<table class="table table-striped">
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Annie Butler</h2>
+													</td>
+													<td>
+														<i class="flag flag-us"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Victor Reed</h2>
+													</td>
+													<td>
+														<i class="flag flag-ph"></i> 
+													</td>
+												</tr>	
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Charles Johnson</h2>
+													</td>
+													<td>
+														<i class="flag flag-gb"></i> 
+													</td>
+												</tr>	
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Evelyn Baker</h2>
+													</td>
+													<td>
+														<i class="flag flag-fr"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Shawn Rivera</h2>
+													</td>
+													<td>
+														<i class="flag flag-de"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Adam Russell</h2>
+													</td>
+													<td>
+														<i class="flag flag-at"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Russell Lee</h2>
+													</td>
+													<td>
+														<i class="flag flag-it"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Joe Kelly</h2>
+													</td>
+													<td>
+														<i class="flag flag-jp"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Benjamin Wright</h2>
+													</td>
+													<td>
+														<i class="flag flag-cn"></i> 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 style="margin:0px"><img class="img-circle" src="images/avatar.jpg" width="30"> Jimmy Washington</h2>
+													</td>
+													<td>
+														<i class="flag flag-ca"></i> 
+													</td>
+												</tr>
+											</table>
+									</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#contactus">
+          Contact Organization
+        </a>
+      </h4>
+    </div>
+    <div id="contactus" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#contactus">
+          Follow us
+        </a>
+      </h4>
+    </div>
+  </div>
+</div>
+                        	</div>
+							
+							
+						</div>
+					</div>
+				</section>
+				<!-- dashboard -->
+				
+			<!-- content -->
+			<!-- footer -->
+				<!--<footer>
+						<section id="mainFooter">
+							<div class="container" id="footer">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="footerWidget">
+											<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
+											<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">MapStory</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="footerWidget">
+
+											<h3>MapStory Foundation</h3>
+											<address>
+												<p> <i class="icon-location"></i>&nbsp;Address Line 1<br>
+													Washington, D.C., USA <br>
+													<i class="icon-phone"></i>&nbsp;615.987.1234 <br>
+													<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">info@mapstory.org</a> </p>
+												</address>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</footer>
+					<section  id="footerRights">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6">
+										<p>Copyright © 2013 <a href="http://www.little-neko.com" target="blank">MapStory Foundation</a> / All rights reserved.</p>
+									</div>
+									<div class="col-sm-6">
+										<ul class="socialNetwork pull-right">
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+											<li><a href="https://twitter.com/LIttleNeko1" class="tips" title="" data-original-title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+										</ul>     
+									</div>
+								</div>
+							</div>
+						</section>-->
+					<!-- End footer -->
+					</div>
+					<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+		<script type="text/javascript" src="js-plugin/dynatree/jquery.dynatree.min.js"></script>
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>

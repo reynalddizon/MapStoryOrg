@@ -1,0 +1,12 @@
+v.1.2
+- added fullscreen version
+- added loader
+- fixed icon size on tablet
+- changed menu icon size and color
+- optimized menu icon on mobile
+- added margin-bottom on news bloc for mobile
+- set offset in pixel
+- fixed icon sizes on tablet "portrait"
+
+v.1.1
+Changed the value of the data-target attribute for the body tag (fixes issue related to 'Home' button highlighting).

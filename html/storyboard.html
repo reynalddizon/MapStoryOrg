@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MapStory 7</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta content='Flat administration template for Twitter Bootstrap. Twitter Bootstrap 3 template with Ruby on Rails support.' name='description'>
+    <link href='assets/images/meta_icons/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='assets/images/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+    <link href='assets/images/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='assets/images/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+ 
+    <!-- / START - page related stylesheets [optional] -->
+	
+    <link href="assets/stylesheets/plugins/select2/select2.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/bootstrap_switch/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/common/bootstrap-wysihtml5.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/bootstrap/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/light-theme.css" media="all" id="color-settings-body-color" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/theme-colors.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/demo.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/stylesheets/thirdparty/bootstrap-colorpicker.css" type='text/css' />
+	<link href="assets/stylesheets/plugins/tabdrop/tabdrop.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/plugins/jgrowl/jquery.jgrowl.min.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/jquery/jquery_ui.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/plugins/datatables/bootstrap-datatable.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="assets/stylesheets/plugins/fuelux/wizard.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/stylesheets/hopscotch-0.1.2.css"></link>
+	
+	<!--Plugins-->
+	
+  </head>
+  <body class='contrast-orange without-footer' id="composer">
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  
+	<!--plugin scripts-->
+    <!--<header>
+      <nav class='navbar navbar-default' style="margin-bottom:0">
+        <a class='navbar-brand' href='index.html'>
+          <img width="120" height="21" class="logo" alt="Flatty" src="assets/images/MSBanner.png" />
+          <img width="30" height="21" class="logo-xs" alt="Flatty" src="assets/images/logo_xs.svg" />
+        </a>
+        <ul class='nav'>
+          <li class='dropdown only-icon widget'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-rss'></i>
+              <div class='label'>5</div>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Jon Marino signed up
+                      <small class='text-muted'>just now</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-inbox text-error'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      New MapStory Request
+                      <small class='text-muted'>3 minutes ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-comment text-warning'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Betsy Emmons commented on your MapStory.
+                      <small class='text-muted'>1 hour ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Daniel Dufour signed up
+                      <small class='text-muted'>last week</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Sean Emerson signed up
+                      <small class='text-muted'>last week</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='widget-footer'>
+                <a href='#'>All notifications</a>
+              </li>
+            </ul>
+          </li>
+          <li class='dropdown light user-menu'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <img width="23" height="23" alt="Mila Kunis" src="assets/images/avatar.jpg" />
+              <span class='user-name'>@mapstoryteller</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-cog'></i>
+                  Settings
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='sign_in.html'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search MapStory" autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form>
+      </nav>
+    </header>-->
+	
+	<div class="tabbable">
+        <ul class="nav nav-tabs nav-tabs-simple" style="margin-bottom:2px">
+			<li>
+               <a class="orange-border" href="../../MapStoryBeta/files/home.html">
+					<img src="assets/images/logo.png" height="14" />
+                </a>
+            </li>
+            <li>
+				<a class="green-border" href="storylayers.html">
+					<span id="SLTab">StoryLayers</span>
+                </a>
+            </li>
+            <li class="active">
+                <a class="red-border" data-toggle="tab" href="#StoryBoardTab">
+					<span id="SBTab">StoryBoard</span>
+                </a>
+            </li>
+			<li>
+                <a class="blue-border" href="storypins.html">
+					<span id="SPTab">StoryPins</span>
+                </a>
+            </li>
+			<li>
+                <a class="orange-border" href="storypreview.html">
+					<span id="SPVTab">StoryPreview</span>
+                </a>
+            </li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="StoryBoardTab">
+			
+			<iframe style="position:absolute; z-index:0; opacity:0.5" width="100%" height="700px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ph/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+					<!-- MyStoryBoard Pane-->
+							<div id="main_area">
+								<div class="row" style="padding:20px">
+									<!--Upper Storyboard-->
+									<div class="row col-sm-12" id="slider">
+										<div class="col-sm-8 col-sm-offset-2" id="carousel-bounding-box">
+											<div id="myCarousel" class="carousel slide">
+												<div class="carousel-inner well">
+													<div class="active item" data-slide-number="0">
+														<div class="fuelux">
+															<div class="wizard" id="wizard0">
+																<ul class="steps">
+																	<li class="active" data-target="#0step1">
+																		<span class="step">Contents</span>
+																	</li>
+																	<li data-target="#0step2">
+																		<span class="step">Bounds</span>
+																	</li>
+																	<li data-target="#0step3">
+																		<span class="step">Layers</span>
+																	</li>
+																	<li data-target="#0step4">
+																		<span class="step">Layout</span>
+																	</li>
+																</ul>
+																<div class="actions">
+																	<button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev</button>
+																	<button class="btn btn-xs btn-default btn-next" data-last="Finish">Next <i class="icon-arrow-right"></i></button>
+																</div>
+															</div>
+															<div class="step-content">
+																<hr class="hr-normal">
+																	<div class="step-pane active" id="0step1">
+																		<div class="row">
+																			<div class="col-sm-2">
+																				<img src="storyboxes/sb1.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																				<button class="btn btn-default">Update</button>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<label class="control-label">StoryBox Title</label> <input type="text" class="char-max-length form-control" maxlength="50"  title="Title"
+																								required> <br>
+																						<label>Abstract</label>
+																						<textarea class="char-max-length form-control" maxlength="250" type="text" placeholder="Details" rows="5"></textarea>
+																					</fieldset>
+																				</form>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<div class="col-sm-6"><label class="control-label">Start Time</label> 	<div class="datepicker input-group" id="datepicker1">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select start time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<div class="col-sm-6"><label class="control-label">End Time</label> 	<div class="datepicker input-group" id="datepicker2">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select end time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<hr>
+																						<label class="control-label">Playback</label><br>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											t	<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Seconds</a></li>
+																											<li><a href="#">Minutes</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-sm-1">per</div>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											T
+																											<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Hours</a></li>
+																											<li><a href="#">Days</a></li>
+																											<li><a href="#">Months</a></li>
+																											<li><a href="#">Years</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div> <br><br>						
+																						<label class="control-label">Transition to next StoryBox</label><br> 
+																						<div class="btn-group dropdown btn-block">
+																							<button class="btn dropdown-toggle" data-toggle="dropdown">
+																							Transition
+																								<span class="caret"></span>
+																							</button>
+																							<ul class="dropdown-menu">
+																								<li>
+																									<a href="#">Map Pan and Zoom</a>
+																								</li>
+																								<li>
+																									<a href="#">Fade</a>
+																								</li>
+																								<li>
+																									<a href="#">Slide</a>
+																								</li>
+																							</ul>
+																						</div> <br>		
+																					</fieldset>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="0step2"> </div>
+																	<div class="step-pane" id="0step3">
+																		<div class="col-sm-6">
+																			<div class="well" style="padding:5px">
+																				<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<form class="form">
+																				<fieldset>
+																					<div class="col-sm-6">
+																						<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label>
+																						<input type="text" class="form-control" title="Title" required> <label>Scale</label>
+																						<div class="input-group">
+																							<span class="input-group-addon">1:</span> <input class="col-sm-12 form-control" id="prependedInput" type="text" placeholder="Scale">
+																						</div>
+																					</div>
+																					<div class="col-sm-6">
+																						<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input type="text" class="form-control" title="Title" required>
+																					</div>
+																				</fieldset>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="0step4">
+																		<button class="btn btn-primary">Edit my Layers</button>
+																		<button class="btn btn-default">Refresh list</button>
+																		<br> <br>
+																		<div class="well" style="padding:5px">
+																			<table class="table">
+																				<thead>
+																					<tr>
+																						<th></th>
+																						<th>Layer Name</th>
+																						<th>Geo</th>
+																						<th>Author</th>
+																						<th style="width: 50px;"></th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 1</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 2</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 3</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 4</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 5</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 6</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+															</div>
+														</div>
+													</div>
+													<div class="item" data-slide-number="1">
+														<div class="fuelux">
+															<div class="wizard" id="wizard1">
+																<ul class="steps">
+																	<li class="active" data-target="#1step1">
+																		<span class="step">Contents</span>
+																	</li>
+																	<li data-target="#1step2">
+																		<span class="step">Bounds</span>
+																	</li>
+																	<li data-target="#1step3">
+																		<span class="step">Layers</span>
+																	</li>
+																	<li data-target="#1step4">
+																		<span class="step">Layout</span>
+																	</li>
+																</ul>
+																<div class="actions">
+																	<button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev</button>
+																	<button class="btn btn-xs btn-default btn-next" data-last="Finish">Next <i class="icon-arrow-right"></i></button>
+																</div>
+															</div>
+															<div class="step-content">
+																<hr class="hr-normal">
+																	<div class="step-pane active" id="1step1">
+																		<div class="row">
+																			<div class="col-sm-2">
+																				<img src="storyboxes/sb2.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																				<button class="btn btn-default">Update</button>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<label class="control-label">StoryBox Title</label> <input type="text" class="char-max-length form-control" maxlength="50"  title="Title"
+																								required> <br>
+																						<label>Abstract</label>
+																						<textarea class="char-max-length form-control" maxlength="250" type="text" placeholder="Details" rows="5"></textarea>
+																					</fieldset>
+																				</form>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<div class="col-sm-6"><label class="control-label">Start Time</label> 	<div class="datepicker input-group" id="datepicker1">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select start time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<div class="col-sm-6"><label class="control-label">End Time</label> 	<div class="datepicker input-group" id="datepicker2">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select end time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<hr>
+																						<label class="control-label">Playback</label><br>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											t	<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Seconds</a></li>
+																											<li><a href="#">Minutes</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-sm-1">per</div>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											T
+																											<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Hours</a></li>
+																											<li><a href="#">Days</a></li>
+																											<li><a href="#">Months</a></li>
+																											<li><a href="#">Years</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div> <br><br>						
+																						<label class="control-label">Transition to next StoryBox</label><br> 
+																						<div class="btn-group dropdown btn-block">
+																							<button class="btn dropdown-toggle" data-toggle="dropdown">
+																							Transition
+																								<span class="caret"></span>
+																							</button>
+																							<ul class="dropdown-menu">
+																								<li>
+																									<a href="#">Map Pan and Zoom</a>
+																								</li>
+																								<li>
+																									<a href="#">Fade</a>
+																								</li>
+																								<li>
+																									<a href="#">Slide</a>
+																								</li>
+																							</ul>
+																						</div> <br>		
+																					</fieldset>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="1step2">
+																		<div class="col-sm-6">
+																			<div class="well" style="padding:5px">
+																				<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<form class="form">
+																				<fieldset>
+																					<div class="col-sm-6">
+																						<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label>
+																						<input type="text" class="form-control" title="Title" required> <label>Scale</label>
+																						<div class="input-group">
+																							<span class="input-group-addon">1:</span> <input class="col-sm-12 form-control" id="prependedInput" type="text" placeholder="Scale">
+																						</div>
+																					</div>
+																					<div class="col-sm-6">
+																						<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input type="text" class="form-control" title="Title" required>
+																					</div>
+																				</fieldset>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="1step3">
+																		<button class="btn btn-primary">Edit my Layers</button>
+																		<button class="btn btn-default">Refresh list</button>
+																		<br> <br>
+																		<div class="well" style="padding:5px">
+																			<table class="table">
+																				<thead>
+																					<tr>
+																						<th></th>
+																						<th>Layer Name</th>
+																						<th>Geo</th>
+																						<th>Author</th>
+																						<th style="width: 50px;"></th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 1</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 2</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 3</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 4</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 5</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 6</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="1step4">
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 1</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 2</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 3</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															</div>
+														</div>
+													</div>
+													<div class="item" data-slide-number="2">
+														<div class="fuelux">
+															<div class="wizard" id="wizard2">
+																<ul class="steps">
+																	<li class="active" data-target="#2step1">
+																		<span class="step">Contents</span>
+																	</li>
+																	<li data-target="#2step2">
+																		<span class="step">Bounds</span>
+																	</li>
+																	<li data-target="#2step3">
+																		<span class="step">Layers</span>
+																	</li>
+																	<li data-target="#2step4">
+																		<span class="step">Layout</span>
+																	</li>
+																</ul>
+																<div class="actions">
+																	<button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev</button>
+																	<button class="btn btn-xs btn-default btn-next" data-last="Finish">Next <i class="icon-arrow-right"></i></button>
+																</div>
+															</div>
+															<div class="step-content">
+																<hr class="hr-normal">
+																	<div class="step-pane active" id="2step1">
+																		<div class="row">
+																			<div class="col-sm-2">
+																				<img src="storyboxes/sb3.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																				<button class="btn btn-default">Update</button>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<label class="control-label">StoryBox Title</label> <input type="text" class="char-max-length form-control" maxlength="50"  title="Title"
+																								required> <br>
+																						<label>Abstract</label>
+																						<textarea class="char-max-length form-control" maxlength="250" type="text" placeholder="Details" rows="5"></textarea>
+																					</fieldset>
+																				</form>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<div class="col-sm-6"><label class="control-label">Start Time</label> 	<div class="datepicker input-group" id="datepicker1">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select start time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<div class="col-sm-6"><label class="control-label">End Time</label> 	<div class="datepicker input-group" id="datepicker2">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select end time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<hr>
+																						<label class="control-label">Playback</label><br>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											t	<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Seconds</a></li>
+																											<li><a href="#">Minutes</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-sm-1">per</div>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											T
+																											<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Hours</a></li>
+																											<li><a href="#">Days</a></li>
+																											<li><a href="#">Months</a></li>
+																											<li><a href="#">Years</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div> <br><br>						
+																						<label class="control-label">Transition to next StoryBox</label><br> 
+																						<div class="btn-group dropdown btn-block">
+																							<button class="btn dropdown-toggle" data-toggle="dropdown">
+																							Transition
+																								<span class="caret"></span>
+																							</button>
+																							<ul class="dropdown-menu">
+																								<li>
+																									<a href="#">Map Pan and Zoom</a>
+																								</li>
+																								<li>
+																									<a href="#">Fade</a>
+																								</li>
+																								<li>
+																									<a href="#">Slide</a>
+																								</li>
+																							</ul>
+																						</div> <br>		
+																					</fieldset>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="2step2">
+																		<div class="col-sm-6">
+																			<div class="well" style="padding:5px">
+																				<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<form class="form">
+																				<fieldset>
+																					<div class="col-sm-6">
+																						<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label>
+																						<input type="text" class="form-control" title="Title" required> <label>Scale</label>
+																						<div class="input-group">
+																							<span class="input-group-addon">1:</span> <input class="col-sm-12 form-control" id="prependedInput" type="text" placeholder="Scale">
+																						</div>
+																					</div>
+																					<div class="col-sm-6">
+																						<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input type="text" class="form-control" title="Title" required>
+																					</div>
+																				</fieldset>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="2step3">
+																		<button class="btn btn-primary">Edit my Layers</button>
+																		<button class="btn btn-default">Refresh list</button>
+																		<br> <br>
+																		<div class="well" style="padding:5px">
+																			<table class="table">
+																				<thead>
+																					<tr>
+																						<th></th>
+																						<th>Layer Name</th>
+																						<th>Geo</th>
+																						<th>Author</th>
+																						<th style="width: 50px;"></th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 1</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 2</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 3</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 4</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 5</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 6</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="2step4">
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 1</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 2</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 3</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															</div>
+														</div>
+													</div>
+													<div class="item" data-slide-number="3">
+														<div class="fuelux">
+															<div class="wizard" id="wizard3">
+																<ul class="steps">
+																	<li class="active" data-target="#3step1">
+																		<span class="step">Contents</span>
+																	</li>
+																	<li data-target="#3step2">
+																		<span class="step">Bounds</span>
+																	</li>
+																	<li data-target="#3step3">
+																		<span class="step">Layers</span>
+																	</li>
+																	<li data-target="#3step4">
+																		<span class="step">Layout</span>
+																	</li>
+																</ul>
+																<div class="actions">
+																	<button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev</button>
+																	<button class="btn btn-xs btn-default btn-next" data-last="Finish">Next <i class="icon-arrow-right"></i></button>
+																</div>
+															</div>
+															<div class="step-content">
+																<hr class="hr-normal">
+																	<div class="step-pane active" id="3step1">
+																		<div class="row">
+																			<div class="col-sm-2">
+																				<img src="storyboxes/sb4.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																				<button class="btn btn-default">Update</button>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<label class="control-label">StoryBox Title</label> <input type="text" class="char-max-length form-control" maxlength="50"  title="Title"
+																								required> <br>
+																						<label>Abstract</label>
+																						<textarea class="char-max-length form-control" maxlength="250" type="text" placeholder="Details" rows="5"></textarea>
+																					</fieldset>
+																				</form>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<div class="col-sm-6"><label class="control-label">Start Time</label> 	<div class="datepicker input-group" id="datepicker1">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select start time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<div class="col-sm-6"><label class="control-label">End Time</label> 	<div class="datepicker input-group" id="datepicker2">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select end time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<hr>
+																						<label class="control-label">Playback</label><br>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											t	<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Seconds</a></li>
+																											<li><a href="#">Minutes</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-sm-1">per</div>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											T
+																											<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Hours</a></li>
+																											<li><a href="#">Days</a></li>
+																											<li><a href="#">Months</a></li>
+																											<li><a href="#">Years</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div> <br><br>						
+																						<label class="control-label">Transition to next StoryBox</label><br> 
+																						<div class="btn-group dropdown btn-block">
+																							<button class="btn dropdown-toggle" data-toggle="dropdown">
+																							Transition
+																								<span class="caret"></span>
+																							</button>
+																							<ul class="dropdown-menu">
+																								<li>
+																									<a href="#">Map Pan and Zoom</a>
+																								</li>
+																								<li>
+																									<a href="#">Fade</a>
+																								</li>
+																								<li>
+																									<a href="#">Slide</a>
+																								</li>
+																							</ul>
+																						</div> <br>		
+																					</fieldset>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="3step2">
+																		<div class="col-sm-6">
+																			<div class="well" style="padding:5px">
+																				<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<form class="form">
+																				<fieldset>
+																					<div class="col-sm-6">
+																						<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label>
+																						<input type="text" class="form-control" title="Title" required> <label>Scale</label>
+																						<div class="input-group">
+																							<span class="input-group-addon">1:</span> <input class="col-sm-12 form-control" id="prependedInput" type="text" placeholder="Scale">
+																						</div>
+																					</div>
+																					<div class="col-sm-6">
+																						<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input type="text" class="form-control" title="Title" required>
+																					</div>
+																				</fieldset>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="3step3">
+																		<button class="btn btn-primary">Edit my Layers</button>
+																		<button class="btn btn-default">Refresh list</button>
+																		<br> <br>
+																		<div class="well" style="padding:5px">
+																			<table class="table">
+																				<thead>
+																					<tr>
+																						<th></th>
+																						<th>Layer Name</th>
+																						<th>Geo</th>
+																						<th>Author</th>
+																						<th style="width: 50px;"></th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 1</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 2</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 3</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 4</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 5</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 6</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="3step4">
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 1</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 2</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 3</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															</div>
+														</div>
+													</div>
+													<div class="item" data-slide-number="4">
+														<div class="fuelux">
+															<div class="wizard" id="wizard4">
+																<ul class="steps">
+																	<li class="active" data-target="#4step1">
+																		<span class="step">Contents</span>
+																	</li>
+																	<li data-target="#4step2">
+																		<span class="step">Bounds</span>
+																	</li>
+																	<li data-target="#4step3">
+																		<span class="step">Layers</span>
+																	</li>
+																	<li data-target="#4step4">
+																		<span class="step">Layout</span>
+																	</li>
+																</ul>
+																<div class="actions">
+																	<button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev</button>
+																	<button class="btn btn-xs btn-default btn-next" data-last="Finish">Next <i class="icon-arrow-right"></i></button>
+																</div>
+															</div>
+															<div class="step-content">
+																<hr class="hr-normal">
+																	<div class="step-pane active" id="4step1">
+																		<div class="row">
+																			<div class="col-sm-2">
+																				<img src="storyboxes/sb5.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																				<button class="btn btn-default">Update</button>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<label class="control-label">StoryBox Title</label> <input type="text" class="char-max-length form-control" maxlength="50"  title="Title"
+																								required> <br>
+																						<label>Abstract</label>
+																						<textarea class="char-max-length form-control" maxlength="250" type="text" placeholder="Details" rows="5"></textarea>
+																					</fieldset>
+																				</form>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<div class="col-sm-6"><label class="control-label">Start Time</label> 	<div class="datepicker input-group" id="datepicker1">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select start time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<div class="col-sm-6"><label class="control-label">End Time</label> 	<div class="datepicker input-group" id="datepicker2">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select end time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<hr>
+																						<label class="control-label">Playback</label><br>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											t	<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Seconds</a></li>
+																											<li><a href="#">Minutes</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-sm-1">per</div>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											T
+																											<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Hours</a></li>
+																											<li><a href="#">Days</a></li>
+																											<li><a href="#">Months</a></li>
+																											<li><a href="#">Years</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div> <br><br>						
+																						<label class="control-label">Transition to next StoryBox</label><br> 
+																						<div class="btn-group dropdown btn-block">
+																							<button class="btn dropdown-toggle" data-toggle="dropdown">
+																							Transition
+																								<span class="caret"></span>
+																							</button>
+																							<ul class="dropdown-menu">
+																								<li>
+																									<a href="#">Map Pan and Zoom</a>
+																								</li>
+																								<li>
+																									<a href="#">Fade</a>
+																								</li>
+																								<li>
+																									<a href="#">Slide</a>
+																								</li>
+																							</ul>
+																						</div> <br>		
+																					</fieldset>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="4step2">
+																		<div class="col-sm-6">
+																			<div class="well" style="padding:5px">
+																				<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<form class="form">
+																				<fieldset>
+																					<div class="col-sm-6">
+																						<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label>
+																						<input type="text" class="form-control" title="Title" required> <label>Scale</label>
+																						<div class="input-group">
+																							<span class="input-group-addon">1:</span> <input class="col-sm-12 form-control" id="prependedInput" type="text" placeholder="Scale">
+																						</div>
+																					</div>
+																					<div class="col-sm-6">
+																						<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input type="text" class="form-control" title="Title" required>
+																					</div>
+																				</fieldset>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="4step3">
+																		<button class="btn btn-primary">Edit my Layers</button>
+																		<button class="btn btn-default">Refresh list</button>
+																		<br> <br>
+																		<div class="well" style="padding:5px">
+																			<table class="table">
+																				<thead>
+																					<tr>
+																						<th></th>
+																						<th>Layer Name</th>
+																						<th>Geo</th>
+																						<th>Author</th>
+																						<th style="width: 50px;"></th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 1</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 2</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 3</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 4</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 5</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 6</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="4step4">
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 1</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 2</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 3</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															</div>
+														</div>
+													</div>
+													<div class="item" data-slide-number="5">
+														<div class="fuelux">
+															<div class="wizard" id="wizard5">
+																<ul class="steps">
+																	<li class="active" data-target="#5step1">
+																		<span class="step">Contents</span>
+																	</li>
+																	<li data-target="#5step2">
+																		<span class="step">Bounds</span>
+																	</li>
+																	<li data-target="#5step3">
+																		<span class="step">Layers</span>
+																	</li>
+																	<li data-target="#5step4">
+																		<span class="step">Layout</span>
+																	</li>
+																</ul>
+																<div class="actions">
+																	<button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev</button>
+																	<button class="btn btn-xs btn-default btn-next" data-last="Finish">Next <i class="icon-arrow-right"></i></button>
+																</div>
+															</div>
+															<div class="step-content">
+																<hr class="hr-normal">
+																	<div class="step-pane active" id="5step1">
+																		<div class="row">
+																			<div class="col-sm-2">
+																				<img src="storyboxes/newsb.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																				<button class="btn btn-default">Update</button>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<label class="control-label">StoryBox Title</label> <input type="text" class="char-max-length form-control" maxlength="50"  title="Title"
+																								required> <br>
+																						<label>Abstract</label>
+																						<textarea class="char-max-length form-control" maxlength="250" type="text" placeholder="Details" rows="5"></textarea>
+																					</fieldset>
+																				</form>
+																			</div>
+																			<div class="col-sm-5" style="padding-left:10px;padding-right:10px">
+																				<form class="form">
+																					<fieldset>
+																						<div class="col-sm-6"><label class="control-label">Start Time</label> 	<div class="datepicker input-group" id="datepicker1">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select start time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<div class="col-sm-6"><label class="control-label">End Time</label> 	<div class="datepicker input-group" id="datepicker2">
+																								<input class="form-control" data-format="yyyy-MM-dd" placeholder="Select end time" type="text">
+																								<span class="input-group-addon">
+																									<span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+																								</span>
+																							</div>
+																						</div>
+																						<hr>
+																						<label class="control-label">Playback</label><br>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											t	<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Seconds</a></li>
+																											<li><a href="#">Minutes</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-sm-1">per</div>
+																						<div class="col-sm-4">
+																							<div class="input-group">
+																								<input class="form-control" id="appendedPrependedDropdownButton" type="text">
+																								<div class="input-group-btn">
+																									<div class="btn-group dropdown">
+																										<button class="btn dropdown-toggle" data-toggle="dropdown">
+																											T
+																											<span class="caret"></span>
+																										</button>
+																										<ul class="dropdown-menu">
+																											<li><a href="#">Hours</a></li>
+																											<li><a href="#">Days</a></li>
+																											<li><a href="#">Months</a></li>
+																											<li><a href="#">Years</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div> <br><br>						
+																						<label class="control-label">Transition to next StoryBox</label><br> 
+																						<div class="btn-group dropdown btn-block">
+																							<button class="btn dropdown-toggle" data-toggle="dropdown">
+																							Transition
+																								<span class="caret"></span>
+																							</button>
+																							<ul class="dropdown-menu">
+																								<li>
+																									<a href="#">Map Pan and Zoom</a>
+																								</li>
+																								<li>
+																									<a href="#">Fade</a>
+																								</li>
+																								<li>
+																									<a href="#">Slide</a>
+																								</li>
+																							</ul>
+																						</div> <br>		
+																					</fieldset>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="5step2">
+																		<div class="col-sm-6">
+																			<div class="well" style="padding:5px">
+																				<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<form class="form">
+																				<fieldset>
+																					<div class="col-sm-6">
+																						<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label>
+																						<input type="text" class="form-control" title="Title" required> <label>Scale</label>
+																						<div class="input-group">
+																							<span class="input-group-addon">1:</span> <input class="col-sm-12 form-control" id="prependedInput" type="text" placeholder="Scale">
+																						</div>
+																					</div>
+																					<div class="col-sm-6">
+																						<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input type="text" class="form-control" title="Title" required>
+																					</div>
+																				</fieldset>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="5step3">
+																		<button class="btn btn-primary">Edit my Layers</button>
+																		<button class="btn btn-default">Refresh list</button>
+																		<br> <br>
+																		<div class="well" style="padding:5px">
+																			<table class="table">
+																				<thead>
+																					<tr>
+																						<th></th>
+																						<th>Layer Name</th>
+																						<th>Geo</th>
+																						<th>Author</th>
+																						<th style="width: 50px;"></th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 1</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 2</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 3</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 4</td>
+																						<td><span class="label label-success">POINT</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 5</td>
+																						<td><span class="label label-info">LINE</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																					<tr>
+																						<td><input type="checkbox" value=""></td>
+																						<td>StoryLayer 6</td>
+																						<td><span class="label label-danger">POLYGON</span></td>
+																						<td>@mapstoryteller</td>
+																						<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal">
+																						<i class="glyphicon glyphicon-remove"></i></a></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="step-pane" id="5step4">
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 1</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 2</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-4">
+																			<div class="img-thumbnail">
+																				<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																				<div class="caption">
+																					<h3>Layout 3</h3>
+																					<p>Description</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Carousel nav -->
+									</div>
+								</div>
+								<!--/Slider-->
+								<div class="row well" id="slider-thumbs" style="padding:15px;background-color:gainsboro">
+									<!--Lower Storyboard-->
+									<div class="col-sm-1" style="padding-top:50px">
+										<a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+									</div>
+									<div class="col-sm-2" style="padding-right:5px;padding-left:5px">
+										<a id="carousel-selector-0" class="thumbnail"> <img src="storyboxes/sb1.png" />
+										</a>
+									</div>
+									<div class="col-sm-2" style="padding-right:5px;padding-left:5px">
+										<a id="carousel-selector-1" class="thumbnail"> <img src="storyboxes/sb2.png" />
+										</a>
+									</div>
+									<div class="col-sm-2" style="padding-right:5px;padding-left:5px">
+										<a id="carousel-selector-2" class="thumbnail"> <img src="storyboxes/sb3.png" />
+										</a>
+									</div>
+									<div class="col-sm-2" style="padding-right:5px;padding-left:5px">
+										<a id="carousel-selector-3" class="thumbnail"> <img src="storyboxes/sb4.png" />
+										</a>
+									</div>
+									<div class="col-sm-2" style="padding-right:5px;padding-left:5px">
+										<a id="carousel-selector-4" class="thumbnail"> <img src="storyboxes/sb5.png" />
+										</a>
+									</div>
+									<div class="col-sm-1" style="text-align:left;padding-top:50px">
+										<a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+									</div>
+								</div>
+							</div>
+								
+							<script>
+                                jQuery(document).ready(function($) {
+
+                                    $('#myCarousel').carousel({
+                                        interval : false
+                                    });
+
+                                    $('#carousel-text').html($('#slide-content-0').html());
+
+                                    //Handles the carousel thumbnails
+                                    $('[id^=carousel-selector-]').click(function() {
+                                        var id_selector = $(this).attr("id");
+                                        var id = id_selector.substr(id_selector.length - 1);
+                                        var id = parseInt(id);
+                                        $('#myCarousel').carousel(id);
+                                    });
+
+                                    // When the carousel slides, auto update the text
+                                    $('#myCarousel').on('slid', function(e) {
+                                        var id = $('.item.active').data('slide-number');
+                                        $('#carousel-text').html($('#slide-content-' + id).html());
+                                    });
+
+                                });
+                            </script>
+						
+			</div>
+			
+		</div>
+
+	
+    <script src="assets/javascripts/jquery/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <!-- / jquery migrate (for compatibility with new jquery) [required] -->
+    <script src="assets/javascripts/jquery/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- / jquery ui -->
+    <script src="assets/javascripts/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- / jQuery UI Touch Punch -->
+    <script src="assets/javascripts/plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <!-- / bootstrap [required] -->
+    <script src="assets/javascripts/bootstrap/bootstrap.js" type="text/javascript"></script>
+    <!-- / modernizr -->
+    <script src="assets/javascripts/plugins/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <!-- / retina -->
+    <script src="assets/javascripts/plugins/retina/retina.js" type="text/javascript"></script>
+    <!-- / theme file [required] -->
+    <script src="assets/javascripts/theme.js" type="text/javascript"></script>
+    <!-- / demo file [not required!] -->
+    <script src="assets/javascripts/demo.js" type="text/javascript"></script>
+    <!-- / START - page related files and scripts [optional] -->
+    <script src="assets/javascripts/plugins/fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/select2/select2.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/moment.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/input_mask/bootstrap-inputmask.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/charCount/charCount.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/autosize/jquery.autosize-min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/naked_password/naked_password-0.2.4.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/mention/mention.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/typeahead/typeahead.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/wysihtml5.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/bootstrap-wysihtml5.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/pwstrength/pwstrength.js" type="text/javascript"></script>
+	<script src="assets/javascripts/thirdparty/bootstrap-colorpicker.js"></script>
+	<script src="assets/javascripts/plugins/tabdrop/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/jgrowl/jquery.jgrowl.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/typeahead/typeahead.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/timeago/jquery.timeago.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/nestable/jquery.nestable.js" type="text/javascript"></script>
+	<script src="assets/javascripts/plugins/datatables/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/datatables/dataTables.overrides.js" type="text/javascript"></script>
+	<script src="assets/javascripts/plugins/fuelux/wizard.js" type="text/javascript"></script>
+	<script src="assets/javascripts/plugins/fileupload/tmpl.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/load-image.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/canvas-to-blob.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.iframe-transport.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fileupload/jquery.fileupload-init.js" type="text/javascript"></script>
+	<script src="assets/javascripts/hopscotch-0.1.2.js"></script>
+    <script src="assets/javascripts/my_first_tours.js"></script> <!-- define and start your tour in this file -->
+	
+  </body>
+</html>

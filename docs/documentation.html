@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Documentation - Flatty v2.2</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <link href="assets/stylesheets/docs.css" media="all" rel="stylesheet" type="text/css" />
+  </head>
+  <body data-spy='scroll' style='padding-top:60px;padding-bottom:60px' target='.flatty-sidebar'>
+    <div class='navbar navbar-inverse navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <button class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse' type='button'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='brand' href='./index.html'>Flatty v2.2</a>
+          <div class='nav-collapse collapse'>
+            <ul class='nav'>
+              <li class=''>
+                <a href='index.html'>Home</a>
+              </li>
+              <li class=''>
+                <a href='get_started.html'>Get started</a>
+              </li>
+              <li class='active'>
+                <a href='documentation.html'>Documentation</a>
+              </li>
+              <li class=''>
+                <a href='contact.html'>Contact & support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='span3'>
+          <ul class='nav nav-list flatty-sidebar nav-stacked' data-offset-top='0' data-spy='affix'>
+            <li>
+              <a href='#html-template'>
+                HTML template
+              </a>
+            </li>
+            <li>
+              <a href='#body-structure'>
+                Body structure
+              </a>
+            </li>
+            <li>
+              <a href='#forms'>
+                Forms
+              </a>
+            </li>
+            <li>
+              <a href='#ui'>
+                UI Elements & Widgets
+              </a>
+            </li>
+            <li>
+              <a href='#components'>
+                Components
+              </a>
+            </li>
+            <li>
+              <a href='#tables'>
+                Tables
+              </a>
+            </li>
+            <li>
+              <a href='#calendar'>
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a href='#example-pages'>
+                Example pages
+              </a>
+            </li>
+            <li>
+              <a href='#layouts'>
+                Layouts
+              </a>
+            </li>
+            <li>
+              <a href='#colors-and-themes'>
+                Colors and themes
+              </a>
+            </li>
+            <li>
+              <a href='#utils'>
+                Utilities
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='span9'>
+          <div class='page-header'>
+            <h1 class='text-center'>Documentation</h1>
+          </div>
+          <section id='html-template'>
+            <div class='page-header'>
+              <h2>HTML template</h2>
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <!DOCTYPE html>
+                    <html>
+                      <head>
+                        <!-- this enables responsive features in browser -->
+                        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+                  
+                        <!-- your & Flatty stylesheets -->
+                  
+                        <!-- if you are going to support IE8 you must include these files -->
+                        <!--[if lt IE 9]>
+                          <script src='assets/javascripts/ie/html5shiv.js' type='text/javascript'></script>
+                          <script src='assets/javascripts/ie/respond.min.js' type='text/javascript'></script>
+                        <![endif]-->
+                      </head>
+                      <body>
+                        <!-- your content goes here -->
+                  
+                        <!-- your & Flatty javascripts -->
+                      </body>
+                    </html>
+              ]]>
+            </script>
+          </section>
+          <section id='body-structure'>
+            <div class='page-header'>
+              <h2>Body structure</h2>
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                    <body>
+                      <header>...</header>
+                      <div id="wrapper">
+                        <div id="main-nav-bg"></div>
+                        <nav id="main-nav">...</nav>
+                        <section id="content">...</section>
+                      </div>
+                    </body>
+              ]]>
+            </script>
+            <h4>Header structure</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <header>
+                    <nav class="navbar navbar-default">
+                  
+                      <!-- application logo -->
+                      <a class="navbar-brand" href="index.html">
+                        <!-- application logo visible on large screens -->
+                        <img width="81" height="21" class="logo" alt="Flatty" src="/assets/images/logo.svg">
+                        <!-- application logo visible on small screens -->
+                        <img width="21" height="21" class="logo-xs" alt="Flatty" src="/assets/images/logo_xs.svg">
+                      </a>
+                  
+                      <!-- main nav toggler (show/hide) -->
+                      <a class="toggle-nav btn pull-left" href="#">
+                        <i class="icon-reorder"></i>
+                      </a>
+                  
+                      <!-- dropdowns -->
+                      <ul class="nav">
+                  
+                        <!-- light dropdown -->
+                        <li class="dropdown light only-icon">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <!-- ... -->
+                          </a>
+                          <!-- ... -->
+                        </li>
+                  
+                        <!-- medium dropdown & widget -->
+                        <li class="dropdown medium only-icon widget">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <!-- ... -->
+                          </a>
+                          <!-- ... -->
+                        </li>
+                  
+                        <!-- dark dropdown & user menu -->
+                        <li class="dropdown dark user-menu">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img width="23" height="23" alt="Mila Kunis" src="/assets/images/avatar.jpg">
+                            <span class="user-name">Mila Kunis</span>
+                            <b class="caret"></b>
+                          </a>
+                          <!-- ... -->
+                        </li>
+                      </ul>
+                  
+                      <!-- search form - hidden on phone -->
+                      <form action="search_results.html" class="navbar-form navbar-right hidden-xs" method="get">
+                        <button class="btn btn-link icon-search" name="button" type="submit"></button>
+                        <div class="form-group">
+                          <input value="" class="form-control" placeholder="Search..." autocomplete="off" id="q_header" name="q" type="text">
+                        </div>
+                      </form>
+                    </nav>
+                  </header>
+              ]]>
+            </script>
+            <h4>Main navigation structure</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <nav id="main-nav">
+                    <div class="navigation">
+                  
+                      <!-- search form visible on phone -->
+                      <div class="search">
+                        <form action="search_results.html" method="get">
+                          <div class="search-wrapper">
+                            <input value="" class="search-query form-control" placeholder="Search..." autocomplete="off" name="q" type="text">
+                            <button class="btn btn-link icon-search" name="button" type="submit"></button>
+                          </div>
+                        </form>
+                      </div>
+                  
+                      <!-- navigation items -->
+                      <ul class="nav nav-stacked">
+                  
+                        <!-- single navigation item -->
+                        <li class="active">
+                          <a href="index.html">
+                            <i class="icon-dashboard"></i>
+                            <span>Dashboard</span>
+                          </a>
+                        </li>
+                  
+                        <!-- four level dropdown -->
+                        <li>
+                          <a class="dropdown-collapse" href="#">
+                            <i class="icon-folder-open-alt"></i>
+                            <span>Four level dropdown</span>
+                            <i class="icon-angle-down angle-down"></i>
+                          </a>
+                          <ul class="nav nav-stacked">
+                            <li>
+                              <a class="dropdown-collapse" href="#">
+                                <i class="icon-caret-right"></i>
+                                <span>Second level</span>
+                                <i class="icon-angle-down angle-down"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-collapse" href="#">
+                                <i class="icon-caret-right"></i>
+                                <span>Second level</span>
+                                <i class="icon-angle-down angle-down"></i>
+                              </a>
+                              <ul class="nav nav-stacked">
+                                <li>
+                                  <a class="dropdown-collapse" href="#">
+                                    <i class="icon-caret-right"></i>
+                                    <span>Third level</span>
+                                    <i class="icon-angle-down angle-down"></i>
+                                  </a>
+                                  <ul class="nav nav-stacked">
+                                    <li>
+                                      <a href="#">
+                                        <i class="icon-caret-right"></i>
+                                        <span>Fourth level</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i class="icon-caret-right"></i>
+                                        <span>Another fourth level</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+              ]]>
+            </script>
+            <h4>Content structure</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <section id="content">
+                    <div class="container">
+                      <div class="row" id="content-wrapper">
+                        <div class="col-xs-12">
+                          <!-- content of pages goes here -->
+                        </div>
+                      </div>
+                  
+                      <!-- optional footer -->
+                      <footer id="footer">
+                        <div class="footer-wrapper">
+                          <div class="row">
+                            <div class="col-sm-6 text">
+                              Copyright © 2013 Your Project Name
+                            </div>
+                            <div class="col-sm-6 buttons">
+                              <a class="btn btn-link" href="http://www.bublinastudio.com/flatty">Preview</a>
+                              <a class="btn btn-link" href="https://wrapbootstrap.com/theme/flatty-flat-administration-template-WB0P6NR1N">Purchase</a>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                  
+                    </div>
+                  </section>
+              ]]>
+            </script>
+            <h4>Page with title and breadcrumbs structure</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <section id="content">
+                    <div class="container">
+                      <div class="row" id="content-wrapper">
+                        <div class="col-xs-12">
+                  
+                          <!-- page header container -->
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="page-header">
+                  
+                                <!-- page title -->
+                                <h1 class="pull-left">
+                                  <i class="icon-th"></i>
+                                  <span>Grid</span>
+                                </h1>
+                  
+                                <!-- breadcrumbs -->
+                                <div class="pull-right">
+                                  <ul class="breadcrumb">
+                                    <li>
+                                      <a href="index.html">
+                                        <i class="icon-bar-chart"></i>
+                                      </a>
+                                    </li>
+                                    <li class="separator">
+                                      <i class="icon-angle-right"></i>
+                                    </li>
+                                    <li class="active">Grid</li>
+                                  </ul>
+                                </div>
+                  
+                              </div>
+                            </div>
+                  
+                            <!-- content of page -->
+                  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+              ]]>
+            </script>
+          </section>
+          <br>
+          <br>
+          <section id='forms'>
+            <div class='page-header'>
+              <h2>Forms</h2>
+            </div>
+            <div class='page-header'>
+              <h3>Form styles & features</h3>
+            </div>
+            <h4>Example form</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <form class="form">
+                  
+                    <!-- first part -->
+                    <fieldset>
+                      <div class="col-sm-4">
+                        <div class="box">
+                          <div class="lead">
+                            <!-- form part title -->
+                          </div>
+                          <small class="text-muted">
+                            <!-- form part description -->
+                          </small>
+                        </div>
+                      </div>
+                      <div class="col-sm-7 col-sm-offset-1">
+                        <div class="form-group">
+                          <!-- form part controls (inputs, selects...) -->
+                        </div>
+                      </div>
+                    </fieldset>
+                  
+                    <!-- parts divider -->
+                    <hr class="hr-normal">
+                  
+                    <!-- second part -->
+                    <fieldset>
+                      <!-- content -->
+                    </fieldset>
+                  
+                    <div class="form-actions">
+                      <div class="row">
+                        <div class="col-sm-7 col-sm-offset-5">
+                          <!-- form actions (submit, destroy...) -->
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+              ]]>
+            </script>
+            <h4>Striped form</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <form class="form form-horizontal form-striped">
+                    <div class="form-group">
+                      <label class="col-md-3 control-label">
+                        <!-- label -->
+                      </label>
+                      <div class="col-md-9">
+                        <!-- form controls (inputs, selects...) -->
+                      </div>
+                    </div>
+                  
+                    <div class="form-actions">
+                      <div class="row">
+                        <div class="col-md-9 col-md-offset-3">
+                          <!-- form actions -->
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+              ]]>
+            </script>
+            <h4>Vertical form</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <form class="form">
+                    <div class="form-group">
+                      <label><!-- label --></label>
+                      <!-- form controls (inputs, selects...) -->
+                    </div>
+                    <div class="form-actions form-actions-padding">
+                      <!-- form actions -->
+                    </div>
+                  </form>
+              ]]>
+            </script>
+            <br>
+            <div class='page-header'>
+              <h3>Form components</h3>
+            </div>
+            <h4>
+              Select 2 (Simple and multiple)
+              <small><a href="http://ivaynberg.github.io/select2/">Documentation</a></small>
+            </h4>
+            <p>
+              Select2 plugin transforms classic selects to more user friendly. Just add
+              <code>.select2</code>
+              class to select (simple or multiple).
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <select class="select2"></select>
+              ]]>
+            </script>
+            <p>You can easily add placeholder to multiple select.</p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <select class="select2" multiple="" placeholder="Try typing some USA country name"></select>
+              ]]>
+            </script>
+            <h4>
+              Select2 (Tags)
+              <small><a href="http://ivaynberg.github.io/select2/">Documentation</a></small>
+            </h4>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div id='select2-tags'></div>
+              ]]>
+            </script>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $("#select2-tags").select2({
+                      tags: ["today", "tomorrow", "toyota"],
+                      tokenSeparators: [",", " "],
+                      placeholder: "Type your tag here... "
+                  });
+              ]]>
+            </script>
+            <h4>
+              Select2 (HTML in option)
+              <small><a href="http://ivaynberg.github.io/select2/">Documentation</a></small>
+            </h4>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <p>Select2 offers parsing HTML code into select - it's awesome!</p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <select id='select2-icon'>
+                    <option value='icon-heart'>icon-heart</option>
+                  </select>
+              ]]>
+            </script>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  select2icon = function(e) {
+                      return "<i class='" + e.text + "'></i> ." + e.text;
+                  };
+                  
+                  $("#select2-icon").select2({
+                      formatResult: select2icon,
+                      formatSelection: select2icon,
+                      escapeMarkup: function(e) {
+                          return e;
+                      }
+                  });
+              ]]>
+            </script>
+            <h4>
+              Color picker (RGB)
+              <small><a href="http://www.eyecon.ro/bootstrap-colorpicker/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.colorpicker-rgb</code>
+              class to text input. Color picker will return color in RGB.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input class='colorpicker-rgb' type='text'>
+              ]]>
+            </script>
+            <h4>
+              Color picker (HEX)
+              <small><a href="http://www.eyecon.ro/bootstrap-colorpicker/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.colorpicker-hex</code>
+              class to text input. Color picker will return color in HEX.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input class='colorpicker-hex' type='text'>
+              ]]>
+            </script>
+            <h4>
+              Daterange picker
+              <small><a href="https://github.com/dangrossman/bootstrap-daterangepicker">Documentation</a></small>
+            </h4>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="input-group">
+                    <input class="form-control daterange" placeholder="select daterange" type="text">
+                    <span class="input-group-addon" id="daterange2">
+                      <i class="icon-calendar"></i>
+                    </span>
+                  </div>
+              ]]>
+            </script>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $("#daterange2").daterangepicker({
+                    format: "MM/DD/YYYY"
+                  }, function(start, end) {
+                    return $("#daterange2").parent().find("input").first().val(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
+                  });
+              ]]>
+            </script>
+            <h4>
+              Date picker
+              <small><a href="http://tarruda.github.io/bootstrap-datetimepicker/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.datepicker</code>
+              class to unique id.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="datepicker input-group" id="datepicker">
+                    <input class="form-control" data-format="yyyy-MM-dd" placeholder="Select datepicker" type="text">
+                    <span class="input-group-addon">
+                      <span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+                    </span>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              Time picker
+              <small><a href="http://tarruda.github.io/bootstrap-datetimepicker/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.timepicker</code>
+              class to unique id.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="timepicker input-group" id="timepicker">
+                    <input class="form-control" data-format="hh:mm:ss" placeholder="Select timepicker" type="text">
+                    <span class="input-group-addon">
+                      <span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-time"></span>
+                    </span>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              DateTime picker
+              <small><a href="http://tarruda.github.io/bootstrap-datetimepicker/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.datetimepicker</code>
+              class to unique id.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="datetimepicker input-group" id="datetimepicker">
+                    <input class="form-control" data-format="MM/dd/yyyy HH:mm:ss PP" placeholder="Select timepicker" type="text">
+                    <span class="input-group-addon">
+                      <span data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></span>
+                    </span>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              Masked inputs
+              <small><a href="http://digitalbush.com/projects/masked-input-plugin/">Documentation</a></small>
+            </h4>
+            <p>
+              Masked inputs are working via
+              <code>data</code>
+              attributes on inputs. Character
+              <code>a</code>
+              can be any alpha char. Number
+              <code>9</code>
+              can be any numeric char.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input data-mask="a*-999-a999" placeholder="a*-999-a999" type="text">
+              ]]>
+            </script>
+            <h4>
+              Autosize textarea
+              <small><a href="http://www.jacklmoore.com/autosize/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.autosize</code>
+              class to textarea.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class="autosize"></textarea>
+              ]]>
+            </script>
+            <h4>
+              Char counter
+              <small><a href="http://cssglobe.com/jquery-plugin-simplest-twitterlike-dynamic-character-count-for-textareas/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.char-counter</code>
+              class to textarea.
+              Allowed an warning values are passed via
+              <code>data</code>
+              attributes.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class='char-counter' data-char-allowed='20' data-char-warning='10'></textarea>
+              ]]>
+            </script>
+            <h4>
+              Max length
+              <small><a href="http://mimo84.github.io/bootstrap-maxlength/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.char-max-length</code>
+              class to textarea. Lenght limit is passed via
+              <code>maxlength</code>
+              attribute.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class='char-max-length' maxlength='5'></textarea>
+              ]]>
+            </script>
+            <h4>
+              Switch buttons
+              <small><a href="http://www.larentis.eu/switch/">Documentation</a></small>
+            </h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='make-switch switch switch-large' data-off-label='&lt;i class="icon-remove"&gt;&lt;/i&gt;' data-on-label='&lt;i class="icon-ok"&gt;&lt;/i&gt;'>
+                    <input type='checkbox'>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              (Naked) Password strength
+              <small><a href="https://github.com/platform45/nakedpassword">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.nakedpassword</code>
+              class to password field.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input class="nakedpassword form-control" placeholder="Your top secret password" type="password">
+              ]]>
+            </script>
+            <h4>
+              Password strength
+              <small><a href="https://github.com/ablanco/jquery.pwstrength.bootstrap">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.pwstrength</code>
+              class to password field.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input class="pwstrength form-control" placeholder="Your top secret password" type="password">
+              ]]>
+            </script>
+            <h4>
+              Custom file input
+              <small><a href="http://gregpike.net/demos/bootstrap-file-input/demo.html">Documentation</a></small>
+            </h4>
+            <p>All file inputs are converted to buttons.</p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input type='file'>
+              ]]>
+            </script>
+            <h4>
+              Mention
+              <small><a href="http://jakiestfu.github.io/Mention.js/">Documentation</a></small>
+            </h4>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input class="mention" type="text">
+              ]]>
+            </script>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $(".mention").mention({
+                    users: [
+                      {
+                          name: "Lindsay Made",
+                          username: "LindsayM",
+                          image: "http://placekitten.com/25/25"
+                      }, {
+                          name: "Loud Mouth Burrito",
+                          username: "Loudmouthfoods",
+                          image: "http://placekitten.com/21/20"
+                      }
+                    ]
+                  });
+              ]]>
+            </script>
+            <h4>
+              WYSIWYG
+              <small><a href="http://jhollingworth.github.io/bootstrap-wysihtml5/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.wysihtml5</code>
+              class to textarea.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class="wysihtml5" rows="10"><h1>Hello from Flatty</h1></textarea>
+              ]]>
+            </script>
+            <h4>
+              CKEditor
+              <small><a href="http://ckeditor.com/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.ckeditor</code>
+              class to textarea.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class="ckeditor" rows="10"><h1>Hello from Flatty</h1></textarea>
+              ]]>
+            </script>
+            <br>
+            <div class='page-header'>
+              <h3>
+                Validations
+                <small><a href="https://github.com/jzaefferer/jquery-validation">Documentation</a></small>
+              </h3>
+            </div>
+            <p>
+              Just add
+              <code>.validate-form</code>
+              to
+              <code>form</code>
+              tag.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <form class="form validate-form" novalidate="novalidate"></form>
+              ]]>
+            </script>
+            <p>
+              Validations are working via
+              <code>data</code>
+              attributes.
+            </p>
+            <h4>Min length and presence validator</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input data-rule-minlength='2' data-rule-required='true' type='text'>
+              ]]>
+            </script>
+            <h4>Email an presence validator</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <input data-rule-email='true' data-rule-required='true' type='text'>
+              ]]>
+            </script>
+            <h4>Other examples</h4>
+            <p>See Validations page in Flatty for more examples.</p>
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>
+                Wizard
+                <small><a href="http://exacttarget.github.io/fuelux/#wizard">Documentation</a></small>
+              </h3>
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="fuelux">
+                    <div class="wizard">
+                      <ul class="steps">
+                  
+                        <!-- wizard step -->
+                        <li class="complete" data-target="#step1">
+                          <span class="step">1</span>
+                        </li>
+                  
+                      </ul>
+                  
+                      <div class="actions">
+                  
+                        <!-- wizard actions (prev, next) -->
+                        <button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev
+                        </button>
+                        <button class="btn btn-xs btn-success btn-next" data-last="Finish">Finish<i class="icon-arrow-right"></i></button>
+                  
+                      </div>
+                    </div>
+                  
+                    <div class="step-content">
+                      <hr class="hr-normal">
+                      <form action="#" class="form">
+                  
+                        <!-- wizard step1 content -->
+                        <div class="step-pane" id="step1">
+                          <div class="control-group">
+                            <!-- form controls (inputs, selects...) -->
+                          </div>
+                        </div>
+                  
+                      </form>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+          </section>
+          <br>
+          <br>
+          <section id='ui'>
+            <div class='page-header'>
+              <h2>UI Features & Widgets</h2>
+            </div>
+            <div class='page-header'>
+              <h3>UI Features</h3>
+            </div>
+            <h4>Colored accordions</h4>
+            <p>
+              Just add
+              <code>.accorion-blue</code>
+              to accordion.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="accordion accordion-blue panel-group" id="accordion1" style="margin-bottom:0;">
+                    <!-- accordion body -->
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              Responsive tabs
+              <small><a href="http://www.eyecon.ro/bootstrap-tabdrop/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.nav-responsive</code>
+              class to
+              <code>.nav-tabs</code>
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='tabbable'>
+                  
+                    <!-- responsive tabs definition -->
+                    <ul class='nav nav-responsive nav-tabs'>
+                  
+                      <!-- tab element -->
+                      <li class='active'>
+                        <a data-toggle='tab' href='#retab1'>
+                          Section 1
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              ]]>
+            </script>
+            <h4>Centered tabs</h4>
+            <p>
+              Just add
+              <code>.nav-tabs-centered</code>
+              class to
+              <code>.nav-tabs</code>
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='tabbable'>
+                  
+                    <!-- responsive tabs definition -->
+                    <ul class='nav nav-tabs nav-tabs-centered'>
+                  
+                      <!-- tab element -->
+                      <li class='active'>
+                        <a data-toggle='tab' href='#retab1'>
+                          Section 1
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              ]]>
+            </script>
+            <h4>Simple tabs</h4>
+            <p>
+              Just add
+              <code>.nav-tabs-simple</code>
+              class to
+              <code>.nav-tabs</code>
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='tabbable'>
+                  
+                    <!-- responsive tabs definition -->
+                    <ul class='nav nav-tabs nav-tabs-simple'>
+                  
+                      <!-- tab element -->
+                      <li class='active'>
+                  
+                        <!-- color of border can be customized via theme classes like green-border, orange-border...-->
+                        <a class='green-border' data-toggle='tab' href='#tabsimple1'>
+                          Section 1
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              Custom alerts, prompts...
+              <small><a href="http://bootboxjs.com/">Documentation</a></small>
+            </h4>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <strong>Alert</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  bootbox.alert({
+                    message: "I am alert!",
+                  });
+              ]]>
+            </script>
+            <strong>Confirm</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  bootbox.confirm("Are you sure?", function(result) {
+                    console.log("Confirm result: "+result);
+                  });
+              ]]>
+            </script>
+            <strong>Prompt</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  bootbox.prompt("What is your name?", function(result) {
+                    if (result === null) {
+                      console.log("Prompt dismissed");
+                    } else {
+                      console.log(result);
+                    }
+                  });
+              ]]>
+            </script>
+            <h4>Tooltips</h4>
+            <p>
+              Just add
+              <code>.has-tooltip</code>
+              class to
+              some element. Position of tooltip can be customized via
+              <code>data-placement</code>
+              attribute. Content of tooltip goes to
+              <code>title</code>
+              attribute.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='has-tooltip' data-placement='top' title='Top'>Top</div>
+                  <div class='has-tooltip' data-placement='right' title='Right'>Right</div>
+                  <div class='has-tooltip' data-placement='bottom' title='Bottom'>Bottom</div>
+                  <div class='has-tooltip' data-placement='left' title='Left'>Left</div>
+              ]]>
+            </script>
+            <h4>Popovers</h4>
+            <p>
+              Just add
+              <code>.has-popover</code>
+              class to
+              some element. Position of popover can be customized via
+              <code>data-placement</code>
+              attribute. Content of popover goes to
+              <code>data-content</code>
+              attribute and header of popover goes to
+              <code>title</code>
+              attribute.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='has-popover' data-content='Qui quia voluptatem dolore earum provident dolores cumque velit nostrum impedit.' data-placement='top' data-title='Top'>Top</div>
+                  <div class='has-popover' data-content='Harum dolorem molestias nisi rem est maiores delectus qui aliquid voluptas.' data-placement='right' data-title='Right'>Right</div>
+                  <div class='has-popover' data-content='Ut suscipit id ut eos voluptatem culpa sint nam sed assumenda accusamus fugiat vel ea.' data-placement='bottom' data-title='Bottom'>Bottom</div>
+                  <div class='has-popover' data-content='Quae minus voluptate modi id sunt velit ipsam et saepe vero odit voluptatem et.' data-placement='left' data-title='left'>Left</div>
+              ]]>
+            </script>
+            <h4>
+              Notifications (jGrowl)
+              <small><a href="https://github.com/stanlemon/jGrowl">Documentation</a></small>
+            </h4>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $.jGrowl("Lorem ipsum dolor sit amet...");
+              ]]>
+            </script>
+            <strong>Waits for close</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $.jGrowl("Lorem ipsum dolor sit amet...", {
+                      sticky: true
+                  });
+              ]]>
+            </script>
+            <h4>
+              Dynamic timeago
+              <small><a href="http://timeago.yarp.com/">Documentation</a></small>
+            </h4>
+            <p>
+              Just add
+              <code>.timeago</code>
+              class to element like this:
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <span class='timeago has-tooltip' data-placement='top' title='May 16, 2013 21:35'>May 16, 2013 21:35</span>
+              ]]>
+            </script>
+            <h4>
+              Drag & Drop nestable list
+              <small><a href="https://github.com/dbushell/Nestable">Documentation</a></small>
+            </h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='dd'>
+                    <ol class='dd-list'>
+                  
+                      <!-- item -->
+                      <li class='dd-item' data-id='1'>
+                        <div class='dd-handle'>
+                          <!-- item content -->
+                        </div>
+                      </li>
+                  
+                      <li class='dd-item' data-id='2'>
+                        <div class='dd-handle'>
+                          <!-- item content-->
+                        </div>
+                  
+                        <!-- second nested level -->
+                        <ol class='dd-list'>
+                          <li class='dd-item' data-id='3'>
+                            <div class='dd-handle'>
+                              <!-- item content -->
+                            </div>
+                  
+                            <!-- third nested level -->
+                            <ol class='dd-list'>
+                              <li class='dd-item' data-id='4'>
+                                <div class='dd-handle'>
+                                  <!-- item content -->
+                                </div>
+                              </li>
+                            </ol>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              Hovered dropdown
+            </h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='btn-group'>
+                      <button class='btn dropdown-toggle' data-delay='100' data-hover='dropdown' data-toggle='dropdown'>
+                          Opens on hover
+                          <span class='caret'></span>
+                      </button>
+                      <ul class='dropdown-menu'>
+                          <li>
+                              <a href='#'>Action</a>
+                          </li>
+                      </ul>
+                  </div>
+              ]]>
+            </script>
+            <br>
+            <br>
+            <div class='page-header'>
+              <h3>Widgets</h3>
+            </div>
+            <h4>Quick navigation/link</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <!-- background of quick link can be customized by red-background, orange-background... -->
+                      <div class="box-quick-link blue-background">
+                        <a href="#">
+                          <!-- header of quick link -->
+                          <div class="header">
+                            <!-- quick link header content -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <strong>With content</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <!-- width can be controlled by grid classes -->
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <div class="box-quick-link blue-background">
+                        <a href="#">
+                          <!-- header of quick link -->
+                          <div class="header">
+                            <!-- quick link header content -->
+                          </div>
+                          <div class="content">
+                            <!-- quick link content -->
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+          </section>
+          <h4>Statistics</h4>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="box-content box-statistic">
+                      <h3 class="title text-error">
+                        <!-- title content -->
+                      </h3>
+                
+                      <!-- body content -->
+                      <small>New</small>
+                      <div class="text-error icon-inbox align-right"></div>
+                    </div>
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Contrast background</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="box-content box-statistic red-background">
+                      <h3 class="title text-error">
+                        <!-- title content -->
+                      </h3>
+                
+                      <!-- body content -->
+                      <small>New</small>
+                      <div class="text-error icon-inbox align-right"></div>
+                    </div>
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Right aligned text</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="box-content box-statistic red-background text-right">
+                      <h3 class="title text-error">
+                        <!-- title content -->
+                      </h3>
+                
+                      <!-- body content -->
+                      <small>New</small>
+                      <div class="text-error icon-inbox align-right"></div>
+                    </div>
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <h4>Boxes</h4>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="box-header">
+                      <div class="title">
+                        <!-- box header -->
+                      </div>
+                      <div class="actions">
+                        <!-- right aligned box actions -->
+                      </div>
+                    </div>
+                    <div class="box-content">
+                      <!-- box content -->
+                    </div>
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Colored box</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="box-header red-background">
+                      <!-- same as above -->
+                    </div>
+                    <!-- same as above -->
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Bordered box</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box box-bordered">
+                    <div class="box-header red-background">
+                      <!-- same as above -->
+                    </div>
+                    <!-- same as above -->
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Collapsed box</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box box-bordered box-collapsed">
+                    <div class="box-header red-background">
+                      <!-- same as above -->
+                    </div>
+                    <!-- same as above -->
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Scrollable box</strong>
+          <p>
+            Class
+            <code>.scrollable</code>
+            will transform box content to scrollable area. You can customize it with handy
+            <code>data</code>
+            attributes.
+            <code>data-height</code>
+            is height of scrollable area and
+            <code>data-scrollable-start</code>
+            is place where the scroll will start (top or bottom).
+          </p>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="box-header purple-background">
+                      <!-- same as above -->
+                    </div>
+                    <div class="box-content">
+                      <div class='scrollable' data-scrollable-height='78' data-scrollable-start='top'>
+                        <!-- content -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Transparent box</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box box-transparent">
+                    <div class="box-header">
+                      <!-- same as above -->
+                    </div>
+                    <!-- same as above -->
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Padded box</strong>
+          <p>
+            There is
+            <code>.box-padding</code>
+            for medium padding and
+            <code>.box-double-padding</code>
+            for big padding on box content.
+          </p>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box box-padding">
+                    <div class="box-header">
+                      <!-- same as above -->
+                    </div>
+                    <!-- same as above -->
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Small header</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="box-header box-header-small">
+                      <!-- same as above -->
+                    </div>
+                    <!-- same as above -->
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Box actions</strong>
+          <p>
+            Each box has two actions in top right corner. One action will remove box and second will collapse box content.
+          </p>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="box-header">
+                      <div class="actions">
+                        <!-- basic actions for removing and collapsing box -->
+                        <a href="#" class="btn box-remove btn-mini btn-link"><i class="icon-remove"></i></a>
+                        <a href="#" class="btn box-collapse btn-mini btn-link"><i></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            ]]>
+          </script>
+          <strong>Box toolbox</strong>
+          <script class='brush: js' type='syntaxhighlighter'>
+            <![CDATA[
+                 <div class="col-sm-4">
+                   <div class="box">
+                     <div class="box-header box-header-small">
+                        <!-- same as above -->
+                     </div>
+                     <div class="box-content">
+                       <div class="box-toolbox box-toolbox-top">
+                         <!-- toolbox content -->
+                       </div>
+                       <!-- same as above -->
+                     </div>
+                   </div>
+                 </div>
+            ]]>
+          </script>
+          <br>
+          <br>
+          <section id='components'>
+            <div class='page-header'>
+              <h2>Components</h2>
+            </div>
+            <div class='page-header'>
+              <h3>Charts</h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <p>
+              See
+              <code>page source code</code>
+              file for more information about charts initialization.
+            </p>
+            <br>
+            <div class='page-header'>
+              <h3>Address book</h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='clearfix' id='slider'>
+                    <div class='slider-content'>
+                      <ul>
+                        <li id='a'>
+                          <a class='title' name='a'>A</a>
+                          <ul>
+                  
+                            <!-- address book item -->
+                            <li>
+                              <a href='#'>Ashley</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li id='b'>
+                          <a class='title' name='b'>B</a>
+                          <ul>
+                  
+                            <!-- address book item -->
+                            <li>
+                              <a href='#'>Barry</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $('#slider').sliderNav();
+              ]]>
+            </script>
+            <br>
+            <div class='page-header'>
+              <h3>Chat</h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <p>
+              For demo functionality
+              <code>see page source code</code>
+              .
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <!-- chat placed in box -->
+                  <div class="row">
+                    <div class='chat'>
+                      <div class="col-sm-12">
+                        <div class='box'>
+                          <div class='box-header'>
+                  
+                            <!-- chat title -->
+                            <div class='title'>
+                              <i class='icon-comments-alt'></i>
+                              Chat
+                            </div>
+                  
+                            <!-- chat actions (same as box) -->
+                            <div class='actions'>
+                              <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
+                              </a>
+                              <a href="#" class="btn box-collapse btn-mini btn-link"><i></i>
+                              </a>
+                            </div>
+                          </div>
+                  
+                          <div class='box-content box-no-padding'>
+                  
+                            <!-- scrollable area for messages -->
+                            <div class='scrollable' data-scrollable-height='300' data-scrollable-start='bottom'>
+                  
+                              <!-- messages -->
+                              <ul class='unstyled list-hover list-striped'>
+                  
+                                <!-- single message -->
+                                <li class='message'>
+                  
+                                  <!-- user avatar (23x23px) -->
+                                  <div class='avatar'>
+                                    <img alt='Avatar' height='23' src='assets/images/avatar.jpg' width='23'>
+                                  </div>
+                  
+                                  <!-- user name and time -->
+                                  <div class='name-and-time'>
+                                    <div class='name pull-left'>
+                                      <small>
+                                        <a href="#" class="text-contrast">
+                                          <!-- username -->
+                                        </a>
+                                      </small>
+                                    </div>
+                  
+                                    <div class='time pull-right'>
+                                      <small class='date pull-right muted'>
+                                        <!-- dynamic timeago -->
+                                        <span class='timeago fade has-tooltip' data-placement='top' title='2013-05-30 15:10:40 +0200'>May 30, 2013 - 15:10</span>
+                                        <i class='icon-time'></i>
+                                      </small>
+                                    </div>
+                                  </div>
+                  
+                                  <div class='body'>
+                                    <!-- message text -->
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                  
+                            <!-- form for sending messages -->
+                            <form class="new-message">
+                              <input class="form-control" id="message_body" name="message[body]" placeholder="Type your message here..." type="text">
+                              <button class="btn btn-success" type="submit">
+                                <i class="icon-plus"></i>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <strong>Fixed chat</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="row">
+                    <div class='chat chat-fixed'>
+                      <div class="col-sm-12">
+                        <div class='box box-collapsed'>
+                          <div class='box-header box-header-small contrast-background'>
+                            <!-- box header content -->
+                          </div>
+                          <!-- same as above -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <br>
+            <div class='page-header'>
+              <h3>
+                In-place editing
+                <small><a href="http://vitalets.github.io/x-editable/">Documentation</a></small>
+              </h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <p>
+              This plugin makes interfaces very user friendly, but is little bit hard to setup. For more information go to
+              <code>javascripts/demo/inplace_editing.js</code>
+            </p>
+            <br>
+            <div class='page-header'>
+              <h3>
+                File trees
+                <small><a href="https://code.google.com/p/dynatree/">Documentation</a></small>
+              </h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div id="tree1">
+                    <ul id='tree1-treeData'>
+                      <li id='tree1id1' title='Look, a tool tip!'>
+                        item1 with key and tooltip
+                      </li>
+                      <li id='tree1id2'>
+                        item2
+                      </li>
+                      <li class='folder' id='tree1id3'>
+                        Folder with some children
+                        <ul>
+                          <li id='tree1id2.1'>
+                            Sub-item 3.1
+                            <ul>
+                              <li id='tree1id3.1.1'>
+                                Sub-item 3.1.1
+                              </li>
+                              <li id='tree1id3.1.2'>
+                                Sub-item 3.1.2
+                              </li>
+                            </ul>
+                          </li>
+                          <li id='tree1id3.2'>
+                            Sub-item 3.2
+                            <ul>
+                              <li id='tree1id3.2.1'>
+                                Sub-item 3.2.1
+                              </li>
+                              <li id='tree1id3.2.2'>
+                                Sub-item 3.2.2
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class='expanded' id='tree1id4'>
+                        Document with some children (expanded on init)
+                        <ul>
+                          <li id='tree1id4.1'>
+                            Sub-item 4.1 (active and focus on init)
+                            <ul>
+                              <li id='tree1id4.1.1'>
+                                Sub-item 4.1.1
+                              </li>
+                              <li id='tree1id4.1.2'>
+                                Sub-item 4.1.2
+                              </li>
+                            </ul>
+                          </li>
+                          <li id='tree1id4.2'>
+                            Sub-item 4.2
+                            <ul>
+                              <li id='tree1id4.2.1'>
+                                Sub-item 4.2.1
+                              </li>
+                              <li id='tree1id4.2.2'>
+                                Sub-item 4.2.2
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+              ]]>
+            </script>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  $("#tree1").dynatree();
+              ]]>
+            </script>
+            <br>
+            <div class='page-header'>
+              <h3>
+                Fileupload
+                <small><a href="http://blueimp.github.io/jQuery-File-Upload/">Documentation</a></small>
+              </h3>
+            </div>
+            <p>See plugin documentation for more information and server side settings.</p>
+            <br>
+            <div class='page-header'>
+              <h3>Todo list</h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="row">
+                    <div class="todo-list">
+                      <div class="col-sm-12">
+                        <div class="box">
+                          <div class="box-content box-no-padding">
+                  
+                            <!-- container for sorting through multiple lists -->
+                            <div class="sortable-container">
+                  
+                              <!-- form for new todos -->
+                              <form class="new-todo">
+                                <input class="form-control" id="todo_name" name="todo[name]" placeholder="Type your new todo here..." type="text">
+                                <button class="btn btn-success" type="submit">
+                                  <i class="icon-plus"></i>
+                                </button>
+                              </form>
+                  
+                              <!-- grouping todos by date -->
+                              <div class="date text-contrast">Today</div>
+                  
+                              <!-- sortable list -->
+                              <ul class="unstyled sortable" data-sortable-axis="y" data-sortable-connect=".sortable">
+                  
+                                <!-- todo marked as important -->
+                                <li class="important item">
+                                  <label class="check pull-left todo">
+                                    <input type="checkbox">
+                                    <!-- todo content -->
+                                  </label>
+                  
+                                  <!-- todo actions -->
+                                  <div class="actions pull-right">
+                                    <a class="btn btn-link edit has-tooltip" data-placement="top" href="#" title="Edit todo">
+                                      <i class="icon-pencil"></i>
+                                    </a>
+                                    <a class="btn btn-link remove has-tooltip" data-placement="top" href="#" title="Remove todo">
+                                      <i class="icon-remove"></i>
+                                    </a>
+                                    <a class="btn btn-link important has-tooltip" data-placement="top" href="#" title="Mark as important">
+                                      <i class="icon-bookmark-empty"></i>
+                                    </a>
+                                  </div>
+                  
+                                </li>
+                  
+                                <!-- normal item -->
+                                <li class="item">
+                                  <!-- same as above -->
+                                </li>
+                  
+                                <!-- todo marked as done -->
+                                <li class="done item">
+                                  <!-- same as above -->
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <br>
+            <h3>WYSIWYG</h3>
+            <strong>CKEditor</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class='ckeditor' rows='10'></textarea>
+              ]]>
+            </script>
+            <strong>Simple</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <textarea class="wysihtml5" rows="10"></textarea>
+              ]]>
+            </script>
+          </section>
+          <section id='tables'>
+            <br>
+            <br>
+            <div class='page-header'>
+              <h2>Tables</h2>
+            </div>
+            <h4>Basic table</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <table class="table">
+                    <!-- table content -->
+                  </table>
+              ]]>
+            </script>
+            <h4>Responsive table</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class="responsive-table">
+                    <div class="scrollable-area">
+                      <table class="table">
+                        <!-- table content -->
+                      </table>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <h4>
+              Dynamic data table
+              <small><a href="http://www.datatables.net/">Documentation</a></small>
+            </h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <table class='data-table table table-bordered table-striped''>
+                    <!-- we need thead because of ordering controls -->
+                    <thead>
+                      <tr>
+                        <th>
+                          <!-- thead content -->
+                        </th>
+                      </tr>
+                    </thead>
+                    <!-- table content -->
+                  </table>
+              ]]>
+            </script>
+            <h4>
+              Dynamic data table with filter
+              <small><a href="http://www.datatables.net/">Documentation</a></small>
+            </h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <table class='data-table-column-filter table table-bordered table-striped'>
+                    <!-- we need thead because of ordering controls -->
+                    <thead>
+                      <tr>
+                        <th>
+                          <!-- thead content -->
+                        </th>
+                      </tr>
+                    </thead>
+                  
+                    <!-- table content -->
+                  
+                    <!-- we need tfoot because of filtration -->
+                    <tfoot>
+                      <tr>
+                        <th>
+                          <!-- tfoot content -->
+                        </th>
+                      </tr>
+                    </tfoot>
+                  </table>
+              ]]>
+            </script>
+          </section>
+          <br>
+          <br>
+          <section id='calendar'>
+            <div class='page-header'>
+              <h2>
+                Calendar
+                <small><a href="http://arshaw.com/fullcalendar/">Documentation</a></small>
+              </h2>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              This feature needs your JavaScript initialization.
+            </div>
+            <strong>Calendar in box</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <div class='box box-bordered purple-border'>
+                    <div class='box-header purple-background'>
+                      <div class='title'>
+                        <i class='icon-calendar'></i>
+                        Calendar
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      <!-- calendar definition -->
+                      <div class='full-calendar-demo'></div>
+                    </div>
+                  </div>
+              ]]>
+            </script>
+            <strong>Used JavaScript</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  (function() {
+                    var cal, calendarDate, d, m, y;
+                  
+                    this.setDraggableEvents = function() {
+                      return $("#events .external-event").each(function() {
+                        var eventObject;
+                        eventObject = {
+                          title: $.trim($(this).text())
+                        };
+                        $(this).data("eventObject", eventObject);
+                        return $(this).draggable({
+                          zIndex: 999,
+                          revert: true,
+                          revertDuration: 0
+                        });
+                      });
+                    };
+                  
+                    setDraggableEvents();
+                  
+                    calendarDate = new Date();
+                  
+                    d = calendarDate.getDate();
+                  
+                    m = calendarDate.getMonth();
+                  
+                    y = calendarDate.getFullYear();
+                  
+                    cal = $(".full-calendar-demo").fullCalendar({
+                      header: {
+                        center: "title",
+                        left: "basicDay,basicWeek,month",
+                        right: "prev,today,next"
+                      },
+                      buttonText: {
+                        prev: "<span class=\"icon-chevron-left\"></span>",
+                        next: "<span class=\"icon-chevron-right\"></span>",
+                        today: "Today",
+                        basicDay: "Day",
+                        basicWeek: "Week",
+                        month: "Month"
+                      },
+                      droppable: true,
+                      editable: true,
+                      selectable: true,
+                      select: function(start, end, allDay) {
+                        return bootbox.prompt("Event title", function(title) {
+                          if (title !== null) {
+                            cal.fullCalendar("renderEvent", {
+                              title: title,
+                              start: start,
+                              end: end,
+                              allDay: allDay
+                            }, true);
+                            return cal.fullCalendar('unselect');
+                          }
+                        });
+                      },
+                      eventClick: function(calEvent, jsEvent, view) {
+                        return bootbox.dialog({
+                          message: $("<form class='form'><label>Change event name</label></form><input id='new-event-title' class='form-control' type='text' value='" + calEvent.title + "' /> "),
+                          buttons: {
+                            "delete": {
+                              label: "<i class='icon-trash'></i> Delete Event",
+                              className: "pull-left",
+                              callback: function() {
+                                return cal.fullCalendar("removeEvents", function(ev) {
+                                  return ev._id === calEvent._id;
+                                });
+                              }
+                            },
+                            success: {
+                              label: "<i class='icon-save'></i> Save",
+                              className: "btn-success",
+                              callback: function() {
+                                calEvent.title = $("#new-event-title").val();
+                                return cal.fullCalendar('updateEvent', calEvent);
+                              }
+                            }
+                          }
+                        });
+                      },
+                      drop: function(date, allDay) {
+                        var copiedEventObject, eventClass, originalEventObject;
+                        originalEventObject = $(this).data("eventObject");
+                        originalEventObject.id = Math.floor(Math.random() * 99999);
+                        eventClass = $(this).attr('data-event-class');
+                        console.log(originalEventObject);
+                        copiedEventObject = $.extend({}, originalEventObject);
+                        copiedEventObject.start = date;
+                        copiedEventObject.allDay = allDay;
+                        if (eventClass) {
+                          copiedEventObject["className"] = [eventClass];
+                        }
+                        $(".full-calendar-demo").fullCalendar("renderEvent", copiedEventObject, true);
+                        if ($("#calendar-remove-after-drop").is(":checked")) {
+                          return $(this).remove();
+                        }
+                      },
+                      events: [
+                        {
+                          id: "event1",
+                          title: "All Day Event",
+                          start: new Date(y, m, 1),
+                          className: 'event-orange'
+                        }, {
+                          id: "event2",
+                          title: "Long Event",
+                          start: new Date(y, m, d - 5),
+                          end: new Date(y, m, d - 2),
+                          className: "event-red"
+                        }, {
+                          id: 999,
+                          id: "event3",
+                          title: "Repeating Event",
+                          start: new Date(y, m, d - 3, 16, 0),
+                          allDay: false,
+                          className: "event-blue"
+                        }, {
+                          id: 999,
+                          id: "event3",
+                          title: "Repeating Event",
+                          start: new Date(y, m, d + 4, 16, 0),
+                          allDay: false,
+                          className: "event-green"
+                        }, {
+                          id: "event4",
+                          title: "Meeting",
+                          start: new Date(y, m, d, 10, 30),
+                          allDay: false,
+                          className: "event-orange"
+                        }, {
+                          id: "event5",
+                          title: "Lunch",
+                          start: new Date(y, m, d, 12, 0),
+                          end: new Date(y, m, d, 14, 0),
+                          allDay: false,
+                          className: "event-red"
+                        }, {
+                          id: "event6",
+                          title: "Birthday Party",
+                          start: new Date(y, m, d + 1, 19, 0),
+                          end: new Date(y, m, d + 1, 22, 30),
+                          allDay: false,
+                          className: "event-purple"
+                        }
+                      ]
+                    });
+                  
+                  }).call(this);
+              ]]>
+            </script>
+          </section>
+          <br>
+          <br>
+          <section id='layouts'>
+            <div class='page-header'>
+              <h2>Layouts</h2>
+            </div>
+            <div class='page-header'>
+              <h3>Closed navigation</h3>
+            </div>
+            <p>
+              Just add
+              <code>.main-nav-closed</code>
+              to
+              <code>body</code>
+              tag.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <body class="main-nav-closed">
+                    <!-- body content-->
+                  </body>
+              ]]>
+            </script>
+            <div class='page-header'>
+              <h3>Fixed header</h3>
+            </div>
+            <p>
+              Just add
+              <code>.fixed-header</code>
+              to
+              <code>body</code>
+              tag and
+              <code>.navbar-fixed-top</code>
+              to
+              <code>header .navbar</code>
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <body class="fixed-header">
+                    <header>
+                      <div class="navbar navbar-fixed-top">
+                        <!-- header content-->
+                      </div>
+                    </header>
+                    <!-- body content-->
+                  </body>
+              ]]>
+            </script>
+            <div class='page-header'>
+              <h3>Fixed navigation</h3>
+            </div>
+            <p>
+              Just add
+              <code>.fixed-navigation</code>
+              to
+              <code>body</code>
+              tag and
+              <code>.main-nav-fixed</code>
+              to
+              <code>nav#main-nav</code>
+              tag.
+            </p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <body class="fixed-navigation">
+                    <div id="wrapper">
+                      <nav class="main-nav-fixed" id="main-nav">
+                        <!-- nav content-->
+                      </nav>
+                    </div>
+                    <!-- body content-->
+                  </body>
+              ]]>
+            </script>
+            <div class='page-header'>
+              <h3>Fixed header and navigation</h3>
+            </div>
+            <p>This is combination of fixed header and fixed navigation.</p>
+          </section>
+          <br>
+          <br>
+          <section id='colors-and-themes'>
+            <div class='page-header'>
+              <h2>Colors and themes</h2>
+            </div>
+            <div class='lead'>
+              Flatty comes with 43 color combinations! There are 3 main colors for content (light, dark and dark blue) and 14 contrast colors.
+            </div>
+            <br>
+            <div class='page-header'>
+              <h3>Content theme</h3>
+            </div>
+            <p>If you want to change content color/theme you must include theme stylesheet.</p>
+            <strong>Light theme</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <link href="assets/stylesheets/light-theme.css" media="all" rel="stylesheet" type="text/css" />
+              ]]>
+            </script>
+            <strong>Dark theme</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <link href="assets/stylesheets/dark-theme.css" media="all" rel="stylesheet" type="text/css" />
+              ]]>
+            </script>
+            <strong>Dark blue theme</strong>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <link href="assets/stylesheets/dark-blue-theme.css" media="all" rel="stylesheet" type="text/css" />
+              ]]>
+            </script>
+            <br>
+            <div class='page-header'>
+              <h3>Contrast color</h3>
+            </div>
+            <div class='alert alert-info'>
+              <a class='close' data-dismiss='alert' href='#'>×</a>
+              Don't forget to load
+              <code>theme-colors.css</code>
+              file.
+            </div>
+            <p>
+              You can choose contrast color from:
+              <code>contrast-red</code>
+              <code>contrast-blue</code>
+              <code>contrast-orange</code>
+              <code>contrast-purple</code>
+              <code>contrast-green</code>
+              <code>contrast-muted</code>
+              <code>contrast-fb</code>
+              <code>contrast-dark</code>
+              <code>contrast-pink</code>
+              <code>contrast-grass-green</code>
+              <code>contrast-sea-blue</code>
+              <code>contrast-banana</code>
+              <code>contrast-dark-orange</code>
+              <code>contrast-brown</code>
+            </p>
+            <br>
+            <p>To change contrast color just add class to body tag.</p>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <body class="contrast-red"></body>
+              ]]>
+            </script>
+          </section>
+          <br>
+          <br>
+          <section id='utils'>
+            <div class='page-header'>
+              <h2>Utilities</h2>
+            </div>
+            <h4>Coloring</h4>
+            <p>You can use these classes to color your code.</p>
+            <code>.text-contrast</code>
+            <code>.text-red</code>
+            <code>...</code>
+            (sets color of element)
+            <br>
+            <code>.contrast-background</code>
+            <code>.red-background</code>
+            <code>...</code>
+            (sets background-color of element)
+            <br>
+            <code>.contrast-border</code>
+            <code>.red-border</code>
+            <code>...</code>
+            (sets border-color of element)
+            <br>
+            <br>
+            <h4>Hovered and striped lists</h4>
+            <script class='brush: js' type='syntaxhighlighter'>
+              <![CDATA[
+                  <ul class="list-striped list-hover">
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                  </ul>
+              ]]>
+            </script>
+          </section>
+          <br>
+            <a class='btn btn-primary btn-large btn-block' href='./contact.html'>
+              Do you have any questions?
+            </a>
+          </br>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/javascripts/docs.js" type="text/javascript"></script>
+</html>

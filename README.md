@@ -1,4 +1,4 @@
-MapStoryOrg
-===========
+MapStoryStyles
+==============
 
-MapStory Redesign Repo
+Style editor

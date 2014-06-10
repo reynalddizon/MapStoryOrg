@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>MapStory Beta</title>
+		<meta name="description" content="MapStory Beta">
+		<meta name="author" content="reynalddizon">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header" style="height:50px">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="home.html"><img src="images/mslogo02.png" class="img-responsive" style="padding:5px"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<!--<form role="search">
+     								 <div class="form-group">
+        								<input type="text" class="form-control" placeholder="Search">
+     								 </div>
+     								<button type="submit" class="btn btn-sm"><i class="icon-search"></i></button>
+    								</form>
+    								-->
+								<ul class="nav navbar-nav pull-right">
+     							  	<li class="btn-toolbar">
+     							  	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:1px solid transparent;padding:0px 100px 20px 0px">
+     							    		<a style="text-decoration:none;font-size:1.7em;color:#46443b" href="explore.html">Explore</a> 
+     							    	</button></div>
+     							    	
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="color:darkgray;background-color:white;border:1px solid transparent;padding:0px 100px 20px 0px">
+       										 <a style="text-decoration:none;font-size:1.7em;color:#46443b" href="#">Create</a>
+       									</button>
+        								<ul class="dropdown-menu">
+         								 <li><a href="../../MapStoryStyles/html/storylayers.html">StoryLayers</a></li>
+         								 <li><a href="../../MapStoryStyles/html/storyboard.html">StoryBoard</a></li>
+         								 <li><a href="../../MapStoryStyles/html/storypins.html">StoryPins</a></li>
+         								 <li><a href="../../MapStoryStyles/html/storypreview.html">StoryPreview</a></li>
+         								 <li><a href="#">Warper</a></li>
+          								 <li><a href="#">Uploader</a></li>
+          								</ul></div>
+     							   
+     							   		<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="color:darkgray;background-color:white;border:1px solid transparent;padding:0px 100px 20px 0px">
+       								 		<a style="text-decoration:none;font-size:1.7em;color:#46443b" href="#">Learn</a>
+       								 	</button>
+        								<ul class="dropdown-menu">
+         								 <li><a href="getstarted.html">Get Started</a></li>
+         								 <li><a href="getinvolved.html">Get Involved</a></li>
+          								 <li><a href="getskills.html">Get Skills</a></li>
+          								</ul></div>
+          								
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:1px solid orange">
+											<a href="userdiary.html" style="font-size:1.1em;color:orange">
+												Diary
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:1px solid orange">
+											<a href="#" style="font-size:1.1em;color:orange">
+												Users
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="profile.html">Profile</a></li>
+         								 <li><a href="organization.html">Organization</a></li>
+          								 <li><a href="project.html">Project</a></li>
+          								 <li class="divider"></li>
+         								 <li><a href="storylayer.html">StoryLayer</a></li>
+         								 <li><a href="mapstory.html">MapStory</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:1px solid orange">
+											<a data-toggle="modal" data-target="#helpModal" style="font-size:1.1em;color:orange">
+												Help
+											</a>
+										</button></div>
+     							    </li>
+     							  </ul>
+     							    
+							</div>
+						</nav>
+				</div>
+			</header>
+			<!-- header -->
+				
+			<div class="modal fade" id="helpModal" ole="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">MapStory Help Center</h2>
+      						</div>
+      						<div class="modal-body">
+        						<ul class="nav nav-tabs">
+  									<li class="active"><a href="#post" data-toggle="tab">Post a Question</a></li>
+  									<li><a href="#faqs" data-toggle="tab">FAQs</a></li>
+  									<li><a href="#links" data-toggle="tab">Links</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="post">
+										<form role="form">
+  											<div class="form-group">
+   												<label for="exampleInputEmail1">Question Title</label>
+    											<input type="text" class="form-control" id="questiontitle" placeholder="Search or ask your question">
+  											</div>
+  											<div class="form-group">
+    											<label for="exampleInputPassword1">Description</label>
+    											<input type="text" class="form-control" id="questiondetail" placeholder="Details">
+  											</div>
+ 											<div class="form-group">
+    											<label for="exampleInputFile">Attach a screenshot</label>
+    											<input type="file" id="exampleInputFile">
+  											</div>
+  											<div class="checkbox">
+   												 <label>
+      												<input type="checkbox"> Ask anonymously
+    											</label>
+ 											 </div>
+  											<button type="submit" class="btn btn-default btn-sm">Ask question</button>
+										</form>
+									</div>
+									<div class="tab-pane" id="faqs">
+										<h2>Frequently Asked Questions</h2>
+										<h3>Question 1</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 2</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 3</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+									</div>
+									<div class="tab-pane" id="links">
+										<h2>List of Resources</h2>
+
+										<h3>MapStory Wiki</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to Videos</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>Data Repositories</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to video blogs</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+									</div>
+								</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+				
+			<!--<div id="paralaxSlice4" data-stellar-background-ratio="0.5">
+					<div class="maskParent">
+						<div class="paralaxMask"></div>
+						<div class="paralaxText container">
+							<blockquote class="bigTitle">EXPLORE MAPSTORIES<br/><small>Lorem ipsum dolor</small></blockquote>
+						</div>
+					</div>
+				</div>-->
+			<br>
+			<section class="slice color4" id="getskills">
+					<div class="container">
+						<div class="row" style="opacity:0.6">
+								<img src="images/concept1.png" class="col-sm-10 col-sm-offset-1 img-responsive"/>
+						</div>
+					</div>
+				</section>
+
+				
+				<section class="slice color1" id="getstarted" style="height:500px">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Explore Timeline<br/></blockquote><h2 style="text-align:left">Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</h2>
+								<br>
+								<button class="btn btn-sm btn-block">
+									Explore this period
+								</button>	
+							</div>
+							<div class="col-sm-8">
+								<div class="row" style="padding:20px">
+									<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Bevan-PotanoSans&maptype=toner&lang=en&height=400' width='100%' height='400' frameborder='0'></iframe>
+								</div>
+								</div>
+							</div>
+						<!--<div class="col-sm-12" style="text-align:center;padding:10px">
+							<a href="#getstarted" class="pull-left"><i class="icon-left iconRounded"></i></a>
+							<a href="#getinvolved" class="pull-right"><i class="icon-right iconRounded"></i></a>
+						</div>-->
+							
+						</div>
+						</div>
+						</div>
+					</div>
+				</section>
+				
+				<div id="paralaxSlice2" data-stellar-background-ratio="0.5" style="height:500px">
+					<div class="maskParent">
+						<div class="paralaxMask"></div>
+						<div class="paralaxText container">
+						</div>
+					</div>
+				</div>
+				
+				<section class="slice color1" id="getinvolved" style="height:500px">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Explore Places<br/></blockquote><h2 style="text-align:left">Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</h2>
+								<br>
+								<button class="btn btn-sm btn-block">
+									Explore this place
+								</button>							
+							</div>
+							<div class="col-sm-8">
+								<div class="row" style="padding:20px">
+									<div class="col-sm-12">
+							<div id="mapWrapper" class="mb30" style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; -webkit-transform-origin: 570px 175px; -webkit-transform: matrix(1, 0, 0, 1, -155, 0);"><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 200;"><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div></div><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 201;"><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: 153px;"><canvas draggable="false" height="512" width="512" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: 153px;"><canvas draggable="false" height="512" width="512" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: -103px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: 409px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: -103px;"><canvas draggable="false" height="512" width="512" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: 409px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: 153px;"><canvas draggable="false" height="512" width="512" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: 153px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: -103px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: 409px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: -103px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: 409px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: 153px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: 153px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: -103px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: 409px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: -103px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: 409px;"></div></div></div></div></div><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 202;"><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div></div><div style="-webkit-transform: translateZ(0); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: 153px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: 153px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: -103px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: 409px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: -103px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: 409px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: 153px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: 153px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: -103px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: 409px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: -103px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: 409px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: 153px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: 153px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: -103px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: 409px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: -103px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: 409px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: 409px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=3&amp;y=7&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: 153px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=5&amp;y=6&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: -103px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=4&amp;y=5&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: 409px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=2&amp;y=7&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: -103px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=5&amp;y=5&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: -103px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=3&amp;y=5&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1072px; top: 409px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=5&amp;y=7&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: -103px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=2&amp;y=5&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: 153px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=1&amp;y=6&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: 153px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=6&amp;y=6&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: -103px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=1&amp;y=5&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: -103px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=6&amp;y=5&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 48px; top: 409px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=1&amp;y=7&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 1328px; top: 409px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=6&amp;y=7&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 304px; top: 153px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=2&amp;y=6&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 560px; top: 153px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=3&amp;y=6&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: 409px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=4&amp;y=7&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0); position: absolute; left: 816px; top: 153px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@260000000&amp;src=apiv3&amp;hl=en-US&amp;x=4&amp;y=6&amp;z=4&amp;apistyle=s.t%3A6%7Cp.c%3A%23ff6196AD%2Cs.t%3A3%7Cs.e%3Ag.f%7Cp.c%3A%23ffFCFFF5%2Cs.t%3A3%7Cs.e%3Ag.s%7Cp.c%3A%23ff808080%7Cp.l%3A54%2Cs.t%3A81%7Cs.e%3Ag.f%7Cp.c%3A%23ffdde1d4%2Cs.t%3A40%7Cs.e%3Ag.f%7Cp.c%3A%23ff73AB7D%2Cs.t%3A3%7Cs.e%3Al.t.f%7Cp.c%3A%23ff767676%2Cs.t%3A3%7Cs.e%3Al.t.s%7Cp.c%3A%23ffffffff%2Cs.t%3A49%7Cs.e%3Ag.f%7Cp.c%3A%23ff7e7341%2Cs.t%3A82%7Cs.e%3Ag.f%7Cp.v%3Aon%7Cp.c%3A%23ffdee6e6%2Cs.t%3A40%7Cp.v%3Aon%2Cs.t%3A39%7Cp.v%3Aon%2Cs.t%3A36%7Cp.v%3Aon%2Cs.t%3A33%7Cp.v%3Asimplified&amp;scale=2&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="http://maps.google.com/maps?ll=39.47505,-98.007774&amp;z=4&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 62px; height: 26px; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 73px; bottom: 0px; width: 152px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2014 Google, INEGI</span></div></div></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 420px; top: 85px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2014 Google, INEGI</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2014 Google, INEGI</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; position: absolute; -webkit-user-select: none; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a href="http://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; display: none;"><a target="_new" title="Report errors in the road map or imagery to Google" href="http://maps.google.com/maps?ll=39.47505,-98.007774&amp;z=4&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3&amp;skstate=action:mps_dialog$apiref:1&amp;output=classic" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="32" controlheight="271" style="margin: 5px; -webkit-user-select: none; position: absolute; left: 0px; top: 35px;"><div controlwidth="32" controlheight="40" style="cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; position: absolute; left: 0px; top: 0px;"><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2_hdpi.png" draggable="false" style="position: absolute; left: -9px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2_hdpi.png" draggable="false" style="position: absolute; left: -107px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2_hdpi.png" draggable="false" style="position: absolute; left: -58px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2_hdpi.png" draggable="false" style="position: absolute; left: -205px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" controlwidth="0" controlheight="0" style="opacity: 0.6; display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3_hdpi.png" draggable="false" style="position: absolute; left: -38px; top: -360px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" controlwidth="25" controlheight="226" style="position: absolute; left: 4px; top: 45px;"><div title="Zoom in" style="width: 23px; height: 24px; overflow: hidden; position: relative; cursor: pointer; z-index: 1;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3_hdpi.png" draggable="false" style="position: absolute; left: -17px; top: -400px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div title="Click to zoom" style="width: 25px; height: 178px; overflow: hidden; position: relative; cursor: pointer; top: -4px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3_hdpi.png" draggable="false" style="position: absolute; left: -17px; top: -87px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div title="Drag to zoom" style="width: 21px; height: 14px; overflow: hidden; position: absolute; -webkit-transition: top 0.25s ease; transition: top 0.25s ease; z-index: 2; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; left: 2px; top: 156px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: -384px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div title="Zoom out" style="width: 23px; height: 23px; overflow: hidden; position: relative; cursor: pointer; top: -4px; z-index: 3;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3_hdpi.png" draggable="false" style="position: absolute; left: -17px; top: -361px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" style="margin: 5px; z-index: 0; position: absolute; cursor: pointer; right: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 6px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 24px; font-weight: 500;">Map</div><div style="background-color: white; z-index: -1; padding-top: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); border-left-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 26px; text-align: left; display: none;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 3px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 6px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; border-width: 1px 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgba(0, 0, 0, 0.14902); border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 41px;">Satellite</div><div style="background-color: white; z-index: -1; padding-top: 2px; -webkit-background-clip: padding-box; background-clip: padding-box; border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); border-left-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 26px; text-align: left; display: none;"><div draggable="false" title="Zoom in to show 45 degree view" style="color: rgb(184, 184, 184); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 3px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap; display: none;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(241, 241, 241); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">45°</label></div><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 3px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+						</div>
+								</div>
+								</div>
+							
+						</div>
+						<!--<div class="col-sm-12" style="text-align:center;padding:10px">
+							<a href="#getstarted" class="pull-left"><i class="icon-left iconRounded"></i></a>
+							<a href="#getskills" class="pull-right"><i class="icon-right iconRounded"></i></a>
+						</div>-->
+							
+						</div>
+						</div>
+						</div>
+					</div>
+				</section>
+				
+				<div id="paralaxSlice3" data-stellar-background-ratio="0.5" style="height:500px">
+					<div class="maskParent">
+						<div class="paralaxMask"></div>
+						<div class="paralaxText container">
+						</div>
+					</div>
+				</div>
+				
+				<section class="slice color1" id="getstarted" style="height:500px">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Explore Topics<br/></blockquote><h2 style="text-align:left">Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</h2>
+							</div>
+							<div class="col-sm-8">
+								<div class="row" style="padding:20px">
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/crisis.jpg" width="150" height="150">
+										<h4>Crisis</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/geopolitics.jpg" width="150" height="150">
+										<h4>Geopolitics</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/science.jpg" width="150" height="150">
+										<h4>Science</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/industry.jpg" width="150" height="150">
+										<h4>Industry</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/ethnic.jpg" width="150" height="150">
+										<h4>Culture</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/initiative.jpeg" width="150" height="150">
+										<h4>Ideas</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/nature.jpg" width="150" height="150">
+										<h4>Nature and Environment</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img src="images/social/health.png" width="150" height="150">
+										<h4>Health</h4>
+									</div>
+								</div>
+								</div>
+							</div>
+						<!--<div class="col-sm-12" style="text-align:center;padding:10px">
+							<a href="#getstarted" class="pull-left"><i class="icon-left iconRounded"></i></a>
+							<a href="#getinvolved" class="pull-right"><i class="icon-right iconRounded"></i></a>
+						</div>-->
+							
+						</div>
+						</div>
+						</div>
+					</div>
+				</section>
+				
+				<div id="paralaxSlice4" data-stellar-background-ratio="0.5" style="height:500px">
+					<div class="maskParent">
+						<div class="paralaxMask"></div>
+						<div class="paralaxText container">
+						</div>
+					</div>
+				</div>
+				
+				<section class="slice color1" id="getstarted" style="height:500px">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<blockquote class="bigTitle" style="text-align:left;font-weight:200">Explore People<br/></blockquote><h2 style="text-align:left">Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</h2>
+							</div>
+							<div class="col-sm-8">
+								<div class="row" style="padding:20px">
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle" src="images/social/crisis.jpg" width="150" height="150">
+										<h4>Crisis</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle"src="images/social/geopolitics.jpg" width="150" height="150">
+										<h4>Geopolitics</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle"src="images/social/science.jpg" width="150" height="150">
+										<h4>Science</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle"src="images/social/industry.jpg" width="150" height="150">
+										<h4>Industry</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle"src="images/social/ethnic.jpg" width="150" height="150">
+										<h4>Culture</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle"src="images/social/initiative.jpeg" width="150" height="150">
+										<h4>Ideas</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle" src="images/social/nature.jpg" width="150" height="150">
+										<h4>Nature and Environment</h4>
+									</div>
+									<div class="col-sm-3" style="text-align:center;padding:5px">
+										<img class="img-circle" src="images/social/health.png" width="150" height="150">
+										<h4>Health</h4>
+									</div>
+								</div>
+								</div>
+							</div>
+						<!--<div class="col-sm-12" style="text-align:center;padding:10px">
+							<a href="#getstarted" class="pull-left"><i class="icon-left iconRounded"></i></a>
+							<a href="#getinvolved" class="pull-right"><i class="icon-right iconRounded"></i></a>
+						</div>-->
+							
+						</div>
+						</div>
+						</div>
+					</div>
+				</section>
+		<!-- content -->
+			<!-- footer -->
+				<footer>
+						<section id="mainFooter">
+							<div class="container" id="footer">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="footerWidget">
+											<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
+											<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">MapStory</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="footerWidget">
+
+											<h3>MapStory Foundation</h3>
+											<address>
+												<p> <i class="icon-location"></i>&nbsp;Address Line 1<br>
+													Washington, D.C., USA <br>
+													<i class="icon-phone"></i>&nbsp;615.987.1234 <br>
+													<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">info@mapstory.org</a> </p>
+												</address>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</footer>
+					<section  id="footerRights">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6">
+										<p>Copyright © 2013 <a href="http://www.little-neko.com" target="blank">MapStory Foundation</a> / All rights reserved.</p>
+									</div>
+									<div class="col-sm-6">
+										<ul class="socialNetwork pull-right">
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+											<li><a href="https://twitter.com/LIttleNeko1" class="tips" title="" data-original-title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="" data-original-title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+										</ul>     
+									</div>
+								</div>
+							</div>
+						</section>
+					<!-- End footer -->
+					</div>
+					<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>
