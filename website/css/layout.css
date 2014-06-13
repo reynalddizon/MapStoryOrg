@@ -206,11 +206,10 @@ h1.noSubtitle{
 
 .bigTitle, h1.bigTitle, h2.bigTitle, h3.bigTitle {
 	font-weight: 800;
-	font-size: 3.5em;
+	font-size: 3.0em;
 	line-height:1em;
 	text-transform:none;
 	padding:0.5em 0;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -274,14 +273,14 @@ h1.bigTitle:after, .boxWrapper h1:after, .pricingBloc h1:after, .team h1:after, 
 	content:none
 }
 h3, legend {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 22px;
-	margin-bottom: 14px;
+	margin-bottom: 5px;
 	font-weight: 100;
 	letter-spacing: -0.06em;
 }
 h4 {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 22px;
 	margin-bottom: 6px;
 	font-style: bold;
@@ -291,13 +290,12 @@ h4 {
 h5 {
 	font-style: normal;
 	font-weight: 300;
-	font-size: 1.116em;
+	font-size: 15px;
 	line-height: 1.5714em;
-	margin-bottom: 0.916em;
 }
 h6 {
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 0.8em;
 	line-height:1em;
 }
 h1 small, h2 small, h3 small, h4 small {
@@ -400,6 +398,7 @@ hr {
 .btn {
 	padding:15px 20px;
 	font-size:18px;
+	font-weight: 100;
 	 -webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;

@@ -97,7 +97,7 @@ h2.subTitle:after, h1.noSubtitle:after{
 ================================================== */
 
 a {
-	color: gainsboro;
+	
 	font-weight: 100;
 }
 a:hover, .scrollspyNav .active a {

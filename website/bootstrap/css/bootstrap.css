@@ -6014,8 +6014,6 @@ body.modal-open,
     font-family: Montserrat; }
   .timeline li:first-child:before, .timeline li:last-child:before {
     content: "";
-    width: 10px;
-    height: 10px;
     display: block;
     position: absolute;
     top: 0;
@@ -6027,21 +6025,19 @@ body.modal-open,
   .timeline li:last-child {
     padding-bottom: 0; }
   .timeline li .content {
-    padding: 10px;
+    padding:10px 10px 10px 50px;
     background-color: white;
-    border: 1px solid #dddddd;
     position: relative;
     margin-top: 10px;
+    border-top:1px solid gainsboro;
     margin-left: 20px;
     position: relative; }
   .timeline li .icon {
-    width: 40px;
     height: 40px;
     text-align: center;
-    color: white;
     vertical-align: middle;
     line-height: 40px;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     top: 0;
     left: 20px; }
@@ -6057,7 +6053,7 @@ body.modal-open,
       left: -20px; }
   .timeline li .title {
     font-family: Montserrat;
-    margin-left: 70px;
+    margin-left: 20px;
     padding: 2px 0;
     font-size: 16px; }
     .timeline li .title small {
