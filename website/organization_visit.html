@@ -431,13 +431,17 @@
                         	</div>
                         	<div class="col-lg-9">
 								<ul class="nav nav-tabs">
-									<li class="active"><a href="#mapstories" data-toggle="tab">MapStories</a></li>
+									<li class="active"><a href="#activities" data-toggle="tab">Activities</a></li>
+									<li><a href="#mapstories" data-toggle="tab">MapStories</a></li>
   									<li><a href="#storylayers" data-toggle="tab">StoryLayers</a></li>
-  									<li><a href="#activities" data-toggle="tab">Activities</a></li>
+  									<li><a href="#storytellers" data-toggle="tab">StoryTellers</a></li>
+  									<li><a href="#blogs" data-toggle="tab">Blogs</a></li>
+  									<li><a href="#favorites" data-toggle="tab">Favorites</a></li>
+  									<li><a href="#forum" data-toggle="tab">Forum</a></li>
   									<li><a href="#media" data-toggle="tab">Media</a></li>
 								</ul>
 								<div class="tab-content">
-									<div class="tab-pane active" id="mapstories">
+									<div class="tab-pane" id="mapstories">
 										<div class="container">
 											<div class="row">
 												<div class="panel-group" id="accordion">
@@ -802,66 +806,103 @@
                         							</div>
                       							</div>
 									</div>
-									<div class="tab-pane" id="activities">
-										<div class='row timeline' style="max-height:500px; overflow-y:scroll; overflow-x:hidden">
-                <div class='col-sm-12'>
-                  <ol class='list-unstyled'>
-                    <li> <!--News sample-->
-                      <div class='icon red-background'>
-                        <i class='icon-chat'></i>
-                      </div>
-                      <div class='title'>
-                        <a class="text-muted" href="#">Org Name</a>
-                        posted a new article.
-                        <small class='text-muted'>10 minutes ago</small>
-                      </div>
-                      <div class='content'>
-                        Occaecati adipisci eum debitis necessitatibus odio commodi voluptatem iure architecto velit eveniet quos quia dolore quia voluptates voluptatum nam facilis omnis tempora eos magnam qui ad qui id molestiae officia praesentium autem quae eaque sequi dignissimos facere ea consectetur aperiam
-                      </div>
-                    </li>
-                    <li> <!--Photo sample-->
-                      <div class='icon green-background'>
-                        <i class='icon-picture'></i>
-                      </div>
-                      <div class='title'>
-                        <a class="text-muted" href="#">Doris Solomon</a>
-                        uploaded new photos
-                        <small class='text-muted'>10 minutes ago</small>
-                      </div>
-                      <div class='content'>
-                        <img src="images/sampleimg.png" class="img-responsive" />
-                      </div>
-                    </li>
-                    <li>
-                      <div class='icon orange-background'>
-                        <i class='icon-folder-add'></i>
-                      </div>
-                      <div class='title'>
-                        <a class="text-muted" href="#">Noelle Goldstein</a>
-                        uploaded a new dataset
-                        <small class='text-muted'>1 hour ago</small>
-                      </div>
-                      <div class='content'>
-                        <h3>Country Borders c 1980</h3>
-                        Lorem ipsum dolor sit amet.
-                      </div>
-                    </li>
-                    <li>
-                      <div class='icon blue-background'>
-                        <i class='icon-video'></i>
-                      </div>
-                      <div class='title'>
-                        <a class="text-muted" href="#">Don Eason</a>
-                        shared a video clip
-                        <small class='text-muted'>2 weeks ago</small>
-                      </div>
-                      <div class='content'>
-                        <iframe src='http://www.youtube.com/embed/VyG1rk1XgT4' style='frameborder:0;'></iframe>
-                      </div>
-                    </li>
-                  </ol>
-                </div>
-              </div>
+									<div class="tab-pane  active" id="activities">
+										<div class='row' style="padding-left:20px;">
+                							<div class='col-sm-12'>
+                      								<h2 style="color:#b26200">
+                        								recent activities
+                     								</h2>
+                     								<div class="container" style="margin-bottom:10px;padding-left:30px">
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">today</div>
+                        										<div class="col-sm-8">published Lorem Ipsum mapstory</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">favorite</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">today</div>
+                        										<div class="col-sm-8">published Lorem Ipsum storylayer</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">favorite</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">yesterday</div>
+                        										<div class="col-sm-8">updated Lorem Ipsum storylayer</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">use</div>
+                        										<div class="col-sm-1" style="text-align:center;">edit</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">yesterday</div>
+                        										<div class="col-sm-8">published Lorem Ipsum storylayer</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">favorite</div>
+                        									</div>
+                        							</div>
+                      								<h2 style="color:#ff9819">
+                        								last week
+                     								</h2>
+                      								<div class="container" style="margin-bottom:10px;padding-left:30px">
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">Thursday</div>
+                        										<div class="col-sm-8">updated his profile</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">follow</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">Wednesday</div>
+                        										<div class="col-sm-8">joined the Lorem Ipsum initiative</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">join</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">Monday</div>
+                        										<div class="col-sm-8">earned a Globetrotter badge</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">favorite</div>
+                        									</div>
+                        								</div>
+                      									<h2 style="color:#ffae4d">
+                        									last month
+                     								</h2>
+                      								<div class="container" style="margin-bottom:10px;padding-left:30px">
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">15 April</div>
+                        										<div class="col-sm-8">followed Mafalda Hopkirk</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">follow</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">10 April</div>
+                        										<div class="col-sm-8">subscribed to Appleseed Foundation</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">subscribe</div>
+                        									</div>
+                        								</div>
+                    								<h2 style="color:#ffdcb2">
+                        									older activities
+                     								</h2>
+                      								<div class="container" style="margin-bottom:10px;padding-left:30px">
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">10 March</div>
+                        										<div class="col-sm-8">subscribed to OrangeSeed Foundation</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">subscribe</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">02 March</div>
+                        										<div class="col-sm-8">followed Mafalda Hopkirk</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">follow</div>
+                        									</div>
+                        									<div class="row" style="border-bottom:1px solid gainsboro;margin-bottom:10px">
+                        										<div class="col-sm-2">23 February</div>
+                        										<div class="col-sm-8">published Lorem Ipsum mapstory</div>
+                        										<div class="col-sm-1" style="text-align:center;border-right:1px solid gainsboro">view</div>
+                        										<div class="col-sm-1" style="text-align:center;">favorite</div>
+                        									</div>
+                        								</div>
+                							</div>
+              							</div>
 									</div>
 									<div class="tab-pane" id="media">
 										<h2><i class="icon-camera-outline"></i> media gallery</h2>
@@ -886,7 +927,198 @@
 											</div>
 										</div>
 									</div>
-									<div class="tab-pane" id="misc">
+									<div class="tab-pane" id="storytellers">
+										<div class="row" style="max-height:500px; overflow-y:scroll; overflow-x:hidden">
+							<div class="col-sm-4">
+								<!--XS--> <article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Mafalda Hopkirk</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+								<article class="col-sm-12"> 
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Remus Lupin</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Luna Lovegood</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+							</div>
+							<div class="col-sm-4">
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Penelope Clearwater</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Lee Jordan</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Severus Snape</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+							</div>
+							<div class="col-sm-4">
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Millicent Bullstrode</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Gilderoy Lockhart</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+								<article class="col-sm-12"> 
+									
+									
+								<section class="newsText color1">
+									<section class="imgWrapper" style="text-align:center"> 
+										<img src="images/avatar.jpg" class="img-circle" alt="Ashleye template image news" width="150" height="150" style="margin-bottom:15px"> 
+									</section>
+									<h3>Aurora Sinistra</h3>
+									<span class="label label-warning"><i class="icon-comment"></i></span>
+									<span class="label label-primary"><i class="icon-tree"></i></span>
+									<span class="label label-success"><i class="icon-chart"></i></span>
+									<br/><br/>
+									<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+									<a href="#"><i class="icon-right-open-mini"></i>explore</a>
+								</section>
+								</article><br/>
+							</div>
+						</div>
+									</div>
+									<div class="tab-pane" id="blogs">
+										<div class="container">
+											<div class="row" style="margin-top:10px;border-bottom:1px solid gainsboro">
+												<div class="col-sm-12">
+													<h2>Maiestatis Deseruisse<p><small>01/01/2014</small></p></h2>
+													<h4>
+														Lorem ipsum dolor sit amet modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. Ipsum ignota scripserit sed ne. Ne appareat intellegat liberavisse nec. Ea per impetus insolens mediocrem, nam et augue placerat, duis congue corpora te eos. Mel ei commodo alterum singulis, eu est quod interpretaris. Ad case propriae elaboraret sea. Ex sit accusam forensibus cotidieque, wisi feugiat omittantur vel ex. Id legere aliquid reprehendunt his. Sea etiam movet putent ad, ad ludus doming eam.
+													</h4>
+												</div>
+											</div>
+											<div class="row" style="margin-top:10px;border-bottom:1px solid gainsboro">
+												<div class="col-sm-12">
+													<h2>Oratio Propriae Pertinacia<p><small>01/01/2014</small></p></h2>
+													<h4>
+														Lorem ipsum dolor sit amet modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. Ipsum ignota scripserit sed ne. Ne appareat intellegat liberavisse nec. Ea per impetus insolens mediocrem, nam et augue placerat, duis congue corpora te eos. Mel ei commodo alterum singulis, eu est quod interpretaris. Ad case propriae elaboraret sea. Ex sit accusam forensibus cotidieque, wisi feugiat omittantur vel ex. Id legere aliquid reprehendunt his. Sea etiam movet putent ad, ad ludus doming eam.
+													</h4>
+												</div>
+											</div>
+											<div class="row" style="margin-top:10px;border-bottom:1px solid gainsboro">
+												<div class="col-sm-12">
+													<h2>Feugait Suavitate<p><small>01/01/2014</small></p></h2>
+													<h4>
+														Lorem ipsum dolor sit amet modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. Ipsum ignota scripserit sed ne. Ne appareat intellegat liberavisse nec. Ea per impetus insolens mediocrem, nam et augue placerat, duis congue corpora te eos. Mel ei commodo alterum singulis, eu est quod interpretaris. Ad case propriae elaboraret sea. Ex sit accusam forensibus cotidieque, wisi feugiat omittantur vel ex. Id legere aliquid reprehendunt his. Sea etiam movet putent ad, ad ludus doming eam.
+													</h4>
+												</div>
+											</div>
+											<div class="row" style="margin-top:10px;border-bottom:1px solid gainsboro">
+												<div class="col-sm-12">
+													<h2>Vim Quod Recteque<p><small>01/01/2014</small></p></h2>
+													<h4>
+														Lorem ipsum dolor sit amet modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri. Albucius officiis eu mel, meis ipsum summo ei his, dicit nostrud molestiae has ne. Ipsum ignota scripserit sed ne. Ne appareat intellegat liberavisse nec. Ea per impetus insolens mediocrem, nam et augue placerat, duis congue corpora te eos. Mel ei commodo alterum singulis, eu est quod interpretaris. Ad case propriae elaboraret sea. Ex sit accusam forensibus cotidieque, wisi feugiat omittantur vel ex. Id legere aliquid reprehendunt his. Sea etiam movet putent ad, ad ludus doming eam.
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="favorites">
+									
+									</div>
+									<div class="tab-pane" id="forum">
 									
 									</div>
 								</div>
