@@ -113,9 +113,9 @@ ul.iconsList li a:hover, ul.iconsList i {
 
 /*** buttons ***/
 .btn {
-	background: #eb7f37;
-	color:white;
-	border:1px solid white;
+	background: white;
+	color:black;
+	border:1px solid gainsboro;
 }
 
 .btn-filter {
@@ -405,8 +405,8 @@ border:none}
 .color1 h1, .color1 h2, .color1 h3, .color1 h4, .color1 blockquote, .color1 a{
 	color:#444;
 }
-.color1 a.btn{color:#fff;}
-.color1 a.btn:hover{color:#EB7F37;}
+.color1 a.btn{color:darkgray;}
+.color1 a.btn:hover{color:white;}
 
 /*color4*/
 .color4, .slice.color4, .bulle.color4, .ctaBox.color4{
