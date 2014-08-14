@@ -75,7 +75,7 @@ h2.subTitle:after, h1.noSubtitle:after{
 	background-image: url('../images/africa.gif');
 }
 #paralaxSlice2 {
-	background-image: url('../images/theme-pics/teach1.jpg');
+	background-image: url('../concept/globe.png');
 }
 #paralaxSlice3 {
 	background-image: url('../images/theme-pics/geog1.png');
@@ -113,8 +113,8 @@ ul.iconsList li a:hover, ul.iconsList i {
 
 /*** buttons ***/
 .btn {
-	background: white;
-	color:black;
+	background: transparent;
+	color:gainsboro;
 	border:1px solid gainsboro;
 }
 

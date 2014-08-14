@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>MapStory Beta</title>
+		<meta name="description" content="MapStory Beta">
+		<meta name="author" content="reynalddizon">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<link href="font-icons/custom-icons/css/flags.css"" media="screen" rel="stylesheet" type="text/css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header" style="height:50px">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="home.html"><img src="images/mslogo02.png" class="img-responsive" style="padding:5px"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<!--<form role="search">
+     								 <div class="form-group">
+        								<input type="text" class="form-control" placeholder="Search">
+     								 </div>
+     								<button type="submit" class="btn btn-sm"><i class="icon-search"></i></button>
+    								</form>
+    								-->
+								<ul class="nav navbar-nav pull-right">
+     							  	<li class="btn-toolbar">
+     							  	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="eureka.html" style="text-decoration:none;font-size:1.3em;color:black">
+												Explore
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												Create
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="../composer/storylayers.html">Composer</a></li>
+         								 <li><a href="#">Tools ></a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												How To
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="getstarted.html">Get Started</a></li>
+         								 <li><a href="getinvolved.html">Get Involved</a></li>
+          								 <li><a href="getskills.html">Get Skills</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="getstarted.html#welcome" style="text-decoration:none;font-size:1.3em;color:black">
+												About
+											</a>
+										</button></div>
+     							    	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="userdiary.html" style="text-decoration:none;font-size:1.3em;color:black">
+												Diary
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-doc"></i>
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="profile_visit.html">Profile</a></li>
+         								 <li><a href="profile_log.html">Profile (logged)</a></li>
+          								 <li><a href="profile_edit.html">Profile (edit)</a></li>
+          								 <li class="divider"></li>
+          								 <li><a href="organization_visit.html">Organization</a></li>
+         								 <li><a href="organization_log.html">Org (logged)</a></li>
+         								  <li class="divider"></li>
+         								 <li><a href="storylayer.html">StoryLayer</a></li>
+         								 <li><a href="mapstory.html">MapStory</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a data-toggle="modal" data-target="#loginModal" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-user"></i>
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a data-toggle="modal" data-target="#helpModal" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-info"></i>
+											</a>
+										</button></div>
+     							    </li>
+     							  </ul>
+							</div>
+						</nav>
+				</div>
+			</header>
+			
+			<div class="modal fade" id="loginModal">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<!--<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">Welcome to MapStory</h2>
+      						</div>-->
+      						<div class="modal-body">
+      							<div class="row" style="margin:10px">
+						<div class="col-sm-6" style="border-right:1px solid darkgray">
+							<h1 style="font-size:1.4em"><strong>Log in</strong></h1>
+							<hr class="col-sm-10" style="margin:10px">
+							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden"><div class="form-group">
+                        <label class="col-md-3 control-label" for="inputText1">Username</label>
+                        <div class="col-md-8">
+                          <input class="form-control" id="inputText1" placeholder="Username" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-3 control-label" for="inputPassword4">Password</label>
+                        <div class="col-md-8">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-3">
+                            <label>
+                              <a href="#" style="color:black">Forgot password?</a>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                          <div class="col-sm-offset-2 col-sm-8">
+                          	<button class="btn btn-sm btn-block"><a href="profile.html">Sign in</a></button>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="col-sm-11" style="margin:10px">
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                        	<div class="col-sm-11">
+                        	<h1 style="font-size:1.2em;">Connect your account</h1>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:dodgerblue;color:white"><i class="icon-facebook-1"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:deepskyblue;color:white"><i class="icon-twitter-bird"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:red;color:white"><i class="icon-gplus-1"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:blueviolet;color:white"><i class="icon-yahoo"></i></button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+						</div>
+						<div class="col-sm-6" >
+							<h1 class="col-sm-offset-1" style="font-size:1.4em">
+								<strong>Sign up to MapStory</strong>
+								<button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</h1>
+							<hr class="col-sm-offset-1 col-sm-10" style="margin:10px">
+							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden">
+							<div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Name</label>
+                        <div class="col-md-4">
+                          <input class="form-control" id="inputText1" placeholder="First" type="text">
+                        </div>
+                        <div class="col-md-5">
+                          <input class="form-control" id="inputText1" placeholder="Last" type="text">
+                        </div>
+                      </div>
+                      		<div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Email</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputText1" placeholder="@email.com" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputPassword4">Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputPassword4">Confirm Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <a href="#" style="color:black">Signing up as an organization?</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              I agree with the <a href="#" style="color:black">Terms and Conditions</a>.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                          <div class="col-sm-offset-2 col-sm-9">
+                          	<button class="btn btn-sm btn-block">Join MapStory</button>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+						</div>
+					</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+				
+			<div class="modal fade" id="helpModal" ole="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">MapStory Help Center</h2>
+      						</div>
+      						<div class="modal-body">
+        						<ul class="nav nav-tabs">
+  									<li class="active"><a href="#post" data-toggle="tab">Post a Question</a></li>
+  									<li><a href="#faqs" data-toggle="tab">FAQs</a></li>
+  									<li><a href="#links" data-toggle="tab">Links</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="post">
+										<form role="form">
+  											<div class="form-group">
+   												<label for="exampleInputEmail1">Question Title</label>
+    											<input type="text" class="form-control" id="questiontitle" placeholder="Search or ask your question">
+  											</div>
+  											<div class="form-group">
+    											<label for="exampleInputPassword1">Description</label>
+    											<input type="text" class="form-control" id="questiondetail" placeholder="Details">
+  											</div>
+ 											<div class="form-group">
+    											<label for="exampleInputFile">Attach a screenshot</label>
+    											<input type="file" id="exampleInputFile">
+  											</div>
+  											<div class="checkbox">
+   												 <label>
+      												<input type="checkbox"> Ask anonymously
+    											</label>
+ 											 </div>
+  											<button type="submit" class="btn btn-default btn-sm">Ask question</button>
+										</form>
+									</div>
+									<div class="tab-pane" id="faqs">
+										<h2>Frequently Asked Questions</h2>
+										<h3>Question 1</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 2</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 3</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+									</div>
+									<div class="tab-pane" id="links">
+										<h2>List of Resources</h2>
+
+										<h3>MapStory Wiki</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to Videos</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>Data Repositories</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to video blogs</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+									</div>
+								</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+			<!-- header -->
+				<!-- content -->
+				
+				<!--<section id="home" data-stellar-background-ratio="0.5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-sm-6">
+								<div class="flexslider" id="flexHome">
+									<ul class="slides">
+										<li>
+											<h1>Welcome to MapStory</h1>
+											<h2>Lorem ipsum dolor sit amet</h2>
+										</li>
+										<li>
+											<h1>Share your stories</h1>
+											<h2>Lorem ipsum dolor sit amet</h2>
+										</li>
+										<li>
+											<h1>Get involved</h1>
+											<h2>Lorem ipsum dolor sit amet</h2>
+										</li>
+									</ul>
+								</div> 
+							</div>
+							<div class="col-lg-5 col-sm-6 hidden-xs">
+								<img src="images/theme-pics/MSlogo-lg.png" alt="Ashley, Bootstrap website template" class="img-responsive"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				-->
+				
+				<section class="slice color4" style="height:600px">
+					<div class="container">
+					<BR><BR>
+						<div class="row">
+								<blockquote class="bigTitle" style="text-align:center;font-weight:200">Welcome to StoryBoard.<br/></blockquote>
+								<h2 style="text-align:center">
+									<p>Edit and style your data. Add photos, videos and annotations. Organize your chapters. Preview your work.</p>
+									<p>Share your MapStories through StoryBoard.
+								</h2>
+						</div>
+						<br><br>
+						<div class="row">
+							<section>
+								<div class="container">
+									<div class="row">
+										<a href="../composer/storylayers.html">
+										<div class="col-sm-3" style="text-align:center">
+											<img src="concept/storyLayers.png" width="150" height="150">
+											<h2 style="font-size:1.6em;padding-top:10px">StoryLayers</h2>
+											<h4>Upload your shapefiles. Edit and update your data. Apply styles and map elements.</h4>
+										</div>
+										</a>
+										<a href="../composer/storyboxes.html">
+										<div class="col-sm-3" style="text-align:center">
+											<img src="concept/storyboxes.png" width="150" height="150">
+											<h2 style="font-size:1.6em;padding-top:10px">StoryBoxes</h2>
+											<h4>Organzie your story chapters. Manage slide transitions. Configure playback settings.</h4>
+										</div>
+										</a>
+										<a href="../composer/storypins.html">
+										<div class="col-sm-3" style="text-align:center">
+											<img src="concept/storypins.png" width="150" height="150">
+											<h2 style="font-size:1.6em;padding-top:10px">StoryPins</h2>
+											<h4>Add photos, video clips and audio files to your annotations.</h4>
+										</div>
+										</a>
+										<a href="../composer/storypreview.html">
+										<div class="col-sm-3" style="text-align:center">
+											<img src="concept/storypreview.png" width="150" height="150">
+											<h2 style="font-size:1.6em;padding-top:10px">StoryPreview</h2>
+											<h4>Finishing touches before you tell your story to the world.</h4>
+										</div>
+										</a>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+				
+				
+		
+		<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>
