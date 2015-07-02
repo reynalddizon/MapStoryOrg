@@ -2879,7 +2879,7 @@ input[type="button"].btn-block {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid #46443b; }
+  border-bottom: 1px solid gainsboro; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -2887,15 +2887,13 @@ input[type="button"].btn-block {
       margin-right: 2px;
       line-height: 1.42857;
       border: 1px solid transparent;
-      border-radius: 4px 4px 0 0; }
-      .nav-tabs > li > a:hover {
-        border-color: #eeeeee #eeeeee #46443b; }
+      border-radius: 0 0 0; }
+      .nav-tabs > li > a:hover { }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
       background-color: white;
-      border: 1px solid #46443b;
-      border-radius:4px 4px 0 0;
-      border-bottom-color: transparent;
+      border-bottom: 3px solid orange;
+      border-radius: 0 0;
       cursor: default; }
 
 .nav-pills > li {
