@@ -169,6 +169,11 @@
 					<img src="assets/images/logo.png" height="14" />
                 </a>
             </li>
+            <li>
+               <a data-toggle="modal" href="#StartModal">
+				    <i class="icon icon-star"></i>
+				</a>
+            </li>
             <li class="active">
 				<a class="green-border" data-toggle="tab" href="#StoryLayersTab">
 					StoryLayers
@@ -189,12 +194,111 @@
 					StoryPreview
                 </a>
             </li>
+            
 		</ul>
 		<div class="tab-content" >
 			<div class="tab-pane active" id="StoryLayersTab">
 			<iframe style="position:absolute; z-index:0" width="100%" height="700px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
 			
 			<div class="panel-group col-sm-3 sortable ui-sortable" style="position:absolute; z-index:1; opacity:0.95;" id="LayersAccordion">
+				
+				
+				<!--New Layer Header-->
+				<div class="panel panel-default" style="color: #000000">
+					<div class="panel-heading" style="background-color:#ffffff">
+						<div class="panel-title text-primary" style="background-color:#ffffff" >
+							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#LayersAccordion" href="#NewLayer">
+								Add a StoryLayer </span>
+							
+						</div>
+					</div>
+				<!--New Layer Content-->
+					<div id="NewLayer" class="panel-collapse collapse in">
+						<div class="panel-body" style="background-color:#ffffff">
+							<div class="row">
+								<div class="col-sm-12">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#NewSearch" data-toggle="tab"  style="padding:10px"><i class="text-primary glyphicon glyphicon-search"></i> Add exisiting</a></li>
+										<li><a href="#NewUpload" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-upload"></i> Upload new</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="NewSearch" style="max-height:400px; overflow-y:scroll; overflow-x:hidden">
+											<div class="col-sm-12" style="padding:10px">
+												<div class="box"> 
+													<div class="input-group col-sm-12">
+                                						<input class="form-control " id="appendedInput" type="text">
+                                						
+                                						    <span class="input-group-addon"><a data-toggle="modal" href="#StoryLayersModal">
+                                						        <i class="icon-search"></i> Search
+                                						    </a>
+                                						    </span>
+                              						</div>
+                              						<br>
+													<a data-toggle="modal" href="#StoryLayersModal">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">Common Data</h3>
+														<small>Commonly used storylayers</small>
+														<div class="text-primary icon-star align-right"></div>
+													</div>
+													</a>
+													<a data-toggle="modal" href="#StoryLayersModal">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">Explore StoryLayers</h3>
+														<small>Entire storylayers collection</small>
+														<div class="text-primary icon-globe align-right"></div>
+													</div>
+													</a>
+													<a data-toggle="modal" href="#StoryLayersModal">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">My Favorites</h3>
+														<small>Favorite storylayers</small>
+														<div class="text-primary icon-heart align-right"></div>
+													</div>
+													</a>
+													<a data-toggle="modal" href="#StoryLayersModal">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">My StoryLayers</h3>
+														<small>Uploaded storylayers</small>
+														<div class="text-primary icon-user align-right"></div>
+													</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="NewUpload">
+											<div class="col-sm-12" style="padding:10px">
+												<div class="box"> 
+													<a data-toggle="modal" href="#UploadCSVModal">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">Upload CSV</h3>
+														<small>Excel, tabular or text-based files</small>
+														<div class="text-primary icon-list-ol align-right"></div>
+													</div>
+													</a>
+													<a data-toggle="modal" href="#UploadSHPModal">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">Upload Shapefile</h3>
+														<small>GIS files</small>
+														<div class="text-primary icon-trello align-right"></div>
+													</div>
+													</a>
+													<a href="http://wiki.mapstory.org/wiki/Get_Skills">
+													<div class="box-content box-statistic">
+														<h3 class="title text-primary">Upload User Guide</h3>
+														<small>User manual</small>
+														<div class="text-primary icon-info-sign align-right"></div>
+													</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 				<!--Point Layer Header-->
 				<div class="panel panel-default" style="color: #000000">
 					<div class="panel-heading" style="background-color:#ffffff;">
@@ -206,13 +310,13 @@
 											<i class="glyphicon glyphicon-eye-open"></i>
 										</button>
 										<button type="button" data-toggle="button" class="btn btn-xs btn-default active">
-											<i class="glyphicon glyphicon-pencil"></i>
+											<i class="glyphicon glyphicon-pencil"></i> Edit
 										</button>
 									</div>
 						</div>
 					</div>
 				<!-- Points Layer Content-->
-					<div id="PointLayer" class="panel-collapse collapse in">
+					<div id="PointLayer" class="panel-collapse collapse">
 						<div class="panel-body" style="background-color:#ffffff">
 							<div class="row">
 								<div class="col-sm-12">
@@ -5049,172 +5153,6 @@
 					</div>
 				</div>
 				
-				<!--Line Layer Header-->
-				<div class="panel panel-default" style="color: #000000">
-					<div class="panel-heading" style="background-color:#ffffff;">
-						<div class="panel-title text-primary" style="background-color:#ffffff">
-							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#LayersAccordion" href="#LineLayer">
-										StoryLayer 2 </span>
-							<div class="pull-right">
-										<button type="button" data-toggle="button" class="btn btn-xs btn-default">
-											<i class="glyphicon glyphicon-eye-open"></i>
-										</button>
-										<button type="button" data-toggle="button" class="btn btn-xs btn-default active">
-											<i class="glyphicon glyphicon-pencil"></i>
-										</button>
-									</div>
-						</div>
-					</div>
-				<!-- Line Layer Content-->
-					<div id="LineLayer" class="panel-collapse collapse">
-						<div class="panel-body" style="background-color:#ffffff">
-							<div class="row">
-								<div class="col-sm-12">
-									<ul class="nav nav-tabs">
-										<li class="active"><a href="#LNStyles" data-toggle="tab" style="padding:10px"><i class=" text-primary glyphicon glyphicon-picture" ></i></a></li>
-										<li><a href="#LNHistory" data-toggle="tab"  style="padding:10px"><i class="text-primary glyphicon glyphicon-calendar"></i></a></li>
-										<li><a href="#LNEdit" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-edit"></i></a></li>
-										<li><a href="#LNInfobox" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-comment"></i></a></li>
-										<li><a href="#LNMetadata" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-tag"></i></a></li>
-										
-									</ul>
-									<div class="tab-content">
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!--Polygon Layer Header-->
-				<div class="panel panel-default" style="color: #000000">
-					<div class="panel-heading" style="background-color:#ffffff;">
-						<div class="panel-title text-primary" style="background-color:#ffffff" >
-							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#LayersAccordion" href="#PolygonLayer">
-										StoryLayer 3 </span>
-							<div class="pull-right">
-										<button type="button" data-toggle="button" class="btn btn-xs btn-default">
-											<i class="glyphicon glyphicon-eye-open"></i>
-										</button>
-										<button type="button" data-toggle="button" class="btn btn-xs btn-default active">
-											<i class="glyphicon glyphicon-pencil"></i>
-										</button>
-									</div>
-						</div>
-					</div>
-				<!-- Polygon Layer Content-->
-					<div id="PolygonLayer" class="panel-collapse collapse">
-						<div class="panel-body" style="background-color:#ffffff">
-							<div class="row">
-								<div class="col-sm-12">
-									<ul class="nav nav-tabs">
-										<li class="active"><a href="#PGStyles" data-toggle="tab" style="padding:10px"><i class=" text-primary glyphicon glyphicon-picture" ></i></a></li>
-										<li><a href="#PGHistory" data-toggle="tab"  style="padding:10px"><i class="text-primary glyphicon glyphicon-calendar"></i></a></li>
-										<li><a href="#PGEdit" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-edit"></i></a></li>
-										<li><a href="#PGInfobox" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-comment"></i></a></li>
-										<li><a href="#PGMetadata" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-tag"></i></a></li>
-									</ul>
-									<div class="tab-content">
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!--New Layer Header-->
-				<div class="panel panel-default" style="color: #000000">
-					<div class="panel-heading" style="background-color:#ffffff">
-						<div class="panel-title text-primary" style="background-color:#ffffff" >
-							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#LayersAccordion" href="#NewLayer">
-								New StoryLayer </span>
-							
-						</div>
-					</div>
-				<!--New Layer Content-->
-					<div id="NewLayer" class="panel-collapse collapse">
-						<div class="panel-body" style="background-color:#ffffff">
-							<div class="row">
-								<div class="col-sm-12">
-									<ul class="nav nav-tabs">
-										<li class="active"><a href="#NewSearch" data-toggle="tab"  style="padding:10px"><i class="text-primary glyphicon glyphicon-search"></i></a></li>
-										<li><a href="#NewUpload" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-upload"></i></a></li>
-									</ul>
-									<div class="tab-content">
-										<div class="tab-pane active" id="NewSearch" style="max-height:400px; overflow-y:scroll; overflow-x:hidden">
-											<div class="col-sm-12" style="padding:10px">
-												<div class="box"> 
-													<div class="input-group col-sm-12">
-                                						<input class="form-control " id="appendedInput" type="text">
-                                						<span class="input-group-addon"><i class="icon-search"></i></span>
-                              						</div>
-                              						<br>
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">Common Data</h3>
-														<small>Commonly used storylayers</small>
-														<div class="text-primary icon-star align-right"></div>
-													</div>
-													</a>
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">Mapping Services</h3>
-														<small>OGC WMS, WFS & WCS</small>
-														<div class="text-primary icon-globe align-right"></div>
-													</div>
-													</a>
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">My Favorites</h3>
-														<small>Favorite storylayers</small>
-														<div class="text-primary icon-heart align-right"></div>
-													</div>
-													</a>
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">My StoryLayers</h3>
-														<small>Uploaded storylayers</small>
-														<div class="text-primary icon-user align-right"></div>
-													</div>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="tab-pane" id="NewUpload">
-											<div class="col-sm-12" style="padding:10px">
-												<div class="box"> 
-													<a data-toggle="modal" href="#UploadCSVModal">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">Upload CSV</h3>
-														<small>Excel, tabular or text-based files</small>
-														<div class="text-primary icon-list-ol align-right"></div>
-													</div>
-													</a>
-													<a data-toggle="modal" href="#UploadSHPModal">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">Upload Shapefile</h3>
-														<small>GIS files</small>
-														<div class="text-primary icon-trello align-right"></div>
-													</div>
-													</a>
-													<a href="http://wiki.mapstory.org/wiki/Get_Skills">
-													<div class="box-content box-statistic">
-														<h3 class="title text-primary">Upload User Guide</h3>
-														<small>User manual</small>
-														<div class="text-primary icon-info-sign align-right"></div>
-													</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				</div>
 			</div>
 			</div>
@@ -6893,21 +6831,22 @@
 					<button type="button" class="close" data-dismiss="modal">
 						x
 					</button>
-					<h4 class="modal-title">StoryLayers</h4>
+					<h4 class="modal-title">Explore StoryLayers</h4>
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-md-3">
-							<ul class="nav nav-pills nav-stacked">
-								<li class="active"><a href="#SLFeatured" data-toggle="tab">Featured</a></li>
+						<div class="col-md-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#SLFeatured" data-toggle="tab">Search Results</a></li>
 								<li><a href="#SLCommon" data-toggle="tab">Common</a></li>
+								<li><a href="#SLAll" data-toggle="tab">Explore</a></li>
 								<li><a href="#SLFavorites" data-toggle="tab">Favorites</a></li>
 								<li><a href="#SLMy" data-toggle="tab">My Uploads</a></li>
 							</ul>
 						</div>
-						<div class="tab-content col-md-9" style="max-height:250px; overflow-y:scroll; overflow-x:hidden">
+						<div class="tab-content" style="max-height:250px; overflow-y:scroll; overflow-x:hidden">
 							<div class="tab-pane active" id="SLFeatured">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<div class="box">
 										<div class="box-content box-statistic">
 											<img src="storylayers/red.png" class="img-thumbnail">
@@ -6926,7 +6865,26 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-4">
 								<div class="box">
 									<div class="box-content box-statistic">
 										<img src="storylayers/yellowdots.png" class="img-thumbnail">
@@ -6947,106 +6905,26 @@
 								</div>
 							</div>
 							<div class="tab-pane" id="SLCommon">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<div class="box">
-										<div class="box-content box-statistic">
-											<img src="storylayers/pink.png" class="img-thumbnail">
-											<h4 class="title text-primary">Pink Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-										<div class="box-content box-statistic">
-											<img src="storylayers/blue.png" class="img-thumbnail">
-											<h4 class="title text-primary">Blue Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-										<div class="box-content box-statistic">
-											<img src="storylayers/green.png" class="img-thumbnail">
-											<h4 class="title text-primary">Green Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6">
-								<div class="box">
-									<div class="box-content box-statistic">
-										<img src="storylayers/reddots.png" class="img-thumbnail">
-										<h4 class="title text-primary">Red Dots Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/black.png" class="img-thumbnail">
-										<h4 class="title text-primary">Black Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/skyblue.png" class="img-thumbnail">
-										<h4 class="title text-primary">Sky Blue Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-								</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="SLFavorites">
-								<div class="col-sm-6">
-									<div class="box">
-										<div class="box-content box-statistic">
-											<img src="storylayers/orange.png" class="img-thumbnail">
-											<h4 class="title text-primary">Orange Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
 										<div class="box-content box-statistic">
 											<img src="storylayers/red.png" class="img-thumbnail">
 											<h4 class="title text-primary">Red Map</h4>
 											<p>@mapstoryteller</p>
 										</div>
 										<div class="box-content box-statistic">
-											<img src="storylayers/purple.png" class="img-thumbnail">
-											<h4 class="title text-primary">Purple Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6">
-								<div class="box">
-									<div class="box-content box-statistic">
-										<img src="storylayers/bluedots.png" class="img-thumbnail">
-										<h4 class="title text-primary">Blue Dots Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/mint.png" class="img-thumbnail">
-										<h4 class="title text-primary">Mint Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/blue.png" class="img-thumbnail">
-										<h4 class="title text-primary">Blue Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-								</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="SLMy">
-								<div class="col-sm-6">
-									<div class="box">
-										<div class="box-content box-statistic">
-											<img src="storylayers/olive.png" class="img-thumbnail">
-											<h4 class="title text-primary">Olive Map</h4>
+											<img src="storylayers/mint.png" class="img-thumbnail">
+											<h4 class="title text-primary">Mint Map</h4>
 											<p>@mapstoryteller</p>
 										</div>
 										<div class="box-content box-statistic">
-											<img src="storylayers/green.png" class="img-thumbnail">
-											<h4 class="title text-primary">Green Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-										<div class="box-content box-statistic">
-											<img src="storylayers/Red.png" class="img-thumbnail">
-											<h4 class="title text-primary">Red Map</h4>
+											<img src="storylayers/orange.png" class="img-thumbnail">
+											<h4 class="title text-primary">Orange Map</h4>
 											<p>@mapstoryteller</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 								<div class="box">
 									<div class="box-content box-statistic">
 										<img src="storylayers/yellowdots.png" class="img-thumbnail">
@@ -7054,13 +6932,209 @@
 										<p>@mapstoryteller</p>
 									</div>
 									<div class="box-content box-statistic">
-										<img src="storylayers/skyblue.png" class="img-thumbnail">
-										<h4 class="title text-primary">Sky Blue Map</h4>
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
 										<p>@mapstoryteller</p>
 									</div>
 									<div class="box-content box-statistic">
-										<img src="storylayers/pink.png" class="img-thumbnail">
-										<h4 class="title text-primary">Pink Map</h4>
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="SLAll">
+								<div class="col-sm-4">
+									<div class="box">
+										<div class="box-content box-statistic">
+											<img src="storylayers/red.png" class="img-thumbnail">
+											<h4 class="title text-primary">Red Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+										<div class="box-content box-statistic">
+											<img src="storylayers/mint.png" class="img-thumbnail">
+											<h4 class="title text-primary">Mint Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+										<div class="box-content box-statistic">
+											<img src="storylayers/orange.png" class="img-thumbnail">
+											<h4 class="title text-primary">Orange Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="SLFavorites">
+								<div class="col-sm-4">
+									<div class="box">
+										<div class="box-content box-statistic">
+											<img src="storylayers/red.png" class="img-thumbnail">
+											<h4 class="title text-primary">Red Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+										<div class="box-content box-statistic">
+											<img src="storylayers/mint.png" class="img-thumbnail">
+											<h4 class="title text-primary">Mint Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+										<div class="box-content box-statistic">
+											<img src="storylayers/orange.png" class="img-thumbnail">
+											<h4 class="title text-primary">Orange Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="SLMy">
+								<div class="col-sm-4">
+									<div class="box">
+										<div class="box-content box-statistic">
+											<img src="storylayers/red.png" class="img-thumbnail">
+											<h4 class="title text-primary">Red Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+										<div class="box-content box-statistic">
+											<img src="storylayers/mint.png" class="img-thumbnail">
+											<h4 class="title text-primary">Mint Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+										<div class="box-content box-statistic">
+											<img src="storylayers/orange.png" class="img-thumbnail">
+											<h4 class="title text-primary">Orange Map</h4>
+											<p>@mapstoryteller</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
+										<p>@mapstoryteller</p>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="box">
+									<div class="box-content box-statistic">
+										<img src="storylayers/yellowdots.png" class="img-thumbnail">
+										<h4 class="title text-primary">Yellow Dots Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/purple.png" class="img-thumbnail">
+										<h4 class="title text-primary">Purple Map</h4>
+										<p>@mapstoryteller</p>
+									</div>
+									<div class="box-content box-statistic">
+										<img src="storylayers/olive.png" class="img-thumbnail">
+										<h4 class="title text-primary">OliveMap</h4>
 										<p>@mapstoryteller</p>
 									</div>
 								</div>
@@ -7071,11 +7145,65 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary" onClick="addLayer()">Use</button>
+					<button type="button" class="btn btn-primary" onClick="addLayer()">Use selected</button>
 				</div>
 			</div>
 		</div>
 	</div>	
+	
+	<div id="StartModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" style="text-align:center">
+					<h1>Welcome to MapStory Composer</h1>
+				</div>
+				<div class="modal-body">
+					<div class="row" style="padding: 0 20px">
+					    <div class="col-sm-3" style="text-align:center">
+					        <img width="125" src="../website/images/elements/storylayers.png">
+					        <h4>StoryLayers</h4>
+					        <p>Quisque ultricies odio vel sapien congue, ut scelerisque sem efficitur. Pellentesque et ex enim. Pellentesque commodo pharetra orci vitae aliquam.</p>
+					    </div>
+					    <div class="col-sm-3"  style="text-align:center">
+					        <img width="125" src="../website/images/elements/storyboxes.png">
+					        <h4>StoryBoxes</h4>
+					        <p>Quisque ultricies odio vel sapien congue, ut scelerisque sem efficitur. Pellentesque et ex enim. Pellentesque commodo pharetra orci vitae aliquam.</p>
+					    </div>
+					    <div class="col-sm-3"  style="text-align:center">
+					        <img width="125" src="../website/images/elements/storypins.png">
+					        <h4>StoryPins</h4>
+					        <p>Quisque ultricies odio vel sapien congue, ut scelerisque sem efficitur. Pellentesque et ex enim. Pellentesque commodo pharetra orci vitae aliquam.</p>
+					    </div>
+					    <div class="col-sm-3"  style="text-align:center">
+					        <img width="125" src="../website/images/elements/storypreview.png">
+					        <h4>StoryPreview</h4>
+					        <p>Quisque ultricies odio vel sapien congue, ut scelerisque sem efficitur. Pellentesque et ex enim. Pellentesque commodo pharetra orci vitae aliquam.</p>
+					    </div>
+					</div>
+					<hr>
+					<div class="row">
+					    <div class="col-sm-3" style="text-align:center">
+					        <h3>MapStory Title</h3>
+					    </div>
+					    <div class="col-sm-8">
+					        <input class="form-control" id="inputDataSource" placeholder="MapStory Title"></input>
+					    </div>
+					</div>
+				</div>
+				<div class="modal-footer">
+				    <div class="row">
+				        <div class="col-sm-3 col-sm-offset-2">
+					        <button type="button" class="btn btn-lg btn-block" data-dismiss="modal">Start composing</button>
+				        </div>
+				        <div class="col-sm-3 col-sm-offset-2">
+					        <button type="button" class="btn btn-lg btn-block" data-dismiss="modal">Take a tour</button>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
 															
 	<!-- / jquery [required] -->
     <script src="assets/javascripts/jquery/jquery.min.js" type="text/javascript"></script>
