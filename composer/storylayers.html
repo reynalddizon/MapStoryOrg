@@ -6384,208 +6384,34 @@
 					<h4 class="modal-title">Upload CSV</h4>
 				</div>
 				<div class="modal-body">
-				<div class="box">
-                    <div class="box-content box-padding">
-                      <div class="fuelux">
-                        <div class="wizard">
-                          <ul class="steps">
-                            <li class="active" data-target="#csv1">
-                              <span class="step">File</span>
-                            </li>
-                            <li data-target="#csv2">
-                              <span class="step">Geo</span>
-                            </li>
-                            <li data-target="#csv3">
-                              <span class="step">Time</span>
-                            </li>
-                          </ul>
-                          <div class="actions">
-                            <button class="btn btn-xs btn-prev"><i class="icon-arrow-left"></i>Prev
-                            </button>
-                            <button class="btn btn-xs btn-success btn-next" data-last="Finish">
-                              Next
-                              <i class="icon-arrow-right"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <div class="step-content">
-                          <hr class="hr-normal">
-						<div class="step-pane active" id="csv1">
-                            <div class="alert alert-warning">
-                          <h4>
-                            Select file
-                          </h4>
-                          Drag and drop CSV files here.
-                          <br><br>
-                          <a><input title="Search file..." type="file"></a>
-                          <a class="btn pull-right"><i class="glyphicon glyphicon-remove-sign"></i></a>
-                          <a class="btn pull-right"><i class="glyphicon glyphicon-upload"></i></a>
-                          <br><br>
-                          <div class="progress">
-                        	 <span class="progress-bar progress-bar-warning" style="width:90%;">90%</span>
-                        	</div>
-                        </div>
-                          </div>
-                          <div class="step-pane" id="csv2">
-                           <div class="alert alert-warning">
-                                   <h4>
-                           		 	<i class="icon-info-sign"></i>
-                           		 	File information
-                          			</h4>
-                          			Columns:
-                          			Latitude
-                          			Longitude
-                          			Name
-                          			Start_time
-                          			End_time
-                          			<p>
-                          			Projection: Web Mercator
-                          			<hr>
-                          			<div class="row" style="padding:10px">
-                          				<div class="col-sm-6">
-                          			Latitude:
-                          			
-                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
-																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-																	Latitude
-																	<span class="caret"></span>
-																</button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Latitude</a></li>
-																	<li><a href="#">Longitude</a></li>
-																	<li><a href="#">Name</a></li>
-																</ul>
-															</div>
-                          				</div>
-                          				<div class="col-sm-6">
-                          			Longitude:
-                          			
-                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
-																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-																	Longitude
-																	<span class="caret"></span>
-																</button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Latitude</a></li>
-																	<li><a href="#">Longitude</a></li>
-																	<li><a href="#">Name</a></li>
-																</ul>
-															</div>
-										</div>
-									</div>
-                          		</div>
-                            	
-                          </div>
-                          <div class="step-pane" id="csv3">
-                            <div class="alert alert-warning">
-                                   <h4>
-                           		 	<i class="icon-info-sign"></i>
-                           		 	Time information
-                          			</h4>
-                          			<div class="btn-group" data-toggle="buttons">
-																<button class="btn">
-																	<input type="radio" name="options" id="Bold"> 
-																	Yes
-																</button>
-																<button class="btn">
-																	<input type="radio" name="options" id="Italic"> 
-																	No
-																</button>
-															</div>
-                          			
-                          			<hr>
-                          			<div class="row" style="padding:10px">
-                          				<div class="col-sm-6">
-                          			Includes start time:
-                          			<div class="btn-group" data-toggle="buttons">
-																<button class="btn">
-																	<input type="radio" name="options" id="Bold"> 
-																	Yes
-																</button>
-																<button class="btn">
-																	<input type="radio" name="options" id="Italic"> 
-																	No
-																</button>
-															</div>
-                          			<p>Source:
-                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
-																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-																	Start_Time
-																	<span class="caret"></span>
-																</button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Start_Time</a></li>
-																	<li><a href="#">End_Time</a></li>
-																	<li><a href="#">Name</a></li>
-																</ul>
-															</div>
-                          			<p>Time format:
-                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
-																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-																	Best Guess
-																	<span class="caret"></span>
-																</button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Best Guess</a></li>
-																	<li><a href="#">Custom</a></li>
-																</ul>
-															</div>
-									<p>Custom format:
-									<div class="input-group col-sm-12">
-                                		<input class="form-control " id="appendedInput" type="text">
-                                		<span class="input-group-addon"><i class="icon-info"></i></span>
-                              		</div>
-                          			</div>
-                          				
-                          			
-                          				<div class="col-sm-6">
-                          			Includes end time:
-                          			<div class="btn-group" data-toggle="buttons">
-																<button class="btn">
-																	<input type="radio" name="options" id="Bold"> 
-																	Yes
-																</button>
-																<button class="btn">
-																	<input type="radio" name="options" id="Italic"> 
-																	No
-																</button>
-															</div>
-                          			<p>Source:
-                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
-																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-																	End_Time
-																	<span class="caret"></span>
-																</button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Start_Time</a></li>
-																	<li><a href="#">End_Time</a></li>
-																	<li><a href="#">Name</a></li>
-																</ul>
-															</div>
-                          			<p>Time format:
-                          			<div class="btn-group has-tooltip" data-placement="top" title="" data-original-title="Symbol style">
-																<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-																	Best Guess
-																	<span class="caret"></span>
-																</button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Best Guess</a></li>
-																	<li><a href="#">Custom</a></li>
-																</ul>
-															</div>
-									<p>Custom format:
-									<div class="input-group col-sm-12">
-                                		<input class="form-control " id="appendedInput" type="text">
-                                		<span class="input-group-addon"><i class="icon-info"></i></span>
-                              		</div>
-                          			</div>
-									</div>
-                          		</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+				<div class="row">
+						<div class="col-md-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#CSVAdd" data-toggle="tab">1. Add CSV File</a></li>
+								<li><a href="#CSVParam" data-toggle="tab">2. Time & Geo Parameters</a></li>
+								<li><a href="#CSVMetadata" data-toggle="tab">3. Metadata</a></li>
+								<li><a href="#CSVPermissions" data-toggle="tab">4. Permissions</a></li>
+								<li><a href="#CSVFinish" data-toggle="tab">5. Finish Upload</a></li>
+							</ul>
+						</div>
+						<div class="tab-content" style="max-height:350px; overflow-y:scroll; overflow-x:hidden">
+							<div class="tab-pane active" id="CSVAdd">
+							    <h2>Includes drag and drop box or the classic locate file button.</h2>
+							</div>
+							<div class="tab-pane" id="CSVParam">
+							    <h2>Includes options for identifying which columns contain geographic and temporal attributes of the features. Also includes options on how geographic information should be projected and the time format the temporal attribute is encoded.</h2>
+							</div>
+							<div class="tab-pane" id="CSVMetadata">
+							     <h2>Includes form fields and options for specifying storylayer level metadata like author, topic(categories), data quality statement etc.</h2>
+							</div>
+							<div class="tab-pane" id="CSVPermissions">
+							     <h2>Includes options for specifying what the author and other users can do with the storylayers. Also includes privacy options.</h2>
+							</div>
+							<div class="tab-pane" id="CSVFinish">
+							     <h2>Other options not specified in previous tabs.</h2>
+							</div>
+						</div>
+					</div>
 					
 																		</div>
 																		
@@ -6830,67 +6656,48 @@
 								<li><a href="#SLMy" data-toggle="tab">My Uploads</a></li>
 							</ul>
 						</div>
-						<div class="tab-content" style="max-height:250px; overflow-y:scroll; overflow-x:hidden">
+						<div class="tab-content" style="max-height:350px; overflow-y:scroll; overflow-x:hidden">
 							<div class="tab-pane active" id="SLFeatured">
-								<div class="col-sm-4">
-									<div class="box">
-										<div class="box-content box-statistic">
-											<img src="storylayers/red.png" class="img-thumbnail">
-											<h4 class="title text-primary">Red Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-										<div class="box-content box-statistic">
-											<img src="storylayers/mint.png" class="img-thumbnail">
-											<h4 class="title text-primary">Mint Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-										<div class="box-content box-statistic">
-											<img src="storylayers/orange.png" class="img-thumbnail">
-											<h4 class="title text-primary">Orange Map</h4>
-											<p>@mapstoryteller</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-								<div class="box">
-									<div class="box-content box-statistic">
-										<img src="storylayers/yellowdots.png" class="img-thumbnail">
-										<h4 class="title text-primary">Yellow Dots Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/purple.png" class="img-thumbnail">
-										<h4 class="title text-primary">Purple Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/olive.png" class="img-thumbnail">
-										<h4 class="title text-primary">OliveMap</h4>
-										<p>@mapstoryteller</p>
-									</div>
-								</div>
-								</div>
-								<div class="col-sm-4">
-								<div class="box">
-									<div class="box-content box-statistic">
-										<img src="storylayers/yellowdots.png" class="img-thumbnail">
-										<h4 class="title text-primary">Yellow Dots Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/purple.png" class="img-thumbnail">
-										<h4 class="title text-primary">Purple Map</h4>
-										<p>@mapstoryteller</p>
-									</div>
-									<div class="box-content box-statistic">
-										<img src="storylayers/olive.png" class="img-thumbnail">
-										<h4 class="title text-primary">OliveMap</h4>
-										<p>@mapstoryteller</p>
-									</div>
-								</div>
-								</div>
+								<article class="col-sm-3" style="background-color:gainsboro;margin:5px;padding:10px"><!--SM-->
+													<section class="imgWrapper"> 
+														<img src="storylayers/olive.png" class="img-responsive">
+													</section>
+													<section class="newsText color1">
+														<h4>StoryLayer Title</h4>
+														<h6 class="date"><i class="icon-user"></i> John Applessed</h6>
+														<h6 class="date"><i class="icon-flag"></i> Wars and Conflicts</h6>
+														<h6 class="date"><i class="icon-pencil"></i> 123 edits</h6>
+														<h6 class="date"><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i></h6>
+														<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+													</section>
+												</article>
+								<article class="col-sm-3" style="background-color:gainsboro;margin:5px;padding:10px"><!--SM-->
+													<section class="imgWrapper"> 
+														<img src="storylayers/mint.png" class="img-responsive">
+													</section>
+													<section class="newsText color1">
+														<h4>StoryLayer Title</h4>
+														<h6 class="date"><i class="icon-user"></i> John Applessed</h6>
+														<h6 class="date"><i class="icon-flag"></i> Wars and Conflicts</h6>
+														<h6 class="date"><i class="icon-pencil"></i> 123 edits</h6>
+														<h6 class="date"><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i></h6>
+														<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+													</section>
+												</article>
+								<article class="col-sm-3" style="background-color:gainsboro;margin:5px;padding:10px"><!--SM-->
+													<section class="imgWrapper"> 
+														<img src="storylayers/red.png" class="img-responsive">
+													</section>
+													<section class="newsText color1">
+														<h4>StoryLayer Title</h4>
+														<h6 class="date"><i class="icon-user"></i> John Applessed</h6>
+														<h6 class="date"><i class="icon-flag"></i> Wars and Conflicts</h6>
+														<h6 class="date"><i class="icon-pencil"></i> 123 edits</h6>
+														<h6 class="date"><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i></h6>
+														<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec.</p>
+													</section>
+												</article>
 							</div>
-							
 							<div class="tab-pane" id="SLAll">
 								<div class="col-sm-4">
 									<div class="box">
