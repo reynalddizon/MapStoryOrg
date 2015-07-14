@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Upload StoryLayer</title>
+		<meta name="description" content="MapStory Beta">
+		<meta name="author" content="reynalddizon">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<link href="font-icons/custom-icons/css/flags.css"" media="screen" rel="stylesheet" type="text/css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header" style="height:50px">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="home.html"><img src="images/mslogo02.png" class="img-responsive" style="padding:5px"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<!--<form role="search">
+     								 <div class="form-group">
+        								<input type="text" class="form-control" placeholder="Search">
+     								 </div>
+     								<button type="submit" class="btn btn-sm"><i class="icon-search"></i></button>
+    								</form>
+    								-->
+								<ul class="nav navbar-nav pull-right">
+     							  	<li class="btn-toolbar">
+     							  	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="eureka.html" style="text-decoration:none;font-size:1.3em;color:black">
+												Explore
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												Create
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="../composer/storylayers.html">Composer</a></li>
+         								 <li><a href="#">Tools ></a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												How-To
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="getstarted.html">Get Started</a></li>
+         								 <li><a href="getinvolved.html">Get Involved</a></li>
+          								 <li><a href="getskills.html">Get Skills</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="getstarted.html#welcome" style="text-decoration:none;font-size:1.3em;color:black">
+												About
+											</a>
+										</button></div>
+     							    	
+     							    	<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a href="userdiary.html" style="text-decoration:none;font-size:1.3em;color:black">
+												Diary
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm dropdown-toggle" data-toggle="dropdown" style="background-color:white;border:transparent">
+											<a href="#" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-doc"></i>
+											</a>
+										</button>
+										<ul class="dropdown-menu">
+         								 <li><a href="profile_visit.html">Profile</a></li>
+         								 <li><a href="profile_log.html">Profile (logged)</a></li>
+          								 <li><a href="profile_edit.html">Profile (edit)</a></li>
+          								 <li class="divider"></li>
+          								 <li><a href="organization_visit.html">Organization</a></li>
+         								 <li><a href="organization_log.html">Org (logged)</a></li>
+         								  <li class="divider"></li>
+         								 <li><a href="storylayer.html">StoryLayer</a></li>
+         								 <li><a href="mapstory.html">MapStory</a></li>
+										</ul></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a data-toggle="modal" data-target="#loginModal" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-user"></i>
+											</a>
+										</button></div>
+										
+										<div class="btn-group"><button class="btn btn-sm" style="background-color:white;border:transparent">
+											<a data-toggle="modal" data-target="#helpModal" style="text-decoration:none;font-size:1.3em;color:black">
+												<i class="icon-info"></i>
+											</a>
+										</button></div>
+     							    </li>
+     							  </ul>
+							</div>
+						</nav>
+				</div>
+			</header>
+			
+			<div class="modal fade" id="loginModal">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<!--<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">Welcome to MapStory</h2>
+      						</div>-->
+      						<div class="modal-body">
+      							<div class="row" style="margin:10px">
+						<div class="col-sm-6" style="border-right:1px solid darkgray">
+							<h1 style="font-size:1.4em"><strong>Log in</strong></h1>
+							<hr class="col-sm-10" style="margin:10px">
+							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden"><div class="form-group">
+                        <label class="col-md-3 control-label" for="inputText1">Username</label>
+                        <div class="col-md-8">
+                          <input class="form-control" id="inputText1" placeholder="Username" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-3 control-label" for="inputPassword4">Password</label>
+                        <div class="col-md-8">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-3">
+                            <label>
+                              <a href="#" style="color:black">Forgot password?</a>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                          <div class="col-sm-offset-2 col-sm-8">
+                          	<button class="btn btn-sm btn-block"><a href="profile.html">Sign in</a></button>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="col-sm-11" style="margin:10px">
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                        	<div class="col-sm-11">
+                        	<h1 style="font-size:1.2em;">Connect your account</h1>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:dodgerblue;color:white"><i class="icon-facebook-1"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:deepskyblue;color:white"><i class="icon-twitter-bird"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:red;color:white"><i class="icon-gplus-1"></i></button>
+                          </div>
+                          <div class="col-sm-3">
+                          	<button class="btn btn-sm btn-block" style="background-color:blueviolet;color:white"><i class="icon-yahoo"></i></button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+						</div>
+						<div class="col-sm-6" >
+							<h1 class="col-sm-offset-1" style="font-size:1.4em">
+								<strong>Sign up to MapStory</strong>
+								<button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</h1>
+							<hr class="col-sm-offset-1 col-sm-10" style="margin:10px">
+							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden">
+							<div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Name</label>
+                        <div class="col-md-4">
+                          <input class="form-control" id="inputText1" placeholder="First" type="text">
+                        </div>
+                        <div class="col-md-5">
+                          <input class="form-control" id="inputText1" placeholder="Last" type="text">
+                        </div>
+                      </div>
+                      		<div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Email</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputText1" placeholder="@email.com" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputPassword4">Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-offset-1 col-md-2 control-label" for="inputPassword4">Confirm Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="inputPassword4" placeholder="Password field" type="password" value="Top secret!">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <a href="#" style="color:black">Signing up as an organization?</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-md-offset-3">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">
+                              I agree with the <a href="#" style="color:black">Terms and Conditions</a>.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-actions form-actions-padding-sm">
+                        <div class="row">
+                          <div class="col-sm-offset-2 col-sm-9">
+                          	<button class="btn btn-sm btn-block">Join MapStory</button>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+						</div>
+					</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+			
+			<div class="modal fade" id="helpModal" ole="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  					<div class="modal-dialog">
+   						 <div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        						<h2 class="modal-title" id="myModalLabel">MapStory Help Center</h2>
+      						</div>
+      						<div class="modal-body">
+        						<ul class="nav nav-tabs">
+  									<li class="active"><a href="#post" data-toggle="tab">Post a Question</a></li>
+  									<li><a href="#faqs" data-toggle="tab">FAQs</a></li>
+  									<li><a href="#links" data-toggle="tab">Links</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="post">
+										<form role="form">
+  											<div class="form-group">
+   												<label for="exampleInputEmail1">Question Title</label>
+    											<input type="text" class="form-control" id="questiontitle" placeholder="Search or ask your question">
+  											</div>
+  											<div class="form-group">
+    											<label for="exampleInputPassword1">Description</label>
+    											<input type="text" class="form-control" id="questiondetail" placeholder="Details">
+  											</div>
+ 											<div class="form-group">
+    											<label for="exampleInputFile">Attach a screenshot</label>
+    											<input type="file" id="exampleInputFile">
+  											</div>
+  											<div class="checkbox">
+   												 <label>
+      												<input type="checkbox"> Ask anonymously
+    											</label>
+ 											 </div>
+  											<button type="submit" class="btn btn-default btn-sm">Ask question</button>
+										</form>
+									</div>
+									<div class="tab-pane" id="faqs">
+										<h2>Frequently Asked Questions</h2>
+										<h3>Question 1</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 2</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+										<h3>Question 3</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+									</div>
+									<div class="tab-pane" id="links">
+										<h2>List of Resources</h2>
+
+										<h3>MapStory Wiki</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How To Videos</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>Data Repositories</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+										<h3>How-to video blogs</h3>
+										<p>Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. In idque concludaturque pri.</p>
+								
+									</div>
+								</div>
+        					</div>
+   						 </div><!-- /.modal-content -->
+  					</div><!-- /.modal-dialog -->
+				</div>
+				
+				<!-- content -->
+				
+				<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
+							<div class="paralaxText container" style="text-align:left;padding-bottom:0">
+								<div class="row">
+									<div class="col-sm-7">
+										<div style="padding:60px 0px 0px 10px;">
+											<h1 style="font-size:3em">Upload StoryLayers</h1>
+											<h1 style="font-size:1.1em;">
+												Upload CSV or shapefiles</h1>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<div class="row"  style="padding:80px 0px 10px 10px;">
+										<div class="col-sm-4 col-sm-offset-4">
+										<a class="btn btn-sm btn-block" href="profile_log.html" style="font-size:0.9em;background-color:transparent;color:white;border:1px solid white;" title="" href="#" target="blank">
+											raster upload
+										</a>
+										</div>
+										<div class="col-sm-4">
+										<a class="btn btn-sm btn-block" href="profile_log.html" style="font-size:0.9em;background-color:transparent;color:white;border:1px solid white;" title="" href="#" target="blank">
+											explore storylayers
+										</a>
+										</div>
+								</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				<!-- dashboard -->
+				<section class="slice" id="dashboard" style="padding-top:20px">
+					<div class="container">
+						<div class="row" >
+                        	<div class="col-lg-12">
+								<ul class="nav nav-tabs">
+  									<li class="active"><a href="#files" data-toggle="tab"><span class="badge">1</span> Upload files</a></li>
+  									<li><a href="#geo" data-toggle="tab"><span class="badge">2</span>  Geospatial Info</a></li>
+  									<li><a href="#time" data-toggle="tab"><span class="badge">3</span>  Time Info</a></li>
+  									<li><a href="#metadata" data-toggle="tab"><span class="badge">4</span>  Metadata</a></li>
+  									<li><a href="#privacy" data-toggle="tab"><span class="badge">5</span>  Permissions & Privacy</a></li>
+  									<li><a href="#finish" data-toggle="tab"><span class="badge">6</span>  Finish Upload</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="files">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-12">
+												    <div class="well" style="text-align:center;padding:50px 0;">
+												        <span style="text-align:center;font-size:7em"><i class="icon icon-cloud-upload"></i></span>
+												        <h2>Drap and drop your files here.</h2>
+												        <button class="btn btn-sm" style="background-color:darkgray;color:white">Browse files...</button>
+												    </div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12">
+												    <form class="form-horizontal" role="form">
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Files to be uploaded</label>
+    														<div class="col-sm-6">
+      															<ul>
+      															    <li>USA.shp <a href="#">remove</a></li>
+        															<li>USA.dbf <a href="#">remove</a></li>
+        															<li>USA.shx <a href="#">remove</a></li>
+        															<li>USA.prj <a href="#">remove</a></li>
+        														</ul>
+      															</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">StoryLayer Edits</label>
+    														<div class="col-sm-6">
+      															<div class="checkbox">
+        															<label>
+          															<input type="checkbox">I want to enable StoryLayer editing. <a href="#">What's this?</a>
+        															</label>
+      															</div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<div class="col-sm-3 col-sm-offset-3">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Upload layers</button>
+    														</div>
+  														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="geo">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-8">
+													<form class="form-horizontal" role="form">
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Projection</label>
+    														<div class="col-sm-6">
+      															<input type="email" class="form-control" id="inputEmail3" placeholder="WGS 84">
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Latitude</label>
+    														<div class="col-sm-6">
+      															<div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Latitude
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Col 1</a></li>
+                                                                        <li><a href="#">Col 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Longitude</label>
+    														<div class="col-sm-6">
+      															<div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Longitude
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Col 1</a></li>
+                                                                        <li><a href="#">Col 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<div class="col-sm-2">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
+    														</div>
+    														<div class="col-sm-2 col-sm-offset-8">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
+    														</div>
+  														</div>
+													</form>
+												</div>
+												<div class="col-sm-4">
+													<div class="well">
+													    <h2>Help Text</h2>
+													    <p>
+													        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus turpis erat, ut malesuada libero facilisis eu. Proin enim orci, finibus id tristique sed, consequat rhoncus sapien. Vivamus in neque quis lorem ultrices laoreet. Suspendisse gravida maximus eros, dictum malesuada justo tempor et. Ut euismod tellus vel sem vestibulum hendrerit. Proin nec blandit sem. Ut ante ex, tempor vel nunc auctor, pharetra venenatis sapien. Proin et pulvinar nisl. Cras a enim enim. Ut quis mi sit amet tortor suscipit semper et quis nibh.
+													    </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="time">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-8">
+													<form class="form-horizontal" role="form">
+  														<div class="form-group">
+  														    <label for="inputEmail3" class="col-sm-3 control-label">Time attribute</label>
+    														<div class="col-sm-6">
+      															<div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                        My StoryLayer has no time attribute.
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                        My StoryLayer has simple time attribute.
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                 <label>
+                                                                     <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                                        My StoryLayer has start and end dates.
+                                                                    </label>
+                                                                </div>
+    														</div>
+  														</div>
+  														<hr>
+  														<h3>/*This panel is only displayed if second option is selected*/</h3>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Source column</label>
+    														<div class="col-sm-6">
+      															<div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Date
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Col 1</a></li>
+                                                                        <li><a href="#">Col 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+  														    <label for="inputEmail3" class="col-sm-3 control-label">Time format</label>
+    														<div class="col-sm-6">
+      															<div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
+                                                                        Best Guess
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
+                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Custom Format">
+                                                                    </label>
+                                                                </div>
+    														</div>
+  														</div>
+  														<hr>
+  														<h3>/*This panel is only displayed if third option is selected*/</h3>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Start Date column</label>
+    														<div class="col-sm-6">
+      															<div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Start Date
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Col 1</a></li>
+                                                                        <li><a href="#">Col 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+  														    <label for="inputEmail3" class="col-sm-3 control-label">Time format</label>
+    														<div class="col-sm-6">
+      															<div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
+                                                                        Best Guess
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
+                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Custom Format">
+                                                                    </label>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">End Date column</label>
+    														<div class="col-sm-6">
+      															<div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Start Date
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Col 1</a></li>
+                                                                        <li><a href="#">Col 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+  														    <label for="inputEmail3" class="col-sm-3 control-label">Time format</label>
+    														<div class="col-sm-6">
+      															<div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
+                                                                        Best Guess
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
+                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Custom Format">
+                                                                    </label>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<div class="col-sm-2">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
+    														</div>
+    														<div class="col-sm-2 col-sm-offset-8">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
+    														</div>
+  														</div>
+													</form>
+												</div>
+												<div class="col-sm-4">
+													<div class="well">
+													    <h2>Help Text</h2>
+													    <p>
+													        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus turpis erat, ut malesuada libero facilisis eu. Proin enim orci, finibus id tristique sed, consequat rhoncus sapien. Vivamus in neque quis lorem ultrices laoreet. Suspendisse gravida maximus eros, dictum malesuada justo tempor et. Ut euismod tellus vel sem vestibulum hendrerit. Proin nec blandit sem. Ut ante ex, tempor vel nunc auctor, pharetra venenatis sapien. Proin et pulvinar nisl. Cras a enim enim. Ut quis mi sit amet tortor suscipit semper et quis nibh.
+													    </p>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="tab-pane" id="metadata">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-8">
+													<form class="form-horizontal" role="form">
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">StoryLayer Name</label>
+    														<div class="col-sm-6">
+      															<input type="email" class="form-control" id="inputEmail3" placeholder="First">
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Thumbnail</label>
+    														<div class="col-sm-3">
+      															<img class="img-thumbnail" src="images/avatars/ava3.png" width="75" />
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Topic</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Topic 1
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Topic 1</a></li>
+                                                                        <li><a href="#">Topic 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Region</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                         Region 1
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Region 1</a></li>
+                                                                        <li><a href="#">Region 2</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Data Source</label>
+    														<div class="col-sm-6">
+      															<input type="email" class="form-control" id="inputEmail3" placeholder="Source">
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Data Quality</label>
+    														<div class="col-sm-6">
+      															<input type="email" class="form-control" id="inputEmail3" placeholder="Data Quality Statement">
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Tags</label>
+    														<div class="col-sm-6">
+      															<input type="email" class="form-control" id="inputEmail3" placeholder="Tags separated by comma">
+    														</div>
+  														</div>
+  														<div class="form-group">
+    														<div class="col-sm-2">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
+    														</div>
+    														<div class="col-sm-2 col-sm-offset-8">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
+    														</div>
+  														</div>
+													</form>
+												</div>
+												<div class="col-sm-4">
+													<div class="well">
+													    <h2>Help Text</h2>
+													    <p>
+													        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus turpis erat, ut malesuada libero facilisis eu. Proin enim orci, finibus id tristique sed, consequat rhoncus sapien. Vivamus in neque quis lorem ultrices laoreet. Suspendisse gravida maximus eros, dictum malesuada justo tempor et. Ut euismod tellus vel sem vestibulum hendrerit. Proin nec blandit sem. Ut ante ex, tempor vel nunc auctor, pharetra venenatis sapien. Proin et pulvinar nisl. Cras a enim enim. Ut quis mi sit amet tortor suscipit semper et quis nibh.
+													    </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="privacy">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-8">
+													<form class="form-horizontal" role="form">
+													    <div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Who can view the StoryLayer?</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                            Anyone
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Anyone</a></li>
+                                                                        <li><a href="#">Only me</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+													</form>
+													<form class="form-horizontal" role="form">
+													    <div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Who can download the StoryLayer?</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                            Anyone
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Anyone</a></li>
+                                                                        <li><a href="#">Only me</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+													</form>
+													<form class="form-horizontal" role="form">
+													    <div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Who can edit the metadata?</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                            Anyone
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Anyone</a></li>
+                                                                        <li><a href="#">Only me</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+													</form>
+													<form class="form-horizontal" role="form">
+													    <div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Who can edit the Storylayer data?</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                            Anyone
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Anyone</a></li>
+                                                                        <li><a href="#">Only me</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+													</form>
+													<form class="form-horizontal" role="form">
+													    <div class="form-group">
+    														<label for="inputEmail3" class="col-sm-3 control-label">Who can manage permissions for this storylayer?</label>
+    														<div class="col-sm-6">
+    														    <div class="dropdown">
+                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                            Anyone
+                                                                        <span class="caret"></span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                        <li><a href="#">Anyone</a></li>
+                                                                        <li><a href="#">Only me</a></li>
+                                                                    </ul>
+                                                                </div>
+    														</div>
+  														</div>
+													</form>
+													<div class="form-group">
+    														<div class="col-sm-2">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
+    														</div>
+    														<div class="col-sm-2 col-sm-offset-8">
+      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
+    														</div>
+  														</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="well">
+													    <h2>Help Text</h2>
+													    <p>
+													        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus turpis erat, ut malesuada libero facilisis eu. Proin enim orci, finibus id tristique sed, consequat rhoncus sapien. Vivamus in neque quis lorem ultrices laoreet. Suspendisse gravida maximus eros, dictum malesuada justo tempor et. Ut euismod tellus vel sem vestibulum hendrerit. Proin nec blandit sem. Ut ante ex, tempor vel nunc auctor, pharetra venenatis sapien. Proin et pulvinar nisl. Cras a enim enim. Ut quis mi sit amet tortor suscipit semper et quis nibh.
+													    </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="finish">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-12">
+												    <div class="well" style="text-align:center;padding:50px 0;">
+												        <span style="text-align:center;font-size:7em"><i class="icon icon-like"></i></span>
+												        <h2>Upload success!</h2>
+												        <br/>
+												        <button class="btn btn-sm" style="background-color:darkgray;color:white">Compose MapStory with this storylayer</button>
+												        <button class="btn btn-sm" style="background-color:darkgray;color:white">Upload another storylayer</button>
+												    </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- dashboard -->
+				
+			<footer class="color4" style="padding:20px 10px;width:100%;">
+					<section id="mainFooter">
+						<div class="container" id="footer">
+							<div class="row">
+								<div class="col-sm-9">
+									<div class="footerWidget">
+										<strong> MapStory</strong> is the atlas of change that everyone can edit. We are a community, not a company, that envisions a world where everyone's wisdom can be tapped, peer reviewed, organized and shared so that we all can dramatically improve our understanding of the rich past, complex present and uncertain future we share as living beings on planet Earth.
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div>
+										<button class="btn btn-sm btn-block btn-default">
+											<a href="donate.html">Help MapStory grow.<br/> Make a donation.</a>
+										</button>
+									</div>
+								</div>
+								</div>
+						</div>
+					</section>
+					<br>
+					<section>
+						<div class="container">
+									<hr style="margin:10px 0 10px 0">
+									<div class="row">
+									<div class="col-sm-12">
+											<p><small>By using this site, you agree to the License, Terms of Use and Privacy Policy. MapStory® is a registered trademark of the MapStory Foundation, Inc., a non-profit organization.</small></p>
+											<p><small>About the MapStory Foundation | Blog | Contact | Developers | Mobile View | Press | Disclaimers | Values | wiki.MapStory.org</small></p>
+									</div>
+								</div>
+							</div>
+				</section>
+				</footer>
+					</div>
+					<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>
