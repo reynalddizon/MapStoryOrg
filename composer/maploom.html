@@ -171,136 +171,65 @@
             </li>
             <li>
                <a data-toggle="modal" href="#StartModal">
-				    <i class="icon icon-star"></i>
+				    <i class="icon icon-star"></i> *THIS IS THE MAPLOOM INTERFACE*
 				</a>
             </li>
-            <li class="active">
-				<a class="green-border" data-toggle="tab" href="#StoryLayersTab">
-					StoryLayers
+            <li class="active pull-right">
+				<a class="green-border" href="#SaveModal" data-toggle="modal">
+					 Return to Composer
                 </a>
             </li>
-            <li >
-                <a class="red-border" href="storyboxes.html">
-					StoryBoxes
-                </a>
-            </li>
-			<li>
-                <a class="blue-border" href="storypins.html">
-					StoryPins
-                </a>
-            </li>
-			<li>
-                <a class="orange-border" href="storypreview.html">
-					StoryPreview
-                </a>
-            </li>
-            
 		</ul>
 		<div class="tab-content" >
 			<div class="tab-pane active" id="StoryLayersTab">
 			<iframe style="position:absolute; z-index:0" width="100%" height="700px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
 			
 			<div class="panel-group col-sm-3 sortable ui-sortable" style="position:absolute; z-index:1; opacity:0.95;" id="LayersAccordion">
-				
-				
-				<!--New Layer Header-->
-				<div class="panel panel-default" style="color: #000000">
-					<div class="panel-heading" style="background-color:#ffffff">
-						<div class="panel-title text-primary" style="background-color:#ffffff" >
-							<h3 class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#LayersAccordion" href="#NewLayer">
-								Add a StoryLayer </h3>
-							
-						</div>
-					</div>
-				<!--New Layer Content-->
-					<div id="NewLayer" class="panel-collapse collapse in">
-						<div class="panel-body" style="background-color:#ffffff">
-							<div class="row">
-								<div class="col-sm-10 col-sm-offset-1" style="padding:10px">
-												<div class="box"> 
-													<div class="input-group col-sm-12">
-                                						<input class="form-control " id="appendedInput" type="text">
-                                						
-                                						    <span class="input-group-addon"><a data-toggle="modal" href="#StoryLayersModal">
-                                						        <i class="icon-search"></i> Search
-                                						    </a>
-                                						    </span>
-                              						</div>
-                              						<br>
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<h3><i class="icon-th"></i> Explore All</h3>
-													<h6>16,324 StoryLayers</h6>
-								                    </a>
-													<hr style="margin:20px">
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<h3><i class="icon-heart"></i> My Favorites</h3>
-													<h6>45 StoryLayers</h6>
-								                    </a>
-													<hr style="margin:20px">
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<h3><i class="icon-star"></i> My Uploads</h3>
-													<h6>8 StoryLayers</h6>
-								                    </a>
-													<hr style="margin:20px">
-													<a data-toggle="modal" href="#StoryLayersModal">
-													<h3><i class="icon-upload"></i> Upload a StoryLayer</h3>
-													<h6>Upload SHP or CSV</h6>
-								                    </a>
-													<hr style="margin:20px">
-													<a data-toggle="modal" href="#CreateModal">
-													<h3><i class="icon-edit"></i> Create a StoryLayer</h3>
-													<h6>Start from scratch</h6>
-								                    </a>
-													
-												</div>
-											</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
 				<!--Point Layer Header-->
 				<div class="panel panel-default" style="color: #000000">
 					<div class="panel-heading" style="background-color:#ffffff;">
 						<div class="panel-title text-primary" style="background-color:#ffffff" >
 							<span class="accordion-toggle layer-title" data-toggle="collapse" data-parent="#LayersAccordion" href="#PointLayer">
-										StoryLayer 1 </span>
+										Editing StoryLayer 1</span>
 							<div class="pull-right">
 										<button type="button" data-toggle="button" class="btn btn-xs btn-default">
 											<i class="glyphicon glyphicon-eye-open"></i>
 										</button>
 										<button type="button" data-toggle="button" class="btn btn-xs btn-default active">
-											<i class="glyphicon glyphicon-pencil"></i> Edit
+											<i class="glyphicon glyphicon-fullscreen"></i> 
+										</button>
+										<button type="button" data-toggle="button" class="btn btn-xs btn-default active">
+											<i class="glyphicon glyphicon-globe"></i> 
 										</button>
 									</div>
 						</div>
 					</div>
 				<!-- Points Layer Content-->
-					<div id="PointLayer" class="panel-collapse collapse">
+					<div id="PointLayer" class="panel-collapse collapse in">
 						<div class="panel-body" style="background-color:#ffffff">
 							<div class="row">
 								<div class="col-sm-12">
-									<ul class="nav nav-tabs">
-										<!--
-										<li class="active"><a href="#PTInfobox" data-toggle="tab" style="padding:10px"><i class="text-primary icon icon-dashboard"></i> Dashboard</a></li>
-										<li><a href="#PTStyles" data-toggle="tab" style="padding:10px"><i class=" text-primary glyphicon glyphicon-picture" ></i></a></li>
-										<li><a href="#PTHistory" data-toggle="tab"  style="padding:10px"><i class="text-primary glyphicon glyphicon-calendar"></i></a></li>
-										<li><a href="#PTEdit" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-edit"></i></a></li>
-										<li><a href="#PTMetadata" data-toggle="tab" style="padding:10px"><i class="text-primary glyphicon glyphicon-tag"></i></a></li>
-										-->
-									</ul>
 									<div class="tab-content">
 										<div class="tab-pane active" id="Dashboard">
 											<div class="row" style="padding:20px">
 												<div class="col-sm-12" style="padding:10px">
-													<div>
 													<div class="col-sm-4">
 														<div class="box-quick-link muted-background">
-                    										<a href="#">
+                    										<a href="#AddModal" data-toggle="modal">
                       											<div class="header">
                        												 <div class="icon-plus"></div>
                       											</div>
                       											<div class="content">Add feature</div>
+                    										</a>
+                  										</div>
+													</div>
+													<div class="col-sm-4">
+														<div class="box-quick-link muted-background">
+                    										<a href="#AppendModal" data-toggle="modal">
+                      											<div class="header">
+                       												 <div class="icon-paperclip"></div>
+                      											</div>
+                      											<div class="content">Append data</div>
                     										</a>
                   										</div>
 													</div>
@@ -324,18 +253,6 @@
                     										</a>
                   										</div>
 													</div>
-												</div>
-													<div>
-													<div class="col-sm-4">
-														<div class="box-quick-link muted-background">
-                    										<a href="#PTStyles" data-toggle="tab">
-                      											<div class="header">
-                       												 <div class="icon-magic"></div>
-                      											</div>
-                      											<div class="content">Edit Style</div>
-                    										</a>
-                  										</div>
-													</div>
 													<div class="col-sm-4">
 														<div class="box-quick-link muted-background">
                     										<a href="#PTHistory" data-toggle="tab">
@@ -352,43 +269,40 @@
                       											<div class="header">
                        												 <div class="icon-tag"></div>
                       											</div>
-                      											<div class="content">Edit Metadata</div>
+                      											<div class="content">Layer Metadata</div>
                     										</a>
                   										</div>
 													</div>
-												</div>
-												<div>
 													<div class="col-sm-4">
 														<div class="box-quick-link muted-background">
                     										<a href="#PTInfobox" data-toggle="tab">
                       											<div class="header">
                        												 <div class="icon-comment"></div>
                       											</div>
-                      											<div class="content">Edit Attrib</div>
+                      											<div class="content">Attributes</div>
                     										</a>
                   										</div>
 													</div>
 													<div class="col-sm-4">
-														<div class="box-quick-link blue-background">
-                    										<a href="#DownloadModal" data-toggle="modal">
+														<div class="box-quick-link muted-background">
+                    										<a href="#" data-toggle="tab">
                       											<div class="header">
-                       												 <div class="icon-download"></div>
+                       												 <div class="icon-save"></div>
                       											</div>
-                      											<div class="content">Download</div>
+                      											<div class="content">Save Edits</div>
                     										</a>
                   										</div>
 													</div>
 													<div class="col-sm-4">
-														<div class="box-quick-link red-background">
-                    										<a href="#" data-toggle="modal">
+														<div class="box-quick-link muted-background">
+                    										<a href="storylayers.html">
                       											<div class="header">
-                       												 <div class="icon-trash"></div>
+                       												 <div class="icon-share"></div>
                       											</div>
-                      											<div class="content">Delete layer</div>
+                      											<div class="content">Save and Exit</div>
                     										</a>
                   										</div>
 													</div>
-												</div>
 												</div>
 											</div>
                       					</div>
@@ -5104,6 +5018,8 @@
 					</div>
 				</div>
 				
+				
+				
 				</div>
 			</div>
 			</div>
@@ -5434,12 +5350,7 @@
 				<div class="modal-body">
 					<div class="container">
 						<div class="row">
-						<div class="col-sm-5">
-							<div class="well">
-								<iframe width="100%" height="300px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
-							</div>
-						</div>
-						<div class="col-sm-7">
+						<div class="col-sm-12">
 							<form class="form form-horizontal" style="margin-bottom: 0;" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden">
 								<div class="form-group">
                         			<label class="col-md-4 control-label" for="inputText1">Feature ID</label>
@@ -6963,62 +6874,16 @@
 		</div>
 	</div>	
 	
-	<div id="CreateModal" class="modal fade">
+	<div id="SaveModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
-					
-					<h4 class="modal-title">Create a New StoryLayer
-						<div class="btn-group pull-right">
-						<button type="button" class="btn">
-							<span class="close" data-dismiss="modal">x
-							</span>
-							</button>
-						</div>
-					</h4>
-				</div>
 				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-						    <div class="col-sm-12">
-						        <h4>Start creating a new storylayer by defining its geometry and storylayer name.</h4>
-						    </div>
-						    <div class="col-sm-4" style="padding:20px">
-						        <img class="img-rounded img-responsive" src="png/point.png" />
-						        <h4>Add Points</h4>
-						        <h6>For POIs and specific places.</h6>
-						    </div>
-						    <div class="col-sm-4" style="padding:20px">
-						        <img class="img-rounded img-responsive" src="png/line.png" />
-						        <h4>Add Lines</h4>
-						        <h6>For roads, rivers and tracks.</h6>
-						    </div>
-						    <div class="col-sm-4" style="padding:20px">
-						        <img class="img-rounded img-responsive" src="png/polygon.png" />
-						        <h4>Add Polygons</h4>
-						        <h6>For buildings and other areas.</h6>
-						    </div>
-						    <hr>
-						    <div class="row">
-						        <div class="form-group">
-                        			<label class="col-sm-2 col-sm-offset-2 control-label" for="inputText1"><h4>StoryLayer Name</h4></label>
-                        			<div class="col-sm-6">
-                          				<input class="form-control" id="inputText1" placeholder="12345" type="text">
-                        			</div>
-                     			 </div>
-						    </div>
-						    <div class="modal-footer">
-				                <div class="row">
-				                    <div class="col-sm-4 col-sm-offset-4">
-					                    <a href="maploom.html"><button type="button" class="btn btn-lg btn-block">Create StoryLayer</button></a>
-				                    </div>
-				                </div>
-				            </div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					
+				    <div class="row"  style="text-align:center">
+				        <h3>Save changes before exiting?</h3>
+				        <br/>
+					        <a href="StoryLayers.html"><button type="button" class="btn btn-md">Save changes</button></a>
+					        <button type="button" class="btn btn-md" data-dismiss="modal">Cancel</button>
+				    </div>
 				</div>
 			</div>
 		</div>
