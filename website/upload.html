@@ -9,7 +9,7 @@
 		<!-- Basic Page Needs
 		================================================== -->
 		<meta charset="utf-8">
-		<title>Upload StoryLayer</title>
+		<title>Upload Data</title>
 		<meta name="description" content="MapStory Beta">
 		<meta name="author" content="reynalddizon">
 		<!-- Mobile Specific Metas
@@ -360,19 +360,14 @@
 										<div style="padding:60px 0px 0px 10px;">
 											<h1 style="font-size:3em">Upload StoryLayers</h1>
 											<h1 style="font-size:1.1em;">
-												Upload CSV or shapefiles</h1>
+												Supports CSV, GeoJSON, GPX, KML, TIF and zipped Shapefiles</h1>
 										</div>
 									</div>
 									<div class="col-sm-5">
 										<div class="row"  style="padding:80px 0px 10px 10px;">
-										<div class="col-sm-4 col-sm-offset-4">
-										<a class="btn btn-sm btn-block" href="profile_log.html" style="font-size:0.9em;background-color:transparent;color:white;border:1px solid white;" title="" href="#" target="blank">
-											raster upload
-										</a>
-										</div>
-										<div class="col-sm-4">
-										<a class="btn btn-sm btn-block" href="profile_log.html" style="font-size:0.9em;background-color:transparent;color:white;border:1px solid white;" title="" href="#" target="blank">
-											explore storylayers
+										<div class="col-sm-6 col-sm-offset-4">
+										<a class="btn btn-sm btn-block" href="#addnew" data-toggle="tab" style="font-size:0.9em;background-color:transparent;color:white;border:1px solid white;">
+											add datasets
 										</a>
 										</div>
 								</div>
@@ -384,16 +379,336 @@
 				<section class="slice" id="dashboard" style="padding-top:20px">
 					<div class="container">
 						<div class="row" >
-                        	<div class="col-lg-12">
+                        	<div class="col-lg-9">
 								<ul class="nav nav-tabs">
-  									<li class="active"><a href="#files" data-toggle="tab"><span class="badge">1</span> Upload files</a></li>
-  									<li><a href="#geo" data-toggle="tab"><span class="badge">2</span>  Geospatial Info</a></li>
-  									<li><a href="#time" data-toggle="tab"><span class="badge">3</span>  Time Info</a></li>
-  									<li><a href="#metadata" data-toggle="tab"><span class="badge">4</span>  Metadata</a></li>
-  									<li><a href="#finish" data-toggle="tab"><span class="badge">5</span>  Finish Upload</a></li>
-								</ul>
+  									<li class="active"><a href="#pending" data-toggle="tab">12 Pending data imports</a></li>
+  									<li><a href="#success" data-toggle="tab">26 Imported storylayers</a></li>
+  								</ul>
 								<div class="tab-content">
-									<div class="tab-pane active" id="files">
+									<div class="tab-pane active" id="pending">
+										<div class="container">
+											<div class="row">
+												<div class="panel-group" id="accordion">
+  													<div class="panel panel-default">
+    													<div class="panel-heading">
+      														<h3 class="panel-title">
+        														<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-size:1.1em">
+          															<span style="float:left"><span class="badge">CSV</span>The Renaissance Period</span>
+          															<span style="float:right">01/01/2014</span>
+        														</a>
+        														<div style="clear:both"></div>
+      														</h3>
+   			 											</div>
+    													<div id="collapse1" class="panel-collapse collapse">
+      														<div class="panel-body">
+    															<div class="row">
+    																<div class="col-sm-10" style="border-right:1px solid gainsboro">
+																		<h4><strong>File type:</strong> Comma-separated values</h4>
+																		<h4><strong>File size:</strong> 913 bytes</h4>
+																		<h4><strong>Number of features:</strong> 123</h4>
+    																	<table class="table table-striped">
+																			<th>
+																				Attribute
+																			</th>
+																			<th>
+																				Data type
+																			</th>
+																			<tr>
+																				<td>City</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>State</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>Value</td>
+																				<td>integer</td>
+																			</tr>
+																		</table>
+																		
+    																</div>
+    																<div class="col-sm-2" style="text-align:right">
+    																	<h2>import as storylayer</h2>
+    																	<hr style="margin:2px">
+    																	<h2>download</h2>
+																		<hr style="margin:2px">
+																		<h2>delete</h2>
+    																</div>
+    															</div>
+      														</div>
+    													</div>
+  													</div>
+  													<div class="panel panel-default">
+    													<div class="panel-heading">
+      														<h3 class="panel-title">
+        														<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-size:1.1em">
+          															<span style="float:left"><span class="badge">SHP</span>The Renaissance Period</span>
+          															<span style="float:right">01/01/2014</span>
+        														</a>
+        														<div style="clear:both"></div>
+      														</h3>
+   			 											</div>
+    													<div id="collapse2" class="panel-collapse collapse">
+      														<div class="panel-body">
+    															<div class="row">
+    																<div class="col-sm-10" style="border-right:1px solid gainsboro">
+																		<h4><strong>File type:</strong> Comma-separated values</h4>
+																		<h4><strong>File size:</strong> 913 bytes</h4>
+																		<h4><strong>Number of features:</strong> 123</h4>
+    																	<table class="table table-striped">
+																			<th>
+																				Attribute
+																			</th>
+																			<th>
+																				Data type
+																			</th>
+																			<tr>
+																				<td>City</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>State</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>Value</td>
+																				<td>integer</td>
+																			</tr>
+																		</table>
+																		
+    																</div>
+    																<div class="col-sm-2" style="text-align:right">
+    																	<h2>import as storylayer</h2>
+    																	<hr style="margin:2px">
+    																	<h2>download</h2>
+																		<hr style="margin:2px">
+																		<h2>delete</h2>
+    																</div>
+    															</div>
+      														</div>
+    													</div>
+  													</div>
+  													<div class="panel panel-default">
+    													<div class="panel-heading">
+      														<h3 class="panel-title">
+        														<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-size:1.1em">
+          															<span style="float:left"><span class="badge">CSV</span>The Renaissance Period</span>
+          															<span style="float:right">01/01/2014</span>
+        														</a>
+        														<div style="clear:both"></div>
+      														</h3>
+   			 											</div>
+    													<div id="collapse3" class="panel-collapse collapse">
+      														<div class="panel-body">
+    															<div class="row">
+    																<div class="col-sm-10" style="border-right:1px solid gainsboro">
+																		<h4><strong>File type:</strong> Comma-separated values</h4>
+																		<h4><strong>File size:</strong> 913 bytes</h4>
+																		<h4><strong>Number of features:</strong> 123</h4>
+    																	<table class="table table-striped">
+																			<th>
+																				Attribute
+																			</th>
+																			<th>
+																				Data type
+																			</th>
+																			<tr>
+																				<td>City</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>State</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>Value</td>
+																				<td>integer</td>
+																			</tr>
+																		</table>
+																		
+    																</div>
+    																<div class="col-sm-2" style="text-align:right">
+    																	<h2>import as storylayer</h2>
+    																	<hr style="margin:2px">
+    																	<h2>download</h2>
+																		<hr style="margin:2px">
+																		<h2>delete</h2>
+    																</div>
+    															</div>
+      														</div>
+    													</div>
+  													</div>
+  												
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="tab-pane" id="success">
+										<div class="container">
+											<div class="row">
+												<div class="panel-group" id="accordion">
+  													<div class="panel panel-default">
+    													<div class="panel-heading">
+      														<h3 class="panel-title">
+        														<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-size:1.1em">
+          															<span style="float:left"><span class="badge">CSV</span>Layer 1</span>
+          															<span style="float:right">01/01/2014</span>
+        														</a>
+        														<div style="clear:both"></div>
+      														</h3>
+   			 											</div>
+    													<div id="collapse5" class="panel-collapse collapse">
+      														<div class="panel-body">
+    															<div class="row">
+    																<div class="col-sm-10" style="border-right:1px solid gainsboro">
+																		<h4><strong>Data source:</strong> Cities-54523814.csv</h4>
+																		<h4><strong>File type:</strong> Comma-separated values</h4>
+																		<h4><strong>File size:</strong> 913 bytes</h4>
+																		<h4><strong>Number of features:</strong> 123</h4>
+    																	<table class="table table-striped">
+																			<th>
+																				Attribute
+																			</th>
+																			<th>
+																				Data type
+																			</th>
+																			<tr>
+																				<td>City</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>State</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>Value</td>
+																				<td>integer</td>
+																			</tr>
+																		</table>
+																		
+    																</div>
+    																<div class="col-sm-2" style="text-align:right">
+    																	<h2>view storylayer page</h2>
+    																	<hr style="margin:2px">
+    																	<h2>download</h2>
+																		<hr style="margin:2px">
+																		<h2>delete</h2>
+    																</div>
+    															</div>
+      														</div>
+    													</div>
+  													</div>
+  													<div class="panel panel-default">
+    													<div class="panel-heading">
+      														<h3 class="panel-title">
+        														<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-size:1.1em">
+          															<span style="float:left"><span class="badge">SHP</span>Layer 2</span>
+          															<span style="float:right">01/01/2014</span>
+        														</a>
+        														<div style="clear:both"></div>
+      														</h3>
+   			 											</div>
+    													<div id="collapse5" class="panel-collapse collapse">
+      														<div class="panel-body">
+    															<div class="row">
+    																<div class="col-sm-10" style="border-right:1px solid gainsboro">
+																		<h4><strong>Data source:</strong> Cities-54523814.csv</h4>
+																		<h4><strong>File type:</strong> Comma-separated values</h4>
+																		<h4><strong>File size:</strong> 913 bytes</h4>
+																		<h4><strong>Number of features:</strong> 123</h4>
+    																	<table class="table table-striped">
+																			<th>
+																				Attribute
+																			</th>
+																			<th>
+																				Data type
+																			</th>
+																			<tr>
+																				<td>City</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>State</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>Value</td>
+																				<td>integer</td>
+																			</tr>
+																		</table>
+																		
+    																</div>
+    																<div class="col-sm-2" style="text-align:right">
+    																	<h2>view storylayer page</h2>
+    																	<hr style="margin:2px">
+    																	<h2>download</h2>
+																		<hr style="margin:2px">
+																		<h2>delete</h2>
+    																</div>
+    															</div>
+      														</div>
+    													</div>
+  													</div>
+  													<div class="panel panel-default">
+    													<div class="panel-heading">
+      														<h3 class="panel-title">
+        														<a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-size:1.1em">
+          															<span style="float:left"><span class="badge">SHP</span>Layer3</span>
+          															<span style="float:right">01/01/2014</span>
+        														</a>
+        														<div style="clear:both"></div>
+      														</h3>
+   			 											</div>
+    													<div id="collapse6" class="panel-collapse collapse">
+      														<div class="panel-body">
+    															<div class="row">
+    																<div class="col-sm-10" style="border-right:1px solid gainsboro">
+																		<h4><strong>Data source:</strong> Cities-54523814.csv</h4>
+																		<h4><strong>File type:</strong> Comma-separated values</h4>
+																		<h4><strong>File size:</strong> 913 bytes</h4>
+																		<h4><strong>Number of features:</strong> 123</h4>
+    																	<table class="table table-striped">
+																			<th>
+																				Attribute
+																			</th>
+																			<th>
+																				Data type
+																			</th>
+																			<tr>
+																				<td>City</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>State</td>
+																				<td>string</td>
+																			</tr>
+																			<tr>
+																				<td>Value</td>
+																				<td>integer</td>
+																			</tr>
+																		</table>
+																		
+    																</div>
+    																<div class="col-sm-2" style="text-align:right">
+    																	<h2>view storylayer page</h2>
+    																	<hr style="margin:2px">
+    																	<h2>download</h2>
+																		<hr style="margin:2px">
+																		<h2>delete</h2>
+    																</div>
+    															</div>
+      														</div>
+    													</div>
+  													</div>
+  												
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="tab-pane" id="addnew">
 										<div class="container">
 											<div class="row">
 												<div class="col-sm-12">
@@ -486,360 +801,18 @@
 											</div>
 										</div>
 									</div>
-									<div class="tab-pane" id="geo">
-										<div class="container">
-											<div class="row">
-												<div class="col-sm-12">
-													<form class="form-horizontal" role="form">
-													     <h2><strong>Geographic Attributes</strong></h2>
-  														    <p>
-  														        Help MapStory determine the geographic information in your dataset. 
-  														    </p>
-  														    <br>
-  														<div class="form-group">
-    														<div class="col-sm-2 col-sm-offset-2">
-    														    <img class="img-responsive" src="images/projection.png" />
-    														</div>
-    														<div class="col-sm-6">
-      															<h2><strong>Map Projection</strong></h2>
-      															<p>Map projection is the process on which a round, 3D surface of the earth is represented on a flat two-dimensional map. By default, all maps are projected using WGS 84 projection.<a href="#"> Read more about Map Projections.</a></p>
-      															<h3><strong>Projection: </strong> WGS 84</h3>
-      														</div>
-  														</div>
-  														<hr>
-  														<div class="form-group">
-    														<div class="col-sm-2 col-sm-offset-2">
-    														    <img class="img-responsive" src="images/latitude.png" />
-    														</div>
-    														<div class="col-sm-6">
-      															<h2><strong>Latitude</strong></h2>
-      															<p>Latitude is the the distance of a point north or south from the equator. Values range from 0 to 90 degrees for North values, and from -90 to 0 degrees for  South values. All values must be in decimal degrees (dd.xxxxx).<a href="#"> Read more about latitude.</a></p>
-      															<div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         Column
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Col 1</a></li>
-                                                                        <li><a href="#">Col 2</a></li>
-                                                                    </ul>
-                                                                </div>
-    														</div>
-  														</div>
-  														<hr>
-  														<div class="form-group">
-    														<div class="col-sm-2 col-sm-offset-2">
-    														    <img class="img-responsive" src="images/longitude.png" />
-    														</div>
-    														<div class="col-sm-6">
-      															<h2><strong>Longitude</strong></h2>
-      															<p>Longitude is the the distance of a point east or west from the prime meridian. Values range from 0 to 180 degrees for East values, and from -180 to 0 degrees for West values. All values must be in decimal degrees (dd.xxxxx).<a href="#"> Read more about longitude.</a></p>
-      															<div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         Column
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Col 1</a></li>
-                                                                        <li><a href="#">Col 2</a></li>
-                                                                    </ul>
-                                                                </div>
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<div class="col-sm-2">
-      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
-    														</div>
-    														<div class="col-sm-2 col-sm-offset-8">
-      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
-    														</div>
-  														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="time">
-										<div class="container">
-											<div class="row">
-												<div class="col-sm-12">
-													<form class="form-horizontal" role="form">
-													    <h2><strong>Time Attribute</strong></h2>
-  														    <p>
-  														        Help MapStory determine the geographic information in your dataset. <a href="#">Learn more about Time information.</a> 
-  														    </p>
-  														    <br>
-  														<div class="form-group">
-  														    <div class="col-sm-4 col-sm-offset-2">
-  														        <div class="well" style="text-align:center">
-  														            <img width="150" src="images/simple.png">
-  														            <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
-                                                                        Simple
-                                                                    </label>
-                                                                    <p>The dataset contains a column which displays the time information for each feature.</p>
-                                                                    </div>
-  														        </div>
-  														    </div>
-  														    <div class="col-sm-4">
-  														        <div class="well" style="text-align:center">
-  														            <img  width="150"  src="images/interval.png">
-  														            <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
-                                                                        Start/End Times
-                                                                    </label>
-                                                                    <p>The dataset contains two columns which indicate the start and end times for each feature.
-                                                                    </div>
-  														        </div>
-  														    </div>
-  														</div>
-  														<hr>
-  														<div class="row">
-  														    <div class="col-sm-2 col-sm-offset-2">
-    														    <img class="img-responsive" src="images/intervals.png" />
-    														</div>
-    														<div class="col-sm-6">
-    														    <h2><strong>Regular Intervals</strong></h2>
-      															<div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
-                                                                        The data was not collected at regular intervals. 
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
-                                                                        The data was collected at regular intervals: <input type="email" class="form-control" id="inputEmail3" placeholder="interval">
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <hr>
-  														<div class="form-group">
-    														<div class="col-sm-2 col-sm-offset-2">
-    														    <img class="img-responsive" src="images/time_col.png" />
-    														</div>
-    														<div class="col-sm-6">
-      															<h2><strong>Simple: Time column and format</strong></h2>
-      															<p>/*this appears only when the Simple option is selected. This should be similar to the start time on the current production*/</p>
-      															<p>Specify the column that contains the time information of the dataset. If the column is in number format, values are automatically translated as year values. If the column is in text format, you need to specify the date format. <a href="#">Learn more about Time formats.</a></p>
-      															<p>Tips on date formats:</p>
-      															<ul>
-      															    <li>MM/dd/yyyy</li>
-      															    <li>M/d/y</li>
-      															    <li>MM/dd/yyyy'T'HH:mm:ss</li>
-      															    <li>MM/dd/yyyy'T'hh:mm:ss</li>
-      															 </ul>
-      															<div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         Time Column 
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Col 1</a></li>
-                                                                        <li><a href="#">Col 2</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
-                                                                        Best Guess
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
-                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Custom Format">
-                                                                    </label>
-                                                                </div>
-    														</div>
-  														</div>
-  														<hr>
-  														<div class="form-group">
-    														<div class="col-sm-2 col-sm-offset-2">
-    														    <img class="img-responsive" src="images/start_end.png" />
-    														</div>
-    														<div class="col-sm-6">
-      															<h2><strong>Start & End Time columns and format</strong></h2>
-      															<p>/*this appears only when the Start/End option is selected*/</p>
-      															<p>Specify the columns that contain the start and end times for the dataset features. If the column is in number format, values are automatically translated as year values. If the column is in text format, you need to specify the date format. <a href="#">Learn more about Time formats.</a></p>
-      															<p>Tips on date formats:</p>
-      															<ul>
-      															    <li>MM/dd/yyyy</li>
-      															    <li>M/d/y</li>
-      															    <li>MM/dd/yyyy'T'HH:mm:ss</li>
-      															    <li>MM/dd/yyyy'T'hh:mm:ss</li>
-      															 </ul>
-      															<div class="row">
-      															<div class="col-sm-6">
-      															<h3><strong>Start Time</strong></h3>
-      															<div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         Start Time Column 
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Col 1</a></li>
-                                                                        <li><a href="#">Col 2</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
-                                                                        Best Guess
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
-                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Custom Format">
-                                                                    </label>
-                                                                </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                <h3><strong>End Time</strong></h3>
-      															<div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         End Time Column 
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Col 1</a></li>
-                                                                        <li><a href="#">Col 2</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="formatRadios" id="formatRadios1" value="option1" checked>
-                                                                        Best Guess
-                                                                    </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                     <input type="radio" name="formatRadios" id="formatRadios3" value="option3">
-                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Custom Format">
-                                                                    </label>
-                                                                </div>
-                                                                </div>
-                                                                </div>
-    														</div>
-  														</div>
-  														<hr>
-  														<div class="form-group">
-    														<div class="col-sm-2">
-      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
-    														</div>
-    														<div class="col-sm-2 col-sm-offset-8">
-      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
-    														</div>
-  														</div>
-													</form>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-									<div class="tab-pane" id="metadata">
-										<div class="container">
-											<div class="row">
-												<div class="col-sm-12">
-													<form class="form-horizontal" role="form">
-													    <h2><strong>StoryLayer Metadata</strong></h2>
-  														    <p>
-  														    Tell us a bit more about your data. The more fully you complete your metadata here, the more others will trust your work and use it as part of their own MapStory projects.
-                                                             </p>
-  														    <br>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">StoryLayer Name</label>
-    														<div class="col-sm-6">
-      															<input type="email" class="form-control" id="inputEmail3" placeholder="First">
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">Thumbnail</label>
-    														<div class="col-sm-3">
-      															<img class="img-thumbnail" src="images/avatars/ava3.png" width="75" />
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">Topic</label>
-    														<div class="col-sm-6">
-    														    <div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         Topic 1
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Topic 1</a></li>
-                                                                        <li><a href="#">Topic 2</a></li>
-                                                                    </ul>
-                                                                </div>
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">Region</label>
-    														<div class="col-sm-6">
-    														    <div class="dropdown">
-                                                                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                         Region 1
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                                        <li><a href="#">Region 1</a></li>
-                                                                        <li><a href="#">Region 2</a></li>
-                                                                    </ul>
-                                                                </div>
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">Data Source</label>
-    														<div class="col-sm-6">
-      															<input type="email" class="form-control" id="inputEmail3" placeholder="Source">
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">Data Quality</label>
-    														<div class="col-sm-6">
-      															<input type="email" class="form-control" id="inputEmail3" placeholder="Data Quality Statement">
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<label for="inputEmail3" class="col-sm-3 control-label">Tags</label>
-    														<div class="col-sm-6">
-      															<input type="email" class="form-control" id="inputEmail3" placeholder="Tags separated by comma">
-    														</div>
-  														</div>
-  														<div class="form-group">
-    														<div class="col-sm-2">
-      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white"><- Previous</button>
-    														</div>
-    														<div class="col-sm-2 col-sm-offset-8">
-      															<button class="btn btn-sm btn-block" style="background-color:darkgray;color:white">Next -></button>
-    														</div>
-  														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="finish">
-										<div class="container">
-											<div class="row">
-												<div class="col-sm-12">
-												    <div class="well" style="text-align:center;padding:50px 0;">
-												        <span style="text-align:center;font-size:7em"><i class="icon icon-like"></i></span>
-												        <h2>Upload success!</h2>
-												        <br/>
-												        <button class="btn btn-sm" style="background-color:darkgray;color:white">Compose MapStory with this storylayer</button>
-												        <button class="btn btn-sm" style="background-color:darkgray;color:white">Upload another storylayer</button>
-												    </div>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
+							</div>
+							<div class="col-lg-3 well">
+								<h4>Help Text</h4>
+								<p>Lorem ipsum dolor sit amet, eum quem veri albucius ei, voluptatum reprehendunt nam ad, mea ei exerci primis. In sea tempor pertinax persecuti, vix at inimicus suscipiantur. Semper principes id vis, mei at malis adipiscing, no paulo altera nostrud usu. Ea sea nulla melius viderer.
+
+Purto moderatius cum ex, vero volumus te sed, per melius virtute epicurei id. Sed at alii option senserit, idque accommodare est an. Quem oblique labores no eos. Dicta dolore nam no, pro no appareat euripidis dissentiunt. Ex sea suavitate abhorreant. No vis purto modus, sea ea alii primis.
+
+Duis vidit insolens per eu. Ridens labore periculis ut eum, eam justo viderer abhorreant ea. Quo dolor splendide at. Nam eu liber partem vituperatoribus.
+
+Usu blandit antiopam in, eam te mutat facete, no has primis mediocritatem. Sed ludus homero at, mel alia ancillae definitiones ei. Facete omnesque consequat vim ad, eam cu habeo altera dicunt. Has solum verterem an, mea ut putant dicunt. In sea oporteat facilisi temporibus. Ex qui vide facilisi scribentur.
+								</p>
 							</div>
 						</div>
 					</div>
