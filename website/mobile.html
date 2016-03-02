@@ -33,10 +33,10 @@
 		<!-- icon fonts -->
 		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/custom-icons.css">
 		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<link href="font-icons/custom-icons/css/flags.css"" media="screen" rel="stylesheet" type="text/css">
 		<!-- Custom css -->
 		<link type="text/css" rel="stylesheet" href="css/layout.css">
 		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
-		<link type="text/css" href="css/flags.css" media="screen" rel="stylesheet">
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 		<script src="js/modernizr-2.6.1.min.js"></script>
 		<!-- Favicons
@@ -149,12 +149,9 @@
       						</div>-->
       						<div class="modal-body">
       							<div class="row" style="margin:10px">
-						<ul class="nav nav-tabs">
-  									<li class="active"><a href="#login" data-toggle="tab"><h2><strong>Log In</strong></h2></a></li>
-  									<li><a href="#signup" data-toggle="tab"><h2><strong>Sign Up</strong></h2></a></li>
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane active" id="login">
+						<div class="col-sm-6" style="border-right:1px solid darkgray">
+							<h1 style="font-size:1.4em"><strong>Log in</strong></h1>
+							<hr class="col-sm-10" style="margin:10px">
 							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden"><div class="form-group">
                         <label class="col-md-3 control-label" for="inputText1">Username</label>
                         <div class="col-md-8">
@@ -184,13 +181,6 @@
                             </label>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <div class="col-md-8 col-md-offset-3">
-                            <label>
-                              <a href="#signup" data-toggle="tab" style="color:black">No account? Create one here.</a>
-                            </label>
-                        </div>
-                      </div>
                       <div class="form-actions form-actions-padding-sm">
                         <div class="row">
                           <div class="col-sm-offset-2 col-sm-8">
@@ -201,22 +191,25 @@
                       <hr class="col-sm-11" style="margin:10px">
                       <div class="form-actions form-actions-padding-sm">
                         <div class="row">
-                        	<div class="col-sm-12">
-                          <div class="col-sm-4">
-                          	<button class="btn btn-sm btn-block" style="background-color:dodgerblue;color:white"><i class="icon-social-facebook"></i>Log in with Facebook</button>
+                        	<div class="col-sm-11">
+                        	<h1 style="font-size:1.2em;">Connect your account</h1>
+                          <div class="col-sm-6">
+                          	<button class="btn btn-sm btn-block" style="background-color:dodgerblue;color:white"><i class="icon-social-facebook"></i></button>
                           </div>
-                          <div class="col-sm-4">
-                          	<button class="btn btn-sm btn-block" style="background-color:crimson;color:white"><i class="icon-social-google"></i> Log in with Google</button>
-                          </div>
-                          <div class="col-sm-4">
-                          	<button class="btn btn-sm btn-block" style="background-color:deepskyblue;color:white"><i class="icon-social-twitter"></i> Log in with Twitter</button>
+                          <div class="col-sm-6">
+                          	<button class="btn btn-sm btn-block" style="background-color:deepskyblue;color:white"><i class="icon-social-twitter"></i></button>
                           </div>
                           </div>
                         </div>
                       </div>
                       </form>
-									</div>
-									<div class="tab-pane" id="signup">
+						</div>
+						<div class="col-sm-6" >
+							<h1 class="col-sm-offset-1" style="font-size:1.4em">
+								<strong>Sign up to MapStory</strong>
+								<button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</h1>
+							<hr class="col-sm-offset-1 col-sm-10" style="margin:10px">
 							<form class="form form-horizontal" method="post" action="#" accept-charset="UTF-8"><input name="authenticity_token" type="hidden">
 							<div class="form-group">
                         <label class="col-sm-offset-1 col-md-2 control-label" for="inputText1">Name</label>
@@ -256,13 +249,6 @@
                       </div>
                       <div class="form-group">
                         <div class="col-md-9 col-md-offset-3">
-                            <label>
-                              <a href="#login" data-toggle="tab" style="color:black">Already have an account? Log in here.</a>
-                            </label>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-md-9 col-md-offset-3">
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" value="">
@@ -278,25 +264,8 @@
                           </div>
                         </div>
                       </div>
-                      <hr class="col-sm-11" style="margin:10px">
-                      <div class="form-actions form-actions-padding-sm">
-                        <div class="row">
-                        	<div class="col-sm-12">
-                          <div class="col-sm-4">
-                          	<button class="btn btn-sm btn-block" style="background-color:dodgerblue;color:white"><i class="icon-social-facebook"></i> Sign up with Facebook</button>
-                          </div>
-                          <div class="col-sm-4">
-                          	<button class="btn btn-sm btn-block" style="background-color:crimson;color:white"><i class="icon-social-google"></i> Sign up with Google</button>
-                          </div>
-                          <div class="col-sm-4">
-                          	<button class="btn btn-sm btn-block" style="background-color:deepskyblue;color:white"><i class="icon-social-twitter"></i> Sign up with Twitter</button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
                       </form>
-									</div>
-								</div>
+						</div>
 					</div>
         					</div>
    						 </div><!-- /.modal-content -->
@@ -1108,23 +1077,9 @@
 						<div class="container">
 									<hr style="margin:10px 0 10px 0">
 									<div class="row">
-									<div class="col-sm-10">
+									<div class="col-sm-12">
 											<p><small>By using this site, you agree to the License, Terms of Use and Privacy Policy. MapStory® is a registered trademark of the MapStory Foundation, Inc., a non-profit organization.</small></p>
 											<p><small>About the MapStory Foundation | Blog | Contact | Developers | Mobile View | Press | Disclaimers | Values | wiki.MapStory.org</small></p>
-											<p><small><i class='flag flag-gb'></i> English | <i class='flag flag-fr'></i> Français | <i class='flag flag-es'></i> Español | <i class='flag flag-de'></i> Deutsch | <i class='flag flag-cn'></i> 中文 | <i class='flag flag-it'></i> Italiano | <i class='flag flag-ru'></i> русский </small></p>
-									</div>
-									<div class="col-sm-2">
-										<div class="btn-group">
-  											<button type="button"  class="btn btn-sm btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="background-color:transparent;color: white;border-color:white;padding: 5px;width:170px">
-    											<i class='flag flag-gb'></i> English <span class="caret" style="border-top-color: white"></span>
-  											</button>
-  											<ul class="dropdown-menu">
-    											<li><a href="#"><i class='flag flag-fr'></i> Français</a></li>
-    											<li><a href="#"><i class='flag flag-es'></i> Español</a></li>
-    											<li><a href="#"><i class='flag flag-de'></i> Deutsch</a></li>
-    											<li><a href="#"><i class='flag flag-cn'></i> 中文</a></li>
-  											</ul>
-										</div>
 									</div>
 								</div>
 							</div>
